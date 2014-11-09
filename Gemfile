@@ -15,13 +15,18 @@ gem 'kaminari', '0.16.1'
 gem 'friendly_id', '5.0.4'
 gem 'font-awesome-sass', '4.2.2'
 gem 'bootstrap-sass', '3.3.0.1'
+gem 'oj'
+gem 'oj_mimic_json'
 
 group :development do
   gem 'foreman'
+  gem 'html2haml'
+  gem 'erb2haml'
 end
 
 group :development, :test do
   gem 'figaro', '1.0.0'
+  gem 'rspec-rails', '~> 3.0.0'
 end
 
 group :production do
