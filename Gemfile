@@ -20,6 +20,7 @@ gem 'oj_mimic_json'
 gem 'strip_attributes'
 gem 'activerecord-import'
 gem 'haml-rails'
+gem 'ruby-progressbar'
 
 group :development do
   gem 'foreman'
