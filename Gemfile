@@ -17,6 +17,7 @@ gem 'font-awesome-sass', '4.2.2'
 gem 'bootstrap-sass', '3.3.0.1'
 gem 'oj'
 gem 'oj_mimic_json'
+gem 'strip_attributes'
 
 group :development do
   gem 'foreman'
@@ -27,6 +28,12 @@ end
 group :development, :test do
   gem 'figaro', '1.0.0'
   gem 'rspec-rails', '~> 3.0.0'
+  gem 'factory_girl_rails'
+  gem 'ffaker', require: 'ffaker'
+end
+
+group :test do
+  gem 'database_cleaner'
 end
 
 group :production do
