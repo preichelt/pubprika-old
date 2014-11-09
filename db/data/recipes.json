@@ -623,34 +623,6 @@
       "nutrition": []
     },
     {
-      "name": "Amish Church Spread",
-      "ingredients": [
-        "1/2 cup brown sugar",
-        "1/4 cup water",
-        "1 tablespoon butter",
-        "2 tablespoons corn syrup",
-        "3/4 cup peanut butter",
-        "1/2 cup marshmallow creme",
-        "1/2 teaspoon vanilla extract"
-      ],
-      "directions": [
-        "1. In a medium saucepan over high heat, combine sugar, water and butter and bring to a boil.",
-        "2. Stir in corn syrup, reduce heat to low, and simmer 1 to 2 minutes; remove from heat.",
-        "3. Add peanut butter, marshmallow crème, and vanilla and stir until blended. Store in a container in refrigerator."
-      ],
-      "notes": [],
-      "image": "images/6B098837-2AF2-44F2-8E6B-68A4D802C0D8-42208-0000956243928659.jpg",
-      "tags": [
-        "Desserts",
-        " Dips"
-      ],
-      "prep_time": "",
-      "cook_time": "5 min",
-      "amount": "2 cups",
-      "source": "http://www.mrfood.com/Snacks/Amish-Church-Spread",
-      "nutrition": []
-    },
-    {
       "name": "Angel Food Cake",
       "ingredients": [
         "1 cup cake flour (no other flour substitutions)",
@@ -683,6 +655,34 @@
       "cook_time": "",
       "amount": "about 12",
       "source": "http://www.chewoutloud.com/2014/03/15/best-ever-angel-food-cake/",
+      "nutrition": []
+    },
+    {
+      "name": "Amish Church Spread",
+      "ingredients": [
+        "1/2 cup brown sugar",
+        "1/4 cup water",
+        "1 tablespoon butter",
+        "2 tablespoons corn syrup",
+        "3/4 cup peanut butter",
+        "1/2 cup marshmallow creme",
+        "1/2 teaspoon vanilla extract"
+      ],
+      "directions": [
+        "1. In a medium saucepan over high heat, combine sugar, water and butter and bring to a boil.",
+        "2. Stir in corn syrup, reduce heat to low, and simmer 1 to 2 minutes; remove from heat.",
+        "3. Add peanut butter, marshmallow crème, and vanilla and stir until blended. Store in a container in refrigerator."
+      ],
+      "notes": [],
+      "image": "images/6B098837-2AF2-44F2-8E6B-68A4D802C0D8-42208-0000956243928659.jpg",
+      "tags": [
+        "Desserts",
+        " Dips"
+      ],
+      "prep_time": "",
+      "cook_time": "5 min",
+      "amount": "2 cups",
+      "source": "http://www.mrfood.com/Snacks/Amish-Church-Spread",
       "nutrition": []
     },
     {
@@ -5391,34 +5391,6 @@
       "nutrition": []
     },
     {
-      "name": "Beer Battered Mushrooms",
-      "ingredients": [
-        "12-16 ounces of button mushrooms, or approximately 4 cups, washed and then drained or patted dry",
-        "3/4 cups flour (I used 1/2 cup brown rice and 1/4 cup potato starch.)",
-        "3/4 teaspoons kosher salt",
-        "1/4 teaspoon freshly cracked black pepper",
-        "1/8 teaspoon garlic powder",
-        "1/8 teaspoon smoked paprika",
-        "1 beer of your choice, I used less than half of a dark Mexican beer",
-        "light flavored cooking oil, enough to fill a medium saucepan with about 2-3\" of oil (I've used both coconut oil and light flavored olive oil, simply adjust the heat to avoid smoking.)"
-      ],
-      "directions": [
-        "Prep the mushrooms by rinsing very well and then draining or patting them dry. Trim the ends slightly and if the mushrooms are large, cut them in half. Whisk together the flour, salt, pepper, garlic and paprika. Whisk in just enough beer to make the consistency pourable, but not too thin. The mixture should resemble pancake batter. Set the batter and the mushrooms in separate bowls next to the stove.",
-        "Pour the oil into a heavy bottomed saucepan and warm it over medium high heat. You want it to be as hot as possible, without smoking. When the oil is hot, drop a few mushrooms into the batter and coat well. Shake off the excess batter and gently place the mushrooms one at a time into the oil. Hold each mushroom in the oil with metal tongs for a few seconds before releasing them. This will help seal the coating and avoid sticking to the bottom of the pan or to the other pieces. Cook just a few pieces at a time to avoid crowding.",
-        "Let them cook for 2-3 minutes, until the coating is lightly browned. (I found it easiest to use separate tongs for coating the mushrooms and for removing them from the oil.) Remove from the oil and drain on a plate lined with paper towels. Let cool for a few minutes prior to serving, they will be extremely hot. Serve with Dill Sauce and Enjoy!"
-      ],
-      "notes": [],
-      "image": "images/30D5DC49-59E2-4E8B-B87B-48A79D5BC144-94324-0001E1AFEC8C9150.jpg",
-      "tags": [
-        "Appetizers"
-      ],
-      "prep_time": "",
-      "cook_time": "",
-      "amount": "",
-      "source": "http://www.barefeetinthekitchen.com/2012/08/beer-battered-mushrooms.html",
-      "nutrition": []
-    },
-    {
       "name": "Beer Battered Mini Corn Dogs with Chipotle Ketchup",
       "ingredients": [
         "canola or peanut oil for frying",
@@ -5453,6 +5425,34 @@
       "cook_time": "",
       "amount": "",
       "source": "http://thebeeroness.com/2012/11/08/beer-battered-mini-corn-dogs-with-chipotle-ketchup/",
+      "nutrition": []
+    },
+    {
+      "name": "Beer Battered Mushrooms",
+      "ingredients": [
+        "12-16 ounces of button mushrooms, or approximately 4 cups, washed and then drained or patted dry",
+        "3/4 cups flour (I used 1/2 cup brown rice and 1/4 cup potato starch.)",
+        "3/4 teaspoons kosher salt",
+        "1/4 teaspoon freshly cracked black pepper",
+        "1/8 teaspoon garlic powder",
+        "1/8 teaspoon smoked paprika",
+        "1 beer of your choice, I used less than half of a dark Mexican beer",
+        "light flavored cooking oil, enough to fill a medium saucepan with about 2-3\" of oil (I've used both coconut oil and light flavored olive oil, simply adjust the heat to avoid smoking.)"
+      ],
+      "directions": [
+        "Prep the mushrooms by rinsing very well and then draining or patting them dry. Trim the ends slightly and if the mushrooms are large, cut them in half. Whisk together the flour, salt, pepper, garlic and paprika. Whisk in just enough beer to make the consistency pourable, but not too thin. The mixture should resemble pancake batter. Set the batter and the mushrooms in separate bowls next to the stove.",
+        "Pour the oil into a heavy bottomed saucepan and warm it over medium high heat. You want it to be as hot as possible, without smoking. When the oil is hot, drop a few mushrooms into the batter and coat well. Shake off the excess batter and gently place the mushrooms one at a time into the oil. Hold each mushroom in the oil with metal tongs for a few seconds before releasing them. This will help seal the coating and avoid sticking to the bottom of the pan or to the other pieces. Cook just a few pieces at a time to avoid crowding.",
+        "Let them cook for 2-3 minutes, until the coating is lightly browned. (I found it easiest to use separate tongs for coating the mushrooms and for removing them from the oil.) Remove from the oil and drain on a plate lined with paper towels. Let cool for a few minutes prior to serving, they will be extremely hot. Serve with Dill Sauce and Enjoy!"
+      ],
+      "notes": [],
+      "image": "images/30D5DC49-59E2-4E8B-B87B-48A79D5BC144-94324-0001E1AFEC8C9150.jpg",
+      "tags": [
+        "Appetizers"
+      ],
+      "prep_time": "",
+      "cook_time": "",
+      "amount": "",
+      "source": "http://www.barefeetinthekitchen.com/2012/08/beer-battered-mushrooms.html",
       "nutrition": []
     },
     {

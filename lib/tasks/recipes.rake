@@ -6,6 +6,9 @@ namespace :recipes do
 
   desc "Import recipes.json into db."
   task :import => :environment do
+    if Rails.env == "development"
+      Rails.logger = Logger.new(STDOUT)
+    end
     file = File.read("db/data/recipes.json")
     data_hash = JSON.parse(file)
     total = data_hash["recipes"].count
