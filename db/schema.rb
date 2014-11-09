@@ -30,16 +30,16 @@ ActiveRecord::Schema.define(version: 20141109045525) do
   add_index "friendly_id_slugs", ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type", using: :btree
 
   create_table "recipes", force: true do |t|
-    t.string   "name",                     null: false
+    t.text     "name",                     null: false
     t.text     "ingredients", default: [],              array: true
     t.text     "directions",  default: [],              array: true
     t.text     "notes",       default: [],              array: true
-    t.string   "image"
+    t.text     "image"
     t.text     "tags",        default: [],              array: true
-    t.time     "prep_time"
-    t.time     "cook_time"
-    t.string   "amount"
-    t.string   "source"
+    t.text     "prep_time"
+    t.text     "cook_time"
+    t.text     "amount"
+    t.text     "source"
     t.text     "nutrition",   default: [],              array: true
     t.datetime "created_at"
     t.datetime "updated_at"
