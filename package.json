@@ -1,0 +1,12 @@
+{
+  "name"         : "paprika-json-converter",
+  "version"      : "0.1.0",
+  "description"  : "Converts Paprika exported recipe html files to json.",
+  "main"         : "convert.js",
+  "author"       : "Phillip Reichelt",
+  "dependencies" : {
+    "cheerio"    : "latest",
+    "async"      : "latest",
+    "underscore" : "latest"
+  }
+}

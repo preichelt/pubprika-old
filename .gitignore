@@ -82,3 +82,7 @@ pickle-email-*.html
 # Ignore application configuration
 /config/application.yml
 .secret
+
+# Node app
+/node_modules
+/paprika_files
