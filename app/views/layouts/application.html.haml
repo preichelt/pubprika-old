@@ -1,0 +1,21 @@
+!!!
+%html
+  %head
+    %meta{:content => "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no", :name => "viewport"}/
+    %title= @title || "Pubprika"
+    = favicon_link_tag 'favicon.ico'
+    = stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = csrf_meta_tags
+  %body
+    #wrap
+      %header
+        = render 'layouts/navigation'
+      .container
+        .row
+          .col-sm-6.col-sm-offset-3.text-center
+            = render 'layouts/messages'
+        .row
+          .col-sm-12
+            = yield
+    = render 'layouts/footer'
