@@ -78,7 +78,7 @@ scan(paprikaFilesDir, '.html', function(err, files){
 
     var image = "";
     if($('.photo').length){
-      image = $('.photo').attr('src');
+      image = $('.photo').attr('src').replace(/images\//g, '');
     }
 
     var tags = [];

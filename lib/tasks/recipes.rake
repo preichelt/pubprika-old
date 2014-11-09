@@ -22,4 +22,12 @@ namespace :recipes do
     Recipe.import recipes
     Rails.logger.info("Finished importing recipes.")
   end
+
+  desc "Copy Paprika exported recipe images to images/recipes directory."
+  task :copy_images => :environment do
+    if Rails.env == "development"
+      Rails.logger = Logger.new(STDOUT)
+    end
+    FileUtils.cp_r 'paprika_files/images/.', 'app/assets/images/recipes'
+  end
 end

@@ -83,6 +83,7 @@ pickle-email-*.html
 /config/application.yml
 .secret
 
-# Node app
+# Node app and Paprika files
 /node_modules
 /paprika_files
+/app/assets/images/recipes
