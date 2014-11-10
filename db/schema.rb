@@ -41,6 +41,7 @@ ActiveRecord::Schema.define(version: 20141109045525) do
     t.text     "amount"
     t.text     "source"
     t.text     "nutrition",   default: [],              array: true
+    t.string   "slug"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

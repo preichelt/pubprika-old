@@ -21,14 +21,22 @@ namespace :recipes do
     file = File.read("db/data/recipes.json")
     data_hash = JSON.parse(file)
     total = data_hash["recipes"].count
-    progress_bar = ProgressBar.create(title: "Recipes", starting_at: 0, total: total)
+    progress_bar = ProgressBar.create(title: "Parsing Recipes", starting_at: 0, total: total)
     recipes = []
     data_hash["recipes"].each do |recipe_data|
       recipe = Recipe.new(recipe_data)
       recipes << recipe
       progress_bar.increment
     end
-    Recipe.import recipes
+    Rails.logger.info("Finished parsing recipes.json. Beginning import.")
+    total = recipes.count
+    progress_bar = ProgressBar.create(title: "Saving Recipes", starting_at: 0, total: total)
+    recipes.each do |recipe|
+      recipe.save!
+      progress_bar.increment
+    end
+    # Much faster but skips friendly-id creation
+    # Recipe.import recipes
     Rails.logger.info("Finished importing recipes.")
   end
 

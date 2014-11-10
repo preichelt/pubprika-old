@@ -12,6 +12,7 @@ class CreateRecipes < ActiveRecord::Migration
       t.text :amount
       t.text :source
       t.text :nutrition, array: true, default: []
+      t.string :slug, unique: true
 
       t.timestamps
     end
