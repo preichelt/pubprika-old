@@ -177,6 +177,43 @@
       "nutrition": []
     },
     {
+      "name": "7 Layer Fried Taquitos",
+      "ingredients": [
+        "1 16oz Can Old El Paso Traditional Refried Beans",
+        "1/2 Teaspoon Cumin",
+        "1/2 Teaspoon Chili Powder",
+        "1 1/2 Cups Guacamole",
+        "3/4 Cup Sour Cream",
+        "2 Cups Grated Colby Jack Cheese",
+        "Pico De Gallo for serving",
+        "1/4 Cup Canola Oil for Frying",
+        "*Olives (optional)",
+        "1 Package Corn Tortillas",
+        "sea salt for garnish"
+      ],
+      "directions": [
+        "1. In a medium bowl, combine the refried beans, cumin and chili powder, stirring well. Set aside.",
+        "2. Heat a large skillet over high heat. Place one tortilla on the hot skillet, allow to cook for a couple seconds, carefully turn the tortilla and cook on the other side, remove to a plate. The tortilla should be flexible now. Cover with a heavy towel or tinfoil to keep warm and pliable or work on one taquito at a time.",
+        "3. Lay one cooked tortilla on a plate and spread a thin layer of the refried bean mixture, sour cream,guacamole and finally a sprinkling of cheese. You made add olives now, with the pico or skip entirely. Tightly roll the tortilla closed see note and set aside. Continue with each tortilla.",
+        "4. Heat a medium skillet to medium heat and add the oil. When the oil begins to shimmer add the taquito, seam side down and cook for 15-30 seconds or until turning golden brown, flip to each side of the taquito allowing each side to brown and then set on a paper towel lined plate. Sprinkle with a little sea salt",
+        "5. Serve with fresh pico de gallo."
+      ],
+      "notes": [
+        "If your corn tortilla is cracking you have either not gotten it hot enough in the pan or allowed it to cool."
+      ],
+      "image": "2C2F8587-AC83-4474-877D-6CF5BA3FF50A-10567-0000166AE38FFD50.jpg",
+      "tags": [
+        "Mexican/Latin"
+      ],
+      "prep_time": "2 min",
+      "cook_time": "2 min",
+      "amount": "12-14 Taquitos",
+      "source": "http://www.ohsweetbasil.com/2013/03/7-layer-dip-fried-taquitos.html",
+      "nutrition": [
+        "Serving Size: 2-3 Per person"
+      ]
+    },
+    {
       "name": "7 Layer Mexican Dip",
       "ingredients": [
         "2 lbs lean ground beef",
@@ -213,43 +250,6 @@
       "amount": "about 40",
       "source": "http://www.chewoutloud.com/2014/01/26/7-layer-mexican-dip/",
       "nutrition": []
-    },
-    {
-      "name": "7 Layer Fried Taquitos",
-      "ingredients": [
-        "1 16oz Can Old El Paso Traditional Refried Beans",
-        "1/2 Teaspoon Cumin",
-        "1/2 Teaspoon Chili Powder",
-        "1 1/2 Cups Guacamole",
-        "3/4 Cup Sour Cream",
-        "2 Cups Grated Colby Jack Cheese",
-        "Pico De Gallo for serving",
-        "1/4 Cup Canola Oil for Frying",
-        "*Olives (optional)",
-        "1 Package Corn Tortillas",
-        "sea salt for garnish"
-      ],
-      "directions": [
-        "1. In a medium bowl, combine the refried beans, cumin and chili powder, stirring well. Set aside.",
-        "2. Heat a large skillet over high heat. Place one tortilla on the hot skillet, allow to cook for a couple seconds, carefully turn the tortilla and cook on the other side, remove to a plate. The tortilla should be flexible now. Cover with a heavy towel or tinfoil to keep warm and pliable or work on one taquito at a time.",
-        "3. Lay one cooked tortilla on a plate and spread a thin layer of the refried bean mixture, sour cream,guacamole and finally a sprinkling of cheese. You made add olives now, with the pico or skip entirely. Tightly roll the tortilla closed see note and set aside. Continue with each tortilla.",
-        "4. Heat a medium skillet to medium heat and add the oil. When the oil begins to shimmer add the taquito, seam side down and cook for 15-30 seconds or until turning golden brown, flip to each side of the taquito allowing each side to brown and then set on a paper towel lined plate. Sprinkle with a little sea salt",
-        "5. Serve with fresh pico de gallo."
-      ],
-      "notes": [
-        "If your corn tortilla is cracking you have either not gotten it hot enough in the pan or allowed it to cool."
-      ],
-      "image": "2C2F8587-AC83-4474-877D-6CF5BA3FF50A-10567-0000166AE38FFD50.jpg",
-      "tags": [
-        "Mexican/Latin"
-      ],
-      "prep_time": "2 min",
-      "cook_time": "2 min",
-      "amount": "12-14 Taquitos",
-      "source": "http://www.ohsweetbasil.com/2013/03/7-layer-dip-fried-taquitos.html",
-      "nutrition": [
-        "Serving Size: 2-3 Per person"
-      ]
     },
     {
       "name": "7 Layer Nacho Waffles",

@@ -1,8 +1,8 @@
 Pubprika::Application.routes.draw do
 
-  root "pages#home"
+  root "recipes#index"
 
-  get "/home", to: "pages#home", as: "home"
+  # get "/home", to: "pages#home", as: "home"
 
   resources :recipes, only: [:index, :show]
 end

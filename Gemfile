@@ -24,8 +24,6 @@ gem 'ruby-progressbar'
 
 group :development do
   gem 'foreman'
-  gem 'html2haml'
-  gem 'erb2haml'
 end
 
 group :development, :test do

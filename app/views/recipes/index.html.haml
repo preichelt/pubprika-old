@@ -1,0 +1,14 @@
+- title("Recipes")
+%h1
+  %i.fa.fa-cutlery
+  Recipes
+%table
+  %thead
+    %tr
+      %th Name
+  %tbody
+    - @recipes.each do |recipe|
+      %tr
+        %td= link_to recipe.name, recipe_path(recipe)
+
+= paginate @recipes
