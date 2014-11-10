@@ -46,4 +46,6 @@ ActiveRecord::Schema.define(version: 20141109045525) do
     t.datetime "updated_at"
   end
 
+  add_index "recipes", ["slug"], name: "index_recipes_on_slug", unique: true, using: :btree
+
 end
