@@ -2,13 +2,36 @@
 
 .row
   .col-sm-2
+    = link_to image_tag("recipes/#{@recipe.image}"), "#", class: "thumbnail"
   .col-sm-10
-    %h2
-      = @recipe.name
+    .row
+      %h2
+        = @recipe.name
+    - unless @recipe.tags.blank?
+      .row
+        = "#{"Category".pluralize(@recipe.tags.count)}: #{@recipe.tags.join(", ")}"
+    - unless @recipe.amount.blank?
+      .row
+        = "Makes: #{@recipe.amount}"
+    - unless @recipe.prep_time.blank? && @recipe.cook_time.blank?
+      .row
+        - unless @recipe.prep_time.blank?
+          = "Prep Time: #{@recipe.prep_time}"
+        - unless @recipe.cook_time.blank?
+          = "#{@recipe.prep_time.blank? ? "" : ", "}Cook Time: #{@recipe.cook_time}"
+    - unless @recipe.source.blank?
+      .row
+        From:
+        = link_to @recipe.source, @recipe.source
 .row
   .col-sm-4
     %h4
       Ingredients
+    %ul.list-group.ingredients-list
+      - @recipe.ingredients.each do |ingredient|
+        %li.list-group-item.ingredients-list-item= ingredient
   .col-sm-8
     %h4
       Directions
+    - @recipe.directions.each do |direction|
+      %p= direction

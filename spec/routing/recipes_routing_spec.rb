@@ -9,5 +9,9 @@ describe RecipesController do
     it "routes to #show" do
       expect(get("/recipes/1")).to route_to("recipes#show", id: "1")
     end
+
+    it "routes to #random" do
+      expect(get("/recipes/random")).to route_to("recipes#random")
+    end
   end
 end

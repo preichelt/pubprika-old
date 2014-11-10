@@ -4,5 +4,9 @@ Pubprika::Application.routes.draw do
 
   # get "/home", to: "pages#home", as: "home"
 
-  resources :recipes, only: [:index, :show]
+  resources :recipes, only: [:index, :show] do
+    collection do
+      get :random
+    end
+  end
 end
