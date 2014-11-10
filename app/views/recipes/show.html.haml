@@ -15,10 +15,10 @@
         = "Makes: #{@recipe.amount}"
     - unless @recipe.prep_time.blank? && @recipe.cook_time.blank?
       .row
-        - unless @recipe.prep_time.blank?
-          = "Prep Time: #{@recipe.prep_time}"
-        - unless @recipe.cook_time.blank?
-          = "#{@recipe.prep_time.blank? ? "" : ", "}Cook Time: #{@recipe.cook_time}"
+        - if !@recipe.prep_time.blank?
+          = "Prep Time: #{@recipe.prep_time}#{@recipe.cook_time.blank? ? "" : ", Cook Time: #{@recipe.cook_time}"}"
+        - elsif !@recipe.cook_time.blank?
+          = "Cook Time: #{@recipe.cook_time}"
     - unless @recipe.source.blank?
       .row
         From:
@@ -31,7 +31,20 @@
       - @recipe.ingredients.each do |ingredient|
         %li.list-group-item.ingredients-list-item= ingredient
   .col-sm-8
-    %h4
-      Directions
-    - @recipe.directions.each do |direction|
-      %p= direction
+    .row
+      %h4
+        Directions
+      - @recipe.directions.each do |direction|
+        %p= direction
+    - unless @recipe.notes.blank?
+      .row
+        %h4
+          Notes
+        - @recipe.notes.each do |note|
+          %p= note
+    - unless @recipe.nutrition.blank?
+      .row
+        %h4
+          Nutrition
+        - @recipe.nutrition.each do |nutrition|
+          %p= nutrition
