@@ -10,7 +10,7 @@ class Recipe < ActiveRecord::Base
     [
       :name,
       [:name, :source],
-      [:name, :source, :image]
+      [:name, :source, :tags]
     ]
   end
 end
