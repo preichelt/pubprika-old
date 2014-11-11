@@ -83,7 +83,7 @@ scan(paprikaFilesDir, '.html', function(err, files){
 
     var tags = [];
     if($('.categories').length){
-      tags = $('.categories').text().split(',');
+      tags = $('.categories').text().split(', ');
     }
 
     var prepTime = "";

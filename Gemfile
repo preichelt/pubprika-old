@@ -21,6 +21,8 @@ gem 'strip_attributes'
 gem 'activerecord-import'
 gem 'haml-rails'
 gem 'ruby-progressbar'
+gem 'pg_search'
+gem 'twitter-typeahead-rails'
 
 group :development do
   gem 'foreman'

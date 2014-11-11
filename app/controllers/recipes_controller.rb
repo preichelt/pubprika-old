@@ -2,10 +2,20 @@ class RecipesController < ApplicationController
 
   def index
     @recipes = get_recipes
+    respond_to do |format|
+      format.html { render :index }
+      format.json do
+        render json: @recipes.as_json(only: [:name, :ingredients, :tags, :slug])
+      end
+    end
   end
 
   def show
     @recipe = Recipe.find(params[:id])
+    respond_to do |format|
+      format.html { render :show }
+      format.json { render json: @recipe.as_json }
+    end
   end
 
   def random

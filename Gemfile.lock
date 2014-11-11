@@ -91,6 +91,10 @@ GEM
     oj (2.11.0)
     oj_mimic_json (1.0.1)
     pg (0.17.1)
+    pg_search (0.7.8)
+      activerecord (>= 3.1)
+      activesupport (>= 3.1)
+      arel
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -155,6 +159,10 @@ GEM
     tilt (1.4.1)
     turbolinks (2.5.1)
       coffee-rails
+    twitter-typeahead-rails (0.10.5)
+      actionpack (>= 3.1)
+      jquery-rails
+      railties (>= 3.1)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     uglifier (2.5.3)
@@ -187,6 +195,7 @@ DEPENDENCIES
   oj
   oj_mimic_json
   pg
+  pg_search
   rails (= 4.1.7)
   rails_12factor
   rspec-rails (~> 3.0.0)
@@ -194,5 +203,6 @@ DEPENDENCIES
   sass-rails (= 4.0.3)
   strip_attributes
   turbolinks (= 2.5.1)
+  twitter-typeahead-rails
   uglifier (= 2.5.3)
   unicorn
