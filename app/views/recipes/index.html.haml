@@ -1,14 +1,19 @@
 - title("Recipes")
-%h1
-  %i.fa.fa-cutlery
-  Phil's Curated Recipes
-%table
-  %thead
-    %tr
-      %th Name
-  %tbody
-    - @recipes.each do |recipe|
-      %tr
-        %td= link_to recipe.name, recipe_path(recipe)
+.row
+  .col-sm-8
+    %h1
+      %i.fa.fa-cutlery
+      Phil's Curated Recipes
+  .col-sm-4
+.row
+  .col-sm-8
+    %table
+      %thead
+        %tr
+          %th Name
+      %tbody
+        - @recipes.each do |recipe|
+          %tr
+            %td= link_to recipe.name, recipe_path(recipe)
 
-= paginate @recipes
+    = paginate @recipes

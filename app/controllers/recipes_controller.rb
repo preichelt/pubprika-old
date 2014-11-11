@@ -26,9 +26,14 @@ class RecipesController < ApplicationController
   private
 
   def get_recipes(per_page = nil)
-    Recipe.all
-      .order('name')
-      .page(params[:page] || 1)
-      .per(per_page || params[:per_page] || Recipe.default_per_page)
+    if params.has_key?(:q)
+      Recipe.search_by_name(params[:q])
+        .order('name')
+    else
+      Recipe.all
+        .order('name')
+        .page(params[:page] || 1)
+        .per(per_page || params[:per_page] || Recipe.default_per_page)
+    end
   end
 end
