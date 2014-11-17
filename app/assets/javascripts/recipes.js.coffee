@@ -1,3 +1,11 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://coffeescript.org/
+# recipes = new Bloodhound(
+#   datumTokenizer: Bloodhound.tokenizers.obj.whitespace("recipe")
+#   queryTokenizer: Bloodhound.tokenizers.whitespace
+#   prefetch: "/recipes.json?per_page=200"
+#   remote: "/recipes.json?q=%QUERY"
+# )
+# recipes.initialize()
+# $(".typeahead").typeahead null,
+#   name: "recipes"
+#   displayKey: "value"
+#   source: recipes.ttAdapter()

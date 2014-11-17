@@ -159,10 +159,6 @@ GEM
     tilt (1.4.1)
     turbolinks (2.5.1)
       coffee-rails
-    twitter-typeahead-rails (0.10.5)
-      actionpack (>= 3.1)
-      jquery-rails
-      railties (>= 3.1)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     uglifier (2.5.3)
@@ -203,6 +199,5 @@ DEPENDENCIES
   sass-rails (= 4.0.3)
   strip_attributes
   turbolinks (= 2.5.1)
-  twitter-typeahead-rails
   uglifier (= 2.5.3)
   unicorn

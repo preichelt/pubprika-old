@@ -12,9 +12,13 @@ class RecipesController < ApplicationController
 
   def show
     @recipe = Recipe.find(params[:id])
-    respond_to do |format|
-      format.html { render :show }
-      format.json { render json: @recipe.as_json }
+    if params.has_key?(:q) && params[:q] != ""
+      redirect_to recipes_path({q: params[:q]})
+    else
+      respond_to do |format|
+        format.html { render :show }
+        format.json { render json: @recipe.as_json }
+      end
     end
   end
 
@@ -26,9 +30,10 @@ class RecipesController < ApplicationController
   private
 
   def get_recipes(per_page = nil)
-    if params.has_key?(:q)
-      Recipe.search_by_name(params[:q])
-        .order('name')
+    if params.has_key?(:q) && params[:q] != ""
+      Recipe.search_name_and_ingredients(params[:q])
+        .page(params[:page] || 1)
+        .per(per_page || params[:per_page] || Recipe.default_per_page)
     else
       Recipe.all
         .order('name')

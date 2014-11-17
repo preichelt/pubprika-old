@@ -10,3 +10,7 @@
     .collapse.navbar-collapse
       %ul.nav.navbar-nav
         = render 'layouts/navigation_links'
+      %form.navbar-form.navbar-right{:role => "search"}
+        .form-group
+          %input.form-control.typeahead{:placeholder => "Search", :type => "search", :name => "q"}
+        %button.btn.btn-default{:type => "submit"} Submit

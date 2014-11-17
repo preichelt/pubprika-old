@@ -15,4 +15,3 @@
 //= require turbolinks
 //= require bootstrap
 //= require common
-//= require twitter/typeahead.min
