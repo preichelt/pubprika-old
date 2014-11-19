@@ -8,12 +8,17 @@ class Recipe < ActiveRecord::Base
 
   pg_search_scope :search_by_name,
                   against: :name,
+                  ignoring: :accents,
                   using: {tsearch: {prefix: true}}
+
   pg_search_scope :search_by_ingredient,
                   against: :ingredients,
+                  ignoring: :accents,
                   using: {tsearch: {prefix: true}}
+
   pg_search_scope :search_by_tag,
                   against: :tags,
+                  ignoring: :accents,
                   using: {tsearch: {prefix: true}}
 
   pg_search_scope :search_name_and_ingredients,
@@ -21,6 +26,7 @@ class Recipe < ActiveRecord::Base
                     name: 'A',
                     ingredients: 'B'
                   },
+                  ignoring: :accents,
                   using: {tsearch: {prefix: true}}
 
   friendly_id :slug_candidates, use: [:slugged, :finders]
