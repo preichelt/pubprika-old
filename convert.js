@@ -3,6 +3,7 @@ var fs = require('fs');
 var cheerio = require('cheerio');
 var async = require('async');
 var _ = require('underscore');
+var ProgressBar = require('progress');
 
 var scan = function(dir, suffix, callback){
   fs.readdir(dir, function(err, files){
@@ -56,7 +57,9 @@ scan(paprikaFilesDir, '.html', function(err, files){
     return html;
   });
 
+  var bar = new ProgressBar(':bar', {total: _.size(recipesHTML)});
   var recipes = [];
+  var allTags = [];
   _.each(recipesHTML, function(html){
     var $ = cheerio.load(html);
     var name = $('h1.fn').text();
@@ -85,6 +88,7 @@ scan(paprikaFilesDir, '.html', function(err, files){
     if($('.categories').length){
       tags = $('.categories').text().split(', ');
     }
+    allTags = allTags.concat(tags);
 
     var prepTime = "";
     if($('.prepTime').length){
@@ -125,13 +129,14 @@ scan(paprikaFilesDir, '.html', function(err, files){
       "nutrition": nutrition
     };
     recipes.push(recipe);
+    bar.tick();
   });
 
   if(fs.existsSync(recipesPath)){
     fs.unlinkSync(recipesPath);
   }
 
-  fs.writeFile(recipesPath, JSON.stringify({"recipes": recipes}, null, 2), {"encoding": "utf8"}, function(error){
+  fs.writeFile(recipesPath, JSON.stringify({"recipes": recipes, "tags": _.uniq(allTags)}, null, 2), {"encoding": "utf8"}, function(error){
     if(error) throw error;
     console.log("recipes.json has been built.");
   });
