@@ -1,12 +1,11 @@
 - title("Recipes")
 .row
-  .col-sm-8
+  .col-md-12
     %h1
       %i.fa.fa-cutlery
       Phil's Curated Recipes
-  .col-sm-4
 .row
-  .col-sm-8
+  .col-md-9
     %table
       %thead
         %tr
@@ -17,3 +16,11 @@
             %td= link_to recipe.name, recipe_path(recipe)
 
     = paginate @recipes
+  .col-md-3
+    .panel.panel-default
+      .panel-heading
+        %h3.panel-title Tags
+      .panel-body
+        - @tags.each do |tag|
+          .tag
+            = link_to tag, recipes_path({t: tag})

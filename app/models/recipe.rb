@@ -42,4 +42,8 @@ class Recipe < ActiveRecord::Base
       [:name, :source, :tags]
     ]
   end
+
+  def self.default_per_page
+    50
+  end
 end

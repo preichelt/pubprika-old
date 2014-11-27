@@ -3,7 +3,12 @@ class RecipesController < ApplicationController
   def index
     @recipes = get_recipes
     respond_to do |format|
-      format.html { render :index }
+      format.html do
+        tags_file = File.read("db/data/tags.json")
+        tags_hash = JSON.parse(tags_file)
+        @tags = tags_hash["tags"]
+        render :index
+      end
       format.json do
         render json: @recipes.as_json(only: [:name, :ingredients, :tags, :slug])
       end
@@ -24,7 +29,8 @@ class RecipesController < ApplicationController
 
   def random
     if !params[:t].blank?
-      @recipe = Recipe.with_tags(params[:t]).sample
+      tags = params[:t].split(",").map {|t| ["BBQ", "4th of July"].include?(t) ? t : t.titleize}
+      @recipe = Recipe.with_tags(tags).sample
     else
       @recipe = Recipe.all.sample
     end
@@ -36,18 +42,17 @@ class RecipesController < ApplicationController
   def get_recipes(per_page = nil)
     query = Recipe
     if !params[:t].blank?
-      query = query.with_tags(params[:t])
+      tags = params[:t].split(",").map {|t| ["BBQ", "4th of July"].include?(t) ? t : t.titleize}
+      query = query.with_tags(tags)
     end
     if !params[:q].blank?
       query = query.search_name_and_ingredients(params[:q])
-        .page(params[:page] || 1)
-        .per(per_page || params[:per_page] || Recipe.default_per_page)
     else
       query = query.all
         .order('name')
-        .page(params[:page] || 1)
-        .per(per_page || params[:per_page] || Recipe.default_per_page)
     end
     query
+      .page(params[:page] || 1)
+      .per(per_page || params[:per_page] || Recipe.default_per_page)
   end
 end

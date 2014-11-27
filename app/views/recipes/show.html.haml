@@ -2,14 +2,18 @@
 
 .row
   .col-sm-2
-    = link_to image_tag("recipes/#{@recipe.image}"), "#", class: "thumbnail"
+    = link_to image_tag("recipes/#{@recipe.image}"), asset_path("recipes/#{@recipe.image}"), class: "thumbnail"
   .col-sm-10
     .row
       %h2
         = @recipe.name
     - unless @recipe.tags.blank?
       .row
-        = "#{"Category".pluralize(@recipe.tags.count)}: #{@recipe.tags.join(", ")}"
+        = "#{"Category".pluralize(@recipe.tags.count)}: "
+        - @recipe.tags.each_with_index do |tag,index|
+          - unless index == 0
+            |
+          = link_to tag, recipes_path({t: tag})
     - unless @recipe.amount.blank?
       .row
         = "Makes: #{@recipe.amount}"

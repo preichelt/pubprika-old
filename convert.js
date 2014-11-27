@@ -39,9 +39,10 @@ var scan = function(dir, suffix, callback){
 var paprikaFilesDir = 'paprika_files';
 var destinationDir = 'db/data';
 var recipesPath = destinationDir + "/recipes.json";
+var tagsPath = destinationDir + "/tags.json";
 
 scan(paprikaFilesDir, '.html', function(err, files){
-  console.log("recipes.json creation starting.");
+  console.log("recipes.json and tags.json creation starting.");
   var filesWithoutIndex = _.without(files, paprikaFilesDir + "/index.html");
   var recipeNames = [];
   var recipesHTML = _.map(filesWithoutIndex, function(file){
@@ -136,8 +137,17 @@ scan(paprikaFilesDir, '.html', function(err, files){
     fs.unlinkSync(recipesPath);
   }
 
-  fs.writeFile(recipesPath, JSON.stringify({"recipes": recipes, "tags": _.uniq(allTags)}, null, 2), {"encoding": "utf8"}, function(error){
+  if(fs.existsSync(tagsPath)){
+    fs.unlinkSync(tagsPath);
+  }
+
+  fs.writeFile(recipesPath, JSON.stringify({"recipes": recipes}, null, 2), {"encoding": "utf8"}, function(error){
     if(error) throw error;
     console.log("recipes.json has been built.");
+  });
+
+  fs.writeFile(tagsPath, JSON.stringify({"tags": _.uniq(allTags).sort()}, null, 2), {"encoding": "utf8"}, function(error){
+    if(error) throw error;
+    console.log("tags.json has been built.");
   });
 });
