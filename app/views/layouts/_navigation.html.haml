@@ -6,11 +6,14 @@
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-      = link_to 'Home', root_path, class: 'navbar-brand'
+      = link_to 'pubprika', root_path, class: 'navbar-brand'
     .collapse.navbar-collapse
       %ul.nav.navbar-nav
         = render 'layouts/navigation_links'
       %form.navbar-form.navbar-right{:role => "search"}
         .form-group
-          %input.form-control.typeahead{:placeholder => "Search", :type => "search", :name => "q"}
-        %button.btn.btn-default{:type => "submit"} Submit
+          .input-group
+            .input-group-addon
+              %i.fa.fa-search
+            %input.form-control.typeahead{:placeholder => "Name or Ingredient", :type => "text", :name => "q"}
+        %button.btn.btn-default{:type => "submit"} Search

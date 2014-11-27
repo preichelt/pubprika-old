@@ -6,15 +6,9 @@
       Phil's Curated Recipes
 .row
   .col-md-9
-    %table
-      %thead
-        %tr
-          %th Name
-      %tbody
-        - @recipes.each do |recipe|
-          %tr
-            %td= link_to recipe.name, recipe_path(recipe)
-
+    - @recipes.each do |recipe|
+      .recipe
+        = link_to recipe.name, recipe_path(recipe)
     = paginate @recipes
   .col-md-3
     .panel.panel-default
