@@ -1,35 +1,97 @@
 {
   "tags": [
-    "4th of July",
-    "African",
-    "American",
-    "Appetizers",
-    "Asian",
-    "BBQ",
-    "Bread",
-    "Breakfast",
-    "Canadian",
-    "Cast Iron",
-    "Christmas",
-    "Cookies",
-    "Copycat",
-    "Desserts",
-    "Dips",
-    "Drinks",
-    "French",
-    "German",
-    "How To",
-    "Italian",
-    "Mediterranean",
-    "Mexican/Latin",
-    "Personal",
-    "Pressure Cooker",
-    "Sandwiches",
-    "Sauces/Spreads",
-    "Seafood",
-    "Seasonings",
-    "Slow Cooker",
-    "Small Batch",
-    "Thanksgiving"
+    {
+      "4th of July": 4
+    },
+    {
+      "African": 2
+    },
+    {
+      "American": 252
+    },
+    {
+      "Appetizers": 159
+    },
+    {
+      "Asian": 84
+    },
+    {
+      "BBQ": 13
+    },
+    {
+      "Bread": 53
+    },
+    {
+      "Breakfast": 257
+    },
+    {
+      "Canadian": 1
+    },
+    {
+      "Cast Iron": 2
+    },
+    {
+      "Christmas": 16
+    },
+    {
+      "Cookies": 88
+    },
+    {
+      "Copycat": 220
+    },
+    {
+      "Desserts": 564
+    },
+    {
+      "Dips": 78
+    },
+    {
+      "Drinks": 89
+    },
+    {
+      "French": 5
+    },
+    {
+      "German": 1
+    },
+    {
+      "How To": 1
+    },
+    {
+      "Italian": 194
+    },
+    {
+      "Mediterranean": 30
+    },
+    {
+      "Mexican/Latin": 224
+    },
+    {
+      "Personal": 1
+    },
+    {
+      "Pressure Cooker": 13
+    },
+    {
+      "Sandwiches": 106
+    },
+    {
+      "Sauces/Spreads": 142
+    },
+    {
+      "Seafood": 70
+    },
+    {
+      "Seasonings": 6
+    },
+    {
+      "Slow Cooker": 208
+    },
+    {
+      "Small Batch": 1
+    },
+    {
+      "Thanksgiving": 25
+    }
   ]
 }

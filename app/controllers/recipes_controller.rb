@@ -7,7 +7,11 @@ class RecipesController < ApplicationController
         tags_file = File.read("db/data/tags.json")
         tags_hash = JSON.parse(tags_file)
         @tags = tags_hash["tags"]
-        render :index
+        if !params[:v].blank? && params[:v] == "grid"
+          render :grid_index
+        else
+          render :index
+        end
       end
       format.json do
         render json: @recipes.as_json(only: [:name, :ingredients, :tags, :slug])
@@ -43,6 +47,7 @@ class RecipesController < ApplicationController
     query = Recipe
     if !params[:t].blank?
       tags = params[:t].split(",").map {|t| ["BBQ", "4th of July"].include?(t) ? t : t.titleize}
+      @current_tags = tags.map {|t| ["Christmas"].include?(t) ? "#{t}" : (t == "Cookies" ? "Cookie" : t == "Sauces/Spreads" ? "Sauce/Spread" : "#{t.singularize}")}.to_sentence + " Recipes"
       query = query.with_tags(tags)
     end
     if !params[:q].blank?

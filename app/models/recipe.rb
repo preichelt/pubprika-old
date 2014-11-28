@@ -29,6 +29,10 @@ class Recipe < ActiveRecord::Base
                   ignoring: :accents,
                   using: {tsearch: {prefix: true}}
 
+  pg_search_scope :search_source,
+                  against: :source,
+                  using: {tsearch: {prefix: true}}
+
   scope :with_tags, lambda { |tags| where("recipes.tags && ARRAY[?]", [*tags]) }
 
   scope :sorted_by, lambda { |sort_option| order("recipes.#{sort_option}") }
@@ -44,6 +48,6 @@ class Recipe < ActiveRecord::Base
   end
 
   def self.default_per_page
-    50
+    52
   end
 end

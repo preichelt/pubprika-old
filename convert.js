@@ -146,7 +146,17 @@ scan(paprikaFilesDir, '.html', function(err, files){
     console.log("recipes.json has been built.");
   });
 
-  fs.writeFile(tagsPath, JSON.stringify({"tags": _.uniq(allTags).sort()}, null, 2), {"encoding": "utf8"}, function(error){
+
+  uniqTags = _.uniq(allTags).sort()
+  groupedTags = _.map(uniqTags, function(t){
+    var tagGroup = {};
+    tagGroup[t] = allTags.reduce(function(n, val){
+      return n + (val === t);
+    }, 0);
+    return tagGroup;
+  });
+
+  fs.writeFile(tagsPath, JSON.stringify({"tags": groupedTags}, null, 2), {"encoding": "utf8"}, function(error){
     if(error) throw error;
     console.log("tags.json has been built.");
   });
