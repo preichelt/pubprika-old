@@ -16,5 +16,8 @@
 //= require bootstrap
 //= require bootstrap-typeahead-rails
 //= require holder
+//= require nprogress
+//= require nprogress-turbolinks
+//= require nprogress-ajax
 //= require_self
 //= require_tree .

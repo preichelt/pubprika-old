@@ -99,6 +99,7 @@ GEM
     mime-types (2.4.3)
     minitest (5.4.2)
     multi_json (1.10.1)
+    nprogress-rails (0.1.6.3)
     oj (2.11.0)
     oj_mimic_json (1.0.1)
     pg (0.17.1)
@@ -205,6 +206,7 @@ DEPENDENCIES
   jquery-rails (= 3.1.2)
   kaminari (= 0.16.1)
   meta_request
+  nprogress-rails
   oj
   oj_mimic_json
   pg
