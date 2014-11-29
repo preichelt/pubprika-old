@@ -56,7 +56,7 @@ class RecipesController < ApplicationController
       query = query.with_tags(tags)
     end
     if !rp[:q].blank?
-      query = query.search_name_and_ingredients(rp[:q])
+      query = query.search_name_ingredients_and_source_base(rp[:q])
     elsif !rp[:s].blank?
       query = query.search_source_base(rp[:s])
     else

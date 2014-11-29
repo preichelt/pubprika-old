@@ -3,7 +3,7 @@
   .col-md-9
     %h1
       %i.fa.fa-cutlery
-      = "Phil's Curated #{params[:s].blank? ? "" : "#{params[:s]} "}#{@current_tags ? "#{@current_tags}" : "Recipes"}"
+      = "Phil's Curated #{@current_tags ? "#{@current_tags}" : "Recipes"}#{params[:s].blank? ? "" : " From #{params[:s]}"}#{params[:q].blank? ? "" : " Containing #{params[:q]}"}"
   .col-md-3
     - if params[:v] == "grid"
       .btn-group.view-btn-group{"aria-label" => "view button group", :role => "group"}

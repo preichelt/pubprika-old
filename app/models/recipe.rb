@@ -6,25 +6,11 @@ class Recipe < ActiveRecord::Base
 
   validates :name, presence: true
 
-  pg_search_scope :search_by_name,
-                  against: :name,
-                  ignoring: :accents,
-                  using: {tsearch: {prefix: true}}
-
-  pg_search_scope :search_by_ingredient,
-                  against: :ingredients,
-                  ignoring: :accents,
-                  using: {tsearch: {prefix: true}}
-
-  pg_search_scope :search_by_tag,
-                  against: :tags,
-                  ignoring: :accents,
-                  using: {tsearch: {prefix: true}}
-
-  pg_search_scope :search_name_and_ingredients,
+  pg_search_scope :search_name_ingredients_and_source_base,
                   against: {
                     name: 'A',
-                    ingredients: 'B'
+                    ingredients: 'B',
+                    source_base: 'C'
                   },
                   ignoring: :accents,
                   using: {tsearch: {prefix: true}}
