@@ -7,7 +7,8 @@ class RecipesController < ApplicationController
         tags_file = File.read("db/data/tags.json")
         tags_hash = JSON.parse(tags_file)
         @tags = tags_hash["tags"]
-        if !params[:v].blank? && params[:v] == "grid"
+        rp = recipe_params
+        if !rp[:v].blank? && rp[:v] == "grid"
           render :grid_index
         else
           render :index
@@ -20,10 +21,11 @@ class RecipesController < ApplicationController
   end
 
   def show
-    if !params[:q].blank?
-      redirect_to recipes_path({q: params[:q]})
+    rp = recipe_params
+    if !rp[:q].blank?
+      redirect_to recipes_path({q: rp[:q]})
     else
-      @recipe = Recipe.find(params[:id])
+      @recipe = Recipe.find(rp[:id])
       respond_to do |format|
         format.html { render :show }
         format.json { render json: @recipe.as_json }
@@ -32,8 +34,9 @@ class RecipesController < ApplicationController
   end
 
   def random
-    if !params[:t].blank?
-      tags = params[:t].split(",").map {|t| ["BBQ", "4th of July"].include?(t) ? t : t.titleize}
+    rp = recipe_params
+    if !rp[:t].blank?
+      tags = rp[:t].split(",").map {|t| ["BBQ", "4th of July"].include?(t) ? t : t.titleize}
       @recipe = Recipe.with_tags(tags).sample
     else
       @recipe = Recipe.all.sample
@@ -43,21 +46,33 @@ class RecipesController < ApplicationController
 
   private
 
+  def recipe_params
+    params.permit(
+      :id,
+      :t,
+      :q,
+      :v,
+      :per_page,
+      :page
+    )
+  end
+
   def get_recipes(per_page = nil)
+    rp = recipe_params
     query = Recipe
-    if !params[:t].blank?
-      tags = params[:t].split(",").map {|t| ["BBQ", "4th of July"].include?(t) ? t : t.titleize}
+    if !rp[:t].blank?
+      tags = rp[:t].split(",").map {|t| ["BBQ", "4th of July"].include?(t) ? t : t.titleize}
       @current_tags = tags.map {|t| ["Christmas"].include?(t) ? "#{t}" : (t == "Cookies" ? "Cookie" : t == "Sauces/Spreads" ? "Sauce/Spread" : "#{t.singularize}")}.to_sentence + " Recipes"
       query = query.with_tags(tags)
     end
-    if !params[:q].blank?
-      query = query.search_name_and_ingredients(params[:q])
+    if !rp[:q].blank?
+      query = query.search_name_and_ingredients(rp[:q])
     else
       query = query.all
         .order('name')
     end
     query
-      .page(params[:page] || 1)
-      .per(per_page || params[:per_page] || Recipe.default_per_page)
+      .page(rp[:page] || 1)
+      .per(per_page || rp[:per_page] || Recipe.default_per_page)
   end
 end

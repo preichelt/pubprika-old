@@ -42,8 +42,7 @@ class Recipe < ActiveRecord::Base
   def slug_candidates
     [
       :name,
-      [:name, :source],
-      [:name, :source, :tags]
+      [:name, :slug_id]
     ]
   end
 

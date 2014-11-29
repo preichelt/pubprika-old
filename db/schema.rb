@@ -31,22 +31,28 @@ ActiveRecord::Schema.define(version: 20141117231800) do
   add_index "friendly_id_slugs", ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type", using: :btree
 
   create_table "recipes", force: true do |t|
-    t.text     "name",                     null: false
+    t.string   "name",                     null: false
     t.text     "ingredients", default: [],              array: true
     t.text     "directions",  default: [],              array: true
     t.text     "notes",       default: [],              array: true
-    t.text     "image"
+    t.string   "image"
     t.text     "tags",        default: [],              array: true
-    t.text     "prep_time"
-    t.text     "cook_time"
-    t.text     "amount"
+    t.string   "prep_time"
+    t.string   "cook_time"
+    t.string   "amount"
     t.text     "source"
     t.text     "nutrition",   default: [],              array: true
     t.string   "slug"
+    t.integer  "slug_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
+  add_index "recipes", ["ingredients"], name: "index_recipes_on_ingredients", using: :btree
+  add_index "recipes", ["name"], name: "index_recipes_on_name", using: :btree
   add_index "recipes", ["slug"], name: "index_recipes_on_slug", unique: true, using: :btree
+  add_index "recipes", ["slug_id"], name: "index_recipes_on_slug_id", unique: true, using: :btree
+  add_index "recipes", ["source"], name: "index_recipes_on_source", using: :btree
+  add_index "recipes", ["tags"], name: "index_recipes_on_tags", using: :btree
 
 end

@@ -61,6 +61,7 @@ scan(paprikaFilesDir, '.html', function(err, files){
   var bar = new ProgressBar(':bar', {total: _.size(recipesHTML)});
   var recipes = [];
   var allTags = [];
+  var slugId = 1;
   _.each(recipesHTML, function(html){
     var $ = cheerio.load(html);
     var name = $('h1.fn').text();
@@ -127,9 +128,11 @@ scan(paprikaFilesDir, '.html', function(err, files){
       "cook_time": cookTime,
       "amount": amount,
       "source": source,
-      "nutrition": nutrition
+      "nutrition": nutrition,
+      "slug_id": slugId
     };
     recipes.push(recipe);
+    slugId += 1;
     bar.tick();
   });
 
