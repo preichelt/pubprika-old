@@ -33,6 +33,8 @@ GEM
     bcrypt (3.1.9)
     bootstrap-sass (3.3.0.1)
       sass (~> 3.2)
+    bootstrap-typeahead-rails (0.10.5.1)
+      railties (>= 3.0)
     bootswatch-rails (3.2.4)
       railties (>= 3.1)
     builder (3.2.2)
@@ -187,6 +189,7 @@ DEPENDENCIES
   activerecord-import
   bcrypt (= 3.1.9)
   bootstrap-sass (= 3.3.0.1)
+  bootstrap-typeahead-rails
   bootswatch-rails
   coffee-rails (= 4.0.1)
   database_cleaner

@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap
+//= require bootstrap-typeahead-rails
 //= require holder
 //= require_self
 //= require_tree .

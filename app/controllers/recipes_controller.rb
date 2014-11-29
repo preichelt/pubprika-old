@@ -2,15 +2,19 @@ class RecipesController < ApplicationController
 
   def index
     @recipes = get_recipes
-    respond_to do |format|
-      format.html do
-        tags_file = File.read("db/data/tags.json")
-        tags_hash = JSON.parse(tags_file)
-        @tags = tags_hash["tags"]
-        render :index
-      end
-      format.json do
-        render json: @recipes.as_json(only: [:name, :ingredients, :tags, :slug])
+    if @recipes.length == 1
+      redirect_to recipe_path(@recipes.first)
+    else
+      respond_to do |format|
+        format.html do
+          tags_file = File.read("db/data/tags.json")
+          tags_hash = JSON.parse(tags_file)
+          @tags = tags_hash["tags"]
+          render :index
+        end
+        format.json do
+          render json: @recipes.as_json(only: [:name, :ingredients, :tags, :slug])
+        end
       end
     end
   end

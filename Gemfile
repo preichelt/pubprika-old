@@ -24,6 +24,7 @@ gem 'haml-rails'
 gem 'ruby-progressbar'
 gem 'pg_search'
 gem 'holder_rails'
+gem 'bootstrap-typeahead-rails'
 
 group :development do
   gem 'foreman'
