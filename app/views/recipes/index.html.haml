@@ -19,8 +19,8 @@
   .col-lg-3.col-sm-12.col-xs-12
     .row
       .btn-group.view-btn-group{"aria-label" => "view button group", :role => "group"}
-        = link_to ('<i class="fa fa-list"></i>').html_safe, params.merge({v: "list"}), class: "btn btn-default list-view-btn"
-        = link_to ('<i class="fa fa-th-large"></i>').html_safe, params.merge({v: "grid"}), class: "btn btn-default grid-view-btn"
+        = link_to ('<i class="fa fa-list"></i>').html_safe, params.merge({v: "list"}), {"class" => "btn btn-default list-view-btn", "data-toggle" => "tooltip", "data-placement" => "top", "title" => "List"}
+        = link_to ('<i class="fa fa-th-large"></i>').html_safe, params.merge({v: "grid"}), {"class" => "btn btn-default grid-view-btn", "data-toggle" => "tooltip", "data-placement" => "top", "title" => "Grid"}
     .row
       %ul.list-group
         - @tags.each do |g|
