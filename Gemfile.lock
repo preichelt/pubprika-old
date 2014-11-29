@@ -36,6 +36,7 @@ GEM
     bootswatch-rails (3.2.4)
       railties (>= 3.1)
     builder (3.2.2)
+    callsite (0.0.11)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -89,6 +90,10 @@ GEM
     kgio (2.9.2)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
+    meta_request (0.3.4)
+      callsite (~> 0.0, >= 0.0.11)
+      rack-contrib (~> 1.1)
+      railties (>= 3.0.0, < 5.0.0)
     mime-types (2.4.3)
     minitest (5.4.2)
     multi_json (1.10.1)
@@ -100,6 +105,8 @@ GEM
       activesupport (>= 3.1)
       arel
     rack (1.5.2)
+    rack-contrib (1.2.0)
+      rack (>= 0.9.1)
     rack-test (0.6.2)
       rack (>= 1.0)
     rails (4.1.7)
@@ -194,6 +201,7 @@ DEPENDENCIES
   jbuilder (= 2.2.4)
   jquery-rails (= 3.1.2)
   kaminari (= 0.16.1)
+  meta_request
   oj
   oj_mimic_json
   pg

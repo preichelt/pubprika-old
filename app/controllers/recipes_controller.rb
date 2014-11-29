@@ -7,13 +7,6 @@ class RecipesController < ApplicationController
         tags_file = File.read("db/data/tags.json")
         tags_hash = JSON.parse(tags_file)
         @tags = tags_hash["tags"]
-        rp = recipe_params
-        @view = nil
-        if !rp[:v].blank? && rp[:v] == "grid"
-          @view = "grid"
-        else
-          @view = "list"
-        end
         render :index
       end
       format.json do
@@ -36,13 +29,7 @@ class RecipesController < ApplicationController
   end
 
   def random
-    rp = recipe_params
-    if !rp[:t].blank?
-      tags = rp[:t].split(",").map {|t| ["BBQ", "4th of July"].include?(t) ? t : t.titleize}
-      @recipe = Recipe.with_tags(tags).sample
-    else
-      @recipe = Recipe.all.sample
-    end
+    @recipe = get_recipes(Recipe.all.count).sample
     redirect_to recipe_path(@recipe)
   end
 
@@ -70,6 +57,8 @@ class RecipesController < ApplicationController
     end
     if !rp[:q].blank?
       query = query.search_name_and_ingredients(rp[:q])
+    elsif !rp[:s].blank?
+      query = query.search_source_base(rp[:s])
     else
       query = query.all
         .order('name')

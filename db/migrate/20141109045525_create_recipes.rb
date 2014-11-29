@@ -11,6 +11,7 @@ class CreateRecipes < ActiveRecord::Migration
       t.string :cook_time
       t.string :amount
       t.text :source
+      t.string :source_base
       t.text :nutrition, array: true, default: []
       t.string :slug, unique: true
       t.integer :slug_id, unique: true

@@ -9,7 +9,7 @@
         = @recipe.name
     - unless @recipe.tags.blank?
       .row
-        = "#{"Category".pluralize(@recipe.tags.count)}: "
+        = "#{"Tag".pluralize(@recipe.tags.count)}: "
         - @recipe.tags.each_with_index do |tag,index|
           - unless index == 0
             |
@@ -27,6 +27,8 @@
       .row
         From:
         = link_to @recipe.source, @recipe.source
+      .row
+        = link_to "Other Recipes From #{@recipe.source_base}", recipes_path({s: @recipe.source_base})
 .row
   .col-sm-4
     %h4

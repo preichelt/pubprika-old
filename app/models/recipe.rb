@@ -29,8 +29,8 @@ class Recipe < ActiveRecord::Base
                   ignoring: :accents,
                   using: {tsearch: {prefix: true}}
 
-  pg_search_scope :search_source,
-                  against: :source,
+  pg_search_scope :search_source_base,
+                  against: :source_base,
                   using: {tsearch: {prefix: true}}
 
   scope :with_tags, lambda { |tags| where("recipes.tags && ARRAY[?]", [*tags]) }

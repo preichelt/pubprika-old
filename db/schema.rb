@@ -41,6 +41,7 @@ ActiveRecord::Schema.define(version: 20141117231800) do
     t.string   "cook_time"
     t.string   "amount"
     t.text     "source"
+    t.string   "source_base"
     t.text     "nutrition",   default: [],              array: true
     t.string   "slug"
     t.integer  "slug_id"

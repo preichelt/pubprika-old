@@ -112,6 +112,11 @@ scan(paprikaFilesDir, '.html', function(err, files){
       source = $('.source').attr('href');
     }
 
+    var sourceBase = "";
+    if(source != ""){
+      sourceBase = source.replace("https://", "").replace("http://", "").replace("www.", "").split("/")[0]
+    }
+
     var nutrition = [];
     $('.nutrition').find('p').each(function(i, el){
       nutrition[i] = $(this).text();
@@ -128,6 +133,7 @@ scan(paprikaFilesDir, '.html', function(err, files){
       "cook_time": cookTime,
       "amount": amount,
       "source": source,
+      "source_base": sourceBase,
       "nutrition": nutrition,
       "slug_id": slugId
     };
