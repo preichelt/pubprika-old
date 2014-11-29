@@ -8,11 +8,13 @@ class RecipesController < ApplicationController
         tags_hash = JSON.parse(tags_file)
         @tags = tags_hash["tags"]
         rp = recipe_params
+        @view = nil
         if !rp[:v].blank? && rp[:v] == "grid"
-          render :grid_index
+          @view = "grid"
         else
-          render :index
+          @view = "list"
         end
+        render :index
       end
       format.json do
         render json: @recipes.as_json(only: [:name, :ingredients, :tags, :slug])
@@ -52,6 +54,7 @@ class RecipesController < ApplicationController
       :t,
       :q,
       :v,
+      :s,
       :per_page,
       :page
     )
