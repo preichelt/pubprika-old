@@ -25,5 +25,6 @@ class CreateRecipes < ActiveRecord::Migration
     add_index :recipes, :ingredients
     add_index :recipes, :tags
     add_index :recipes, :source
+    add_index :recipes, :source_base
   end
 end

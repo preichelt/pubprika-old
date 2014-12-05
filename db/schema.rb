@@ -54,6 +54,7 @@ ActiveRecord::Schema.define(version: 20141117231800) do
   add_index "recipes", ["slug"], name: "index_recipes_on_slug", unique: true, using: :btree
   add_index "recipes", ["slug_id"], name: "index_recipes_on_slug_id", unique: true, using: :btree
   add_index "recipes", ["source"], name: "index_recipes_on_source", using: :btree
+  add_index "recipes", ["source_base"], name: "index_recipes_on_source_base", using: :btree
   add_index "recipes", ["tags"], name: "index_recipes_on_tags", using: :btree
 
 end

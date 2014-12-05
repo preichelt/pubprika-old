@@ -25,6 +25,7 @@ gem 'pg_search'
 gem 'holder_rails'
 gem 'bootstrap-typeahead-rails'
 gem 'nprogress-rails'
+gem 'squeel'
 
 group :development do
   gem 'foreman'
