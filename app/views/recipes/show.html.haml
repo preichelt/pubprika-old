@@ -28,7 +28,7 @@
         = link_to @recipe.source, @recipe.source
       - if @recipe.other_source_base_recipes?
         .row
-          = link_to "Other Recipes From #{@recipe.source_base}", recipes_path({s: @recipe.source_base})
+          = link_to "Other recipes from #{@recipe.source_base}", recipes_path({s: @recipe.source_base})
 .row
   .col-lg-4.col-md-4.col-sm-4.col-xs-12
     %h4

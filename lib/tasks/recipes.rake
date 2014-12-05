@@ -43,6 +43,17 @@ namespace :recipes do
     if Rails.env == "development"
       Rails.logger = Logger.new(STDOUT)
     end
-    FileUtils.cp_r 'paprika_files/images/.', 'app/assets/images/recipes'
+    recipes_dir = 'app/assets/images/recipes'
+    Pathname.new(recipes_dir).children.each {|p| p.rmtree}
+    FileUtils.cp_r 'paprika_files/images/.', recipes_dir
+  end
+
+  desc "Drop paprika files."
+  task :drop_files => :environment do
+    if Rails.env == "development"
+      Rails.logger = Logger.new(STDOUT)
+    end
+    paprika_dir = 'paprika_files'
+    Pathname.new(paprika_dir).children.each {|p| p.rmtree}
   end
 end
