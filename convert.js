@@ -44,17 +44,8 @@ var tagsPath = destinationDir + "/tags.json";
 scan(paprikaFilesDir, '.html', function(err, files){
   console.log("recipes.json and tags.json creation starting.");
   var filesWithoutIndex = _.without(files, paprikaFilesDir + "/index.html");
-  var recipeNames = [];
   var recipesHTML = _.map(filesWithoutIndex, function(file){
     var html = fs.readFileSync(file, "utf16le");
-    var $ = cheerio.load(html);
-    var name = $('h1.fn').text();
-    var source = "";
-    if($('.source').length){
-      source = $('.source').attr('href');
-    }
-    name = name + source;
-    recipeNames.push(name);
     return html;
   });
 
@@ -110,6 +101,10 @@ scan(paprikaFilesDir, '.html', function(err, files){
     var source = "";
     if($('.source').length){
       source = $('.source').attr('href');
+    }
+    var sourceLastTwo = source.slice(-2);
+    if(sourceLastTwo == "/#"){
+      source = source.slice(0, -2);
     }
 
     var sourceBase = "";

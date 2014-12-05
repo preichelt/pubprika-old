@@ -35,8 +35,6 @@ namespace :recipes do
       recipe.save!
       progress_bar.increment
     end
-    # Much faster but skips friendly-id creation
-    # Recipe.import recipes
     Rails.logger.info("Finished importing recipes.")
   end
 

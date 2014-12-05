@@ -136,6 +136,37 @@
       "slug_id": 4
     },
     {
+      "name": "7-Eleven Cherry Slurpee",
+      "ingredients": [
+        "2 cups cold club soda",
+        "1/2 cup sugar",
+        "1/4 teaspoon plus 1/8 teaspoon cherry flavored unsweetened Kool-Aid mix",
+        "1/2 teaspoon cherry extract",
+        "2 1/2 cups crushed ice"
+      ],
+      "directions": [
+        "1. Pour 1 cup of the club soda into a blender. Add the sugar, Kool-Aid mix, and cherry extract. Blend this until all of the sugar is dissolved.",
+        "2. Add the crushed ice and blend on high speed until the drink is a slushy, smooth consistency, with no remaining chunks of ice.",
+        "3. Add the remaining club soda and blend briefly until mixed. You may have to stop the blender and use a long spoon to stir up the contents.",
+        "4. If necessary, put the blender into your freezer for 1/2-hour. This will help thicken it up. After 1/2-hour remove blender from freezer and, again, blend briefly to mix."
+      ],
+      "notes": [],
+      "image": "6BE47B55-625D-4F23-BE1E-FD588BD29A3C-43687-0000382DC3DE1AA6.jpg",
+      "tags": [
+        "American",
+        "Copycat",
+        "Desserts",
+        "Drinks"
+      ],
+      "prep_time": "",
+      "cook_time": "",
+      "amount": "one 32-ounce drink (or two 16-ouncers)",
+      "source": "http://www.topsecretrecipes.com/7-Eleven-Cherry-Slurpee-Recipe.html",
+      "source_base": "topsecretrecipes.com",
+      "nutrition": [],
+      "slug_id": 5
+    },
+    {
       "name": "60-Minute Sticky Buns",
       "ingredients": [
         "For the Dough:",
@@ -183,37 +214,6 @@
       "amount": "12 buns",
       "source": "http://crepesofwrath.net/2014/04/03/60-minute-sticky-buns/",
       "source_base": "crepesofwrath.net",
-      "nutrition": [],
-      "slug_id": 5
-    },
-    {
-      "name": "7-Eleven Cherry Slurpee",
-      "ingredients": [
-        "2 cups cold club soda",
-        "1/2 cup sugar",
-        "1/4 teaspoon plus 1/8 teaspoon cherry flavored unsweetened Kool-Aid mix",
-        "1/2 teaspoon cherry extract",
-        "2 1/2 cups crushed ice"
-      ],
-      "directions": [
-        "1. Pour 1 cup of the club soda into a blender. Add the sugar, Kool-Aid mix, and cherry extract. Blend this until all of the sugar is dissolved.",
-        "2. Add the crushed ice and blend on high speed until the drink is a slushy, smooth consistency, with no remaining chunks of ice.",
-        "3. Add the remaining club soda and blend briefly until mixed. You may have to stop the blender and use a long spoon to stir up the contents.",
-        "4. If necessary, put the blender into your freezer for 1/2-hour. This will help thicken it up. After 1/2-hour remove blender from freezer and, again, blend briefly to mix."
-      ],
-      "notes": [],
-      "image": "6BE47B55-625D-4F23-BE1E-FD588BD29A3C-43687-0000382DC3DE1AA6.jpg",
-      "tags": [
-        "American",
-        "Copycat",
-        "Desserts",
-        "Drinks"
-      ],
-      "prep_time": "",
-      "cook_time": "",
-      "amount": "one 32-ounce drink (or two 16-ouncers)",
-      "source": "http://www.topsecretrecipes.com/7-Eleven-Cherry-Slurpee-Recipe.html",
-      "source_base": "topsecretrecipes.com",
       "nutrition": [],
       "slug_id": 6
     },
@@ -8759,7 +8759,7 @@
       "prep_time": "5 minutes",
       "cook_time": "15 minutes",
       "amount": "About 1 pound of bark",
-      "source": "http://www.browneyedbaker.com/2013/02/06/bourbon-pecan-pralines-recipe/#",
+      "source": "http://www.browneyedbaker.com/2013/02/06/bourbon-pecan-pralines-recipe",
       "source_base": "browneyedbaker.com",
       "nutrition": [],
       "slug_id": 224
@@ -15792,7 +15792,7 @@
       "prep_time": "",
       "cook_time": "",
       "amount": "",
-      "source": "http://megseverydayindulgence.wordpress.com/2013/01/16/chicken-enchilada-soup-chilis-copycat/#",
+      "source": "http://megseverydayindulgence.wordpress.com/2013/01/16/chicken-enchilada-soup-chilis-copycat",
       "source_base": "megseverydayindulgence.wordpress.com",
       "nutrition": [],
       "slug_id": 398
@@ -27392,7 +27392,7 @@
       "prep_time": "",
       "cook_time": "",
       "amount": "3",
-      "source": "http://www.slenderkitchen.com/frozen-breakfast-quesadillas/#",
+      "source": "http://www.slenderkitchen.com/frozen-breakfast-quesadillas",
       "source_base": "slenderkitchen.com",
       "nutrition": [
         "237.9 calories, 10g of fat, 25g of carbohydrates, 10g of fiber, 21.5g of protein"
@@ -70548,7 +70548,7 @@
       "prep_time": "",
       "cook_time": "",
       "amount": "8-10 10 in tortillas",
-      "source": "http://www.cookingclassy.com/2012/10/homemade-tortillas-white-and-whole-wheat-recipes/#",
+      "source": "http://www.cookingclassy.com/2012/10/homemade-tortillas-white-and-whole-wheat-recipes",
       "source_base": "cookingclassy.com",
       "nutrition": [],
       "slug_id": 1823
