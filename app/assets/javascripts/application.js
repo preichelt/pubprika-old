@@ -21,3 +21,7 @@
 //= require nprogress-ajax
 //= require_self
 //= require_tree .
+
+NProgress.configure({
+  showSpinner: false
+});

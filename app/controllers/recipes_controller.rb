@@ -1,5 +1,4 @@
 class RecipesController < ApplicationController
-
   def index
     @recipes = get_recipes
     if @recipes.length == 1
@@ -13,7 +12,7 @@ class RecipesController < ApplicationController
           render :index
         end
         format.json do
-          render json: @recipes.as_json(only: [:name, :ingredients, :tags, :slug])
+          render json: @recipes.as_json(only: [:id, :name, :slug])
         end
       end
     end

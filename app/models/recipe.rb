@@ -35,4 +35,12 @@ class Recipe < ActiveRecord::Base
   def self.default_per_page
     52
   end
+
+  def other_source_base_recipes?
+    if Recipe.search_source_base(self.source_base).length > 1
+      true
+    else
+      false
+    end
+  end
 end

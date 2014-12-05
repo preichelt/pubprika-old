@@ -1,16 +1,16 @@
 {
   "tags": [
     {
-      "4th of July": 4
+      "4th of July": 3
     },
     {
       "African": 2
     },
     {
-      "American": 252
+      "American": 254
     },
     {
-      "Appetizers": 159
+      "Appetizers": 161
     },
     {
       "Asian": 84
@@ -19,10 +19,10 @@
       "BBQ": 13
     },
     {
-      "Bread": 53
+      "Bread": 54
     },
     {
-      "Breakfast": 257
+      "Breakfast": 260
     },
     {
       "Canadian": 1
@@ -31,16 +31,16 @@
       "Cast Iron": 2
     },
     {
-      "Christmas": 16
+      "Christmas": 24
     },
     {
       "Cookies": 88
     },
     {
-      "Copycat": 220
+      "Copycat": 221
     },
     {
-      "Desserts": 564
+      "Desserts": 565
     },
     {
       "Dips": 78
@@ -49,7 +49,10 @@
       "Drinks": 89
     },
     {
-      "French": 5
+      "Easter": 1
+    },
+    {
+      "French": 6
     },
     {
       "German": 1
@@ -58,40 +61,40 @@
       "How To": 1
     },
     {
-      "Italian": 194
+      "Italian": 195
     },
     {
-      "Mediterranean": 30
+      "Mediterranean": 34
     },
     {
       "Mexican/Latin": 224
     },
     {
-      "Personal": 2
+      "Personal": 4
     },
     {
-      "Pressure Cooker": 13
+      "Pressure Cooker": 14
     },
     {
-      "Sandwiches": 106
+      "Sandwiches": 107
     },
     {
-      "Sauces/Spreads": 142
+      "Sauces/Spreads": 145
     },
     {
-      "Seafood": 70
+      "Seafood": 71
     },
     {
       "Seasonings": 6
     },
     {
-      "Slow Cooker": 208
+      "Slow Cooker": 209
     },
     {
       "Small Batch": 1
     },
     {
-      "Thanksgiving": 25
+      "Thanksgiving": 28
     }
   ]
 }
