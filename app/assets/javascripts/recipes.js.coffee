@@ -13,5 +13,8 @@ ready = ->
     displayKey: "name"
     source: recipes.ttAdapter()
 
+  $(".note-content").each (i) ->
+    $(this).html(urlize($(this).html(), {nofollow: true, autoescape: true}))
+
 $(document).ready ready
 $(document).on "page:load", ready

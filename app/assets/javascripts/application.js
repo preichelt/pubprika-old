@@ -19,6 +19,7 @@
 //= require nprogress
 //= require nprogress-turbolinks
 //= require nprogress-ajax
+//= require urlize
 //= require_self
 //= require_tree .
 
