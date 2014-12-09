@@ -24,8 +24,8 @@
           = "Cook Time: #{@recipe.cook_time}"
     - unless @recipe.source.blank?
       .row
-        From:
-        = link_to @recipe.source, @recipe.source
+        Source:
+        = link_to @recipe.source_base, @recipe.source
       - if @recipe.other_source_base_recipes?
         .row
           = link_to "Other recipes from #{@recipe.source_base}", recipes_path({s: @recipe.source_base})

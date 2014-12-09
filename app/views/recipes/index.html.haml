@@ -9,23 +9,23 @@
         = "#{params[:s].blank? ? "" : " from #{params[:s]}"}"
 .row.recipes-container
   .col-lg-9.col-md-9.col-sm-9.col-xs-12
-    - if params[:v] == "grid"
+    - if params[:v] == "list"
+      - @recipes.each do |recipe|
+        .recipe
+          = link_to recipe.name, recipe_path(recipe)
+    - else
       .row
         - @recipes.each do |recipe|
           .col-lg-3.col-md-4.col-sm-6.col-xs-6.grid-img-container
             .thumbnail
               .caption
                 %h4
-                  = recipe.name
+                  = link_to recipe.name, recipe_path(recipe)
                 %p.tags
                   = recipe.tags.to_sentence
                 %p
                   = link_to "View", recipe_path(recipe), class: "label label-success"
               = image_tag("recipes/#{recipe.image}", class: "thumbnail-img")
-    - else
-      - @recipes.each do |recipe|
-        .recipe
-          = link_to recipe.name, recipe_path(recipe)
     = paginate @recipes
   .col-lg-3.col-md-3.col-sm-3.col-xs-12
     .row
