@@ -1,6 +1,6 @@
 - title("Recipes")
 .row
-  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+  .col-xs-12
     %h1
       %i.fa.fa-cutlery
       = "Phil's Curated #{@current_tags ? "#{@current_tags}" : "Recipes"}"
@@ -8,7 +8,7 @@
         = params[:q]
         = "#{params[:s].blank? ? "" : " from #{params[:s]}"}"
 .row.recipes-container
-  .col-lg-9.col-md-9.col-sm-9.col-xs-12
+  .col-md-9.col-sm-8.col-xs-12
     - if params[:v] == "list"
       - @recipes.each do |recipe|
         .recipe
@@ -16,7 +16,7 @@
     - else
       .row
         - @recipes.each do |recipe|
-          .col-lg-3.col-md-4.col-sm-6.col-xs-6.grid-img-container
+          .col-lg-3.col-md-4.col-xs-6.grid-img-container
             .thumbnail
               .caption
                 %h4
@@ -27,16 +27,18 @@
                   = link_to "View", recipe_path(recipe), class: "label label-success"
               = image_tag("recipes/#{recipe.image}", class: "thumbnail-img")
     = paginate @recipes
-  .col-lg-3.col-md-3.col-sm-3.col-xs-12
+  .col-md-3.col-sm-4.col-xs-12
     .row
-      .btn-group.view-btn-group{"aria-label" => "view button group", :role => "group"}
-        = link_to ('<i class="fa fa-list"></i>').html_safe, params.merge({v: "list"}), {"class" => "btn btn-default list-view-btn"}
-        = link_to ('<i class="fa fa-th-large"></i>').html_safe, params.merge({v: "grid"}), {"class" => "btn btn-default grid-view-btn"}
+      .col-xs-12
+        .btn-group.view-btn-group{"aria-label" => "view button group", :role => "group"}
+          = link_to ('<i class="fa fa-list"></i>').html_safe, params.merge({v: "list"}), {"class" => "btn btn-default list-view-btn"}
+          = link_to ('<i class="fa fa-th-large"></i>').html_safe, params.merge({v: "grid"}), {"class" => "btn btn-default grid-view-btn"}
     .row
-      %ul.list-group
-        - @tags.each do |g|
-          - g.each do |k,v|
-            %li.list-group-item
-              %span.badge
-                = v
-              = link_to k, recipes_path({t: k, v: params[:v]})
+      .col-xs-12
+        %ul.list-group
+          - @tags.each do |g|
+            - g.each do |k,v|
+              %li.list-group-item
+                %span.badge
+                  = v
+                = link_to k, recipes_path({t: k, v: params[:v]})

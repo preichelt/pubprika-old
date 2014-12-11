@@ -10,10 +10,21 @@
     .collapse.navbar-collapse
       %ul.nav.navbar-nav
         = render 'layouts/navigation_links'
-      %form.navbar-form.navbar-right{:role => "search"}
-        .form-group
-          .input-group
-            .input-group-addon
-              %i.fa.fa-search
-            %input.form-control.typeahead{:placeholder => "Name, Ingredient or Site", :type => "text", :name => "q"}
-        %button.btn.btn-default{:type => "submit"} Search
+      .hidden-xs
+        %form.navbar-form.navbar-right{:role => "search"}
+          .form-group
+            .input-group
+              %span.input-group-addon
+                %i.fa.fa-search
+              %input.form-control.typeahead{:placeholder => "Name, Ingredient or Site", :type => "text", :name => "q"}
+              %span.input-group-btn
+                %button.btn.btn-default{:type => "submit"} Search
+      .hidden-lg.hidden-md.hidden-sm
+        %form.navbar-form{:role => "search"}
+          .form-group
+            .input-group
+              %span.input-group-addon
+                %i.fa.fa-search
+              %input.form-control{:placeholder => "Name, Ingredient or Site", :type => "text", :name => "q"}
+              %span.input-group-btn
+                %button.btn.btn-default{:type => "submit"} Search

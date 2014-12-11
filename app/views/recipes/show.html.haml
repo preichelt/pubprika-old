@@ -1,36 +1,42 @@
 - title("#{@recipe.name}")
 .row
-  .col-lg-2.col-md-2.col-sm-3.col-xs-12
+  .col-md-2.col-sm-3.col-xs-12
     = link_to image_tag("recipes/#{@recipe.image}"), asset_path("recipes/#{@recipe.image}"), class: "thumbnail img-responsive"
-  .col-lg-10.col-md-10.col-sm-9.col-xs-12
+  .col-md-10.col-sm-9.col-xs-12
     .row.recipe-info-row
-      %h2
-        = @recipe.name
+      .col-xs-12
+        %h2
+          = @recipe.name
     - unless @recipe.tags.blank?
       .row
-        = "#{"Tag".pluralize(@recipe.tags.count)}: "
-        - @recipe.tags.each_with_index do |tag,index|
-          - unless index == 0
-            |
-          = link_to tag, recipes_path({t: tag})
+        .col-xs-12
+          = "#{"Tag".pluralize(@recipe.tags.count)}: "
+          - @recipe.tags.each_with_index do |tag,index|
+            - unless index == 0
+              |
+            = link_to tag, recipes_path({t: tag})
     - unless @recipe.amount.blank?
       .row
-        = "Makes: #{@recipe.amount}"
+        .col-xs-12
+          = "Makes: #{@recipe.amount}"
     - unless @recipe.prep_time.blank? && @recipe.cook_time.blank?
       .row
-        - if !@recipe.prep_time.blank?
-          = "Prep Time: #{@recipe.prep_time}#{@recipe.cook_time.blank? ? "" : ", Cook Time: #{@recipe.cook_time}"}"
-        - elsif !@recipe.cook_time.blank?
-          = "Cook Time: #{@recipe.cook_time}"
+        .col-xs-12
+          - if !@recipe.prep_time.blank?
+            = "Prep Time: #{@recipe.prep_time}#{@recipe.cook_time.blank? ? "" : ", Cook Time: #{@recipe.cook_time}"}"
+          - elsif !@recipe.cook_time.blank?
+            = "Cook Time: #{@recipe.cook_time}"
     - unless @recipe.source.blank?
       .row
-        Source:
-        = link_to @recipe.source_base, @recipe.source
+        .col-xs-12
+          Source:
+          = link_to @recipe.source_base, @recipe.source
       - if @recipe.other_source_base_recipes?
         .row
-          = link_to "Other recipes from #{@recipe.source_base}", recipes_path({s: @recipe.source_base})
+          .col-xs-12
+            = link_to "Other recipes from #{@recipe.source_base}", recipes_path({s: @recipe.source_base})
 .row
-  .col-lg-4.col-md-4.col-sm-4.col-xs-12
+  .col-sm-4.col-xs-12
     %h4
       Ingredients
     %ul.list-group.ingredients-list
@@ -42,32 +48,35 @@
         - else
           %li.list-group-item.ingredients-list-item
             = ingredient
-  .col-lg-8.col-md-8.col-sm-8.col-xs-12
+  .col-sm-8.col-xs-12
     .row
-      %h4
-        Directions
-      - @recipe.directions.each do |direction|
-        %p
-          - if direction.last == ":"
-            %strong
+      .col-xs-12
+        %h4
+          Directions
+        - @recipe.directions.each do |direction|
+          %p
+            - if direction.last == ":"
+              %strong
+                = direction
+            - else
               = direction
-          - else
-            = direction
     - unless @recipe.notes.blank?
       .row
-        %h4
-          Notes
-        - @recipe.notes.each do |note|
-          %p
-            - if note.last == ":"
-              %strong
-                = note
-            - else
-              %span.note-content
-                = note
+        .col-xs-12
+          %h4
+            Notes
+          - @recipe.notes.each do |note|
+            %p
+              - if note.last == ":"
+                %strong
+                  = note
+              - else
+                %span.note-content
+                  = note
     - unless @recipe.nutrition.blank?
       .row
-        %h4
-          Nutrition
-        - @recipe.nutrition.each do |nutrition|
-          %p= nutrition
+        .col-xs-12
+          %h4
+            Nutrition
+          - @recipe.nutrition.each do |nutrition|
+            %p= nutrition
