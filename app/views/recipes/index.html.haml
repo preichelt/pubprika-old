@@ -9,6 +9,21 @@
         = "#{params[:s].blank? ? "" : " from #{params[:s]}"}"
 .row.recipes-container
   .col-md-9.col-sm-8.col-xs-12
+    .hidden-lg.hidden-md.hidden-sm
+      .row
+        .col-xs-12
+          .btn-group.view-btn-group{"aria-label" => "view button group", :role => "group"}
+            = link_to ('<i class="fa fa-list"></i>').html_safe, params.merge({v: "list"}), {"class" => "btn btn-default list-view-btn"}
+            = link_to ('<i class="fa fa-th-large"></i>').html_safe, params.merge({v: "grid"}), {"class" => "btn btn-default grid-view-btn"}
+            .btn-group{:role => "group"}
+              %button.btn.btn-default.dropdown-toggle{"aria-expanded" => "false", "data-toggle" => "dropdown", :type => "button"}
+                Tags
+                %span.caret
+              %ul.dropdown-menu{:role => "menu"}
+                - @tags.each do |g|
+                  - g.each do |k,v|
+                    %li
+                      = link_to "#{k} (#{v})", recipes_path({t: k, v: params[:v]})
     - if params[:v] == "list"
       - @recipes.each do |recipe|
         .recipe
@@ -27,18 +42,19 @@
                   = link_to "View", recipe_path(recipe), class: "label label-success"
               = image_tag("recipes/#{recipe.image}", class: "thumbnail-img")
     = paginate @recipes
-  .col-md-3.col-sm-4.col-xs-12
-    .row
-      .col-xs-12
-        .btn-group.view-btn-group{"aria-label" => "view button group", :role => "group"}
-          = link_to ('<i class="fa fa-list"></i>').html_safe, params.merge({v: "list"}), {"class" => "btn btn-default list-view-btn"}
-          = link_to ('<i class="fa fa-th-large"></i>').html_safe, params.merge({v: "grid"}), {"class" => "btn btn-default grid-view-btn"}
-    .row
-      .col-xs-12
-        %ul.list-group
-          - @tags.each do |g|
-            - g.each do |k,v|
-              %li.list-group-item
-                %span.badge
-                  = v
-                = link_to k, recipes_path({t: k, v: params[:v]})
+  .hidden-xs
+    .col-md-3.col-sm-4
+      .row
+        .col-sm-12
+          .btn-group.view-btn-group{"aria-label" => "view button group", :role => "group"}
+            = link_to ('<i class="fa fa-list"></i>').html_safe, params.merge({v: "list"}), {"class" => "btn btn-default list-view-btn"}
+            = link_to ('<i class="fa fa-th-large"></i>').html_safe, params.merge({v: "grid"}), {"class" => "btn btn-default grid-view-btn"}
+      .row
+        .col-sm-12
+          %ul.list-group
+            - @tags.each do |g|
+              - g.each do |k,v|
+                %li.list-group-item
+                  %span.badge
+                    = v
+                  = link_to k, recipes_path({t: k, v: params[:v]})
