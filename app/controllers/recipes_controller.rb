@@ -1,7 +1,8 @@
 class RecipesController < ApplicationController
   def index
     @recipes = get_recipes
-    if @recipes.length == 1
+    redirect =
+    if @recipes.length == 1 && redirect?
       redirect_to recipe_path(@recipes.first)
     else
       respond_to do |format|
@@ -41,10 +42,11 @@ class RecipesController < ApplicationController
   def recipe_params
     params.permit(
       :id,
-      :t,
       :q,
-      :v,
+      :r,
       :s,
+      :t,
+      :v,
       :per_page,
       :page
     )
@@ -69,5 +71,9 @@ class RecipesController < ApplicationController
     query
       .page(rp[:page] || 1)
       .per(per_page || rp[:per_page] || Recipe.default_per_page)
+  end
+
+  def redirect?
+    recipe_params.has_key?(:r) ? (recipe_params[:r].downcase == "no" ? false : true) : true
   end
 end

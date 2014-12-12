@@ -3,7 +3,7 @@ ready = ->
     datumTokenizer: Bloodhound.tokenizers.obj.whitespace("value")
     queryTokenizer: Bloodhound.tokenizers.whitespace
     prefetch: "/recipes.json"
-    remote: "/recipes.json?q=%QUERY"
+    remote: "/recipes.json?r=no&q=%QUERY"
   )
   recipes.initialize()
   $(".typeahead").typeahead null,

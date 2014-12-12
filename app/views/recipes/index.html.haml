@@ -41,7 +41,6 @@
                 %p
                   = link_to "View", recipe_path(recipe), class: "label label-success"
               = image_tag("recipes/#{recipe.image}", class: "thumbnail-img")
-    = paginate @recipes
   .hidden-xs
     .col-md-3.col-sm-4
       .row
@@ -58,3 +57,11 @@
                   %span.badge
                     = v
                   = link_to k, recipes_path({t: k, v: params[:v]})
+.hidden-lg.hidden-md.hidden-sm
+  .row.small-pagination
+    .col-xs-12
+      = paginate @recipes, window: 0
+.hidden-xs
+  .row
+    .col-sm-12
+      = paginate @recipes, window: 3

@@ -45,7 +45,18 @@
 .view-btn-group
   margin-bottom: 10px
 
+.small-pagination
+  .pagination
+    li
+      a
+        padding: 5px
+
 // show
 .recipe-info-row
   h2
     margin-top: 0px
+
+// print
+@media print
+  a[href]:after
+    content: none
