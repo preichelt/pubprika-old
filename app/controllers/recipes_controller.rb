@@ -1,20 +1,21 @@
 class RecipesController < ApplicationController
   def index
-    @recipes = get_recipes
-    redirect =
-    if @recipes.length == 1 && redirect?
-      redirect_to recipe_path(@recipes.first)
-    else
-      respond_to do |format|
-        format.html do
+    respond_to do |format|
+      format.html do
+        @recipes = get_recipes
+        if @recipes.length == 1 && redirect?
+          redirect_to recipe_path(@recipes.first)
+        else
           tags_file = File.read("db/data/tags.json")
           tags_hash = JSON.parse(tags_file)
           @tags = tags_hash["tags"]
           render :index
         end
-        format.json do
-          render json: @recipes.as_json(only: [:id, :name, :slug])
-        end
+      end
+      format.json do
+        # @recipes = get_recipes
+        # render json: @recipes.as_json(only: [:id, :name, :slug])
+        render json: PgJson.wrap(get_recipes.select(["id", "name", "slug"]), "recipes")["recipes"]
       end
     end
   end
@@ -57,7 +58,12 @@ class RecipesController < ApplicationController
     query = Recipe
     if !rp[:t].blank?
       tags = rp[:t].split(",").map {|t| ["BBQ", "4th of July"].include?(t) ? t : t.titleize}
-      @current_tags = tags.map {|t| ["Christmas"].include?(t) ? "#{t}" : (t == "Cookies" ? "Cookie" : t == "Sauces/Spreads" ? "Sauce/Spread" : "#{t.singularize}")}.to_sentence + " Recipes"
+      @current_tags = tags.map {|t| ["Christmas"].include?(t) ? "#{t}" :
+        (t == "Cookies" ? "Cookie" : (t == "Sauces & Spreads" ? "Sauce & Spread" :
+        (t == "Breads & Doughs" ? "Bread & Dough" : (t == "Desserts & Sweets" ? "Dessert & Sweet" :
+        (t == "Frostings & Glazes" ? "Frosting & Glaze" : (t == "Muffins & Cupcakes" ? "Muffin & Cupcake" :
+        (t == "Salads & Dressings" ? "Salad & Dressing" : (t == "Sandwiches & Wraps" ? "Sandwich & Wrap" :
+        (t == "Soups & Stews" ? "Soup & Stew" : "#{t.singularize}")))))))))}.to_sentence + " Recipes"
       query = query.with_tags(tags)
     end
     if !rp[:q].blank?
@@ -74,6 +80,7 @@ class RecipesController < ApplicationController
   end
 
   def redirect?
-    recipe_params.has_key?(:r) ? (recipe_params[:r].downcase == "no" ? false : true) : true
+    rp = recipe_params
+    rp.has_key?(:r) ? (rp[:r].downcase == "no" ? false : true) : true
   end
 end
