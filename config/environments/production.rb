@@ -77,7 +77,12 @@ Pubprika::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
-  
+
+  config.lograge.enabled = true
+  config.lograge.custom_options = lambda do |event|
+    {:time => event.time}
+  end
+
   # Mailer
   config.action_mailer.raise_delivery_errors = false
   config.action_mailer.default_url_options = { :host => ENV["DOMAIN"] }

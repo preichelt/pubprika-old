@@ -94,7 +94,7 @@
       "source": "http://amandascookin.com/2012/07/1963-homemade-white-bread.html",
       "source_base": "amandascookin.com",
       "nutrition": [
-        "Serving Size: 1 sliceCalories per serving: 140.8Fat per serving: 1.8 g"
+        "Serving Size: 1 slice, Calories per serving: 140.8, Fat per serving: 1.8 g"
       ],
       "slug_id": 3
     },
@@ -259,6 +259,46 @@
       "slug_id": 7
     },
     {
+      "name": "7-Layer Mexican Dip",
+      "ingredients": [
+        "2 lbs lean ground beef",
+        "2 packets (1 oz each) taco seasoning mix",
+        "1 (16 oz) can refried beans",
+        "1 (12 oz) container sour cream",
+        "4 medium to large avocados",
+        "Juice of half a lime",
+        "¼ cup chopped fresh cilantro",
+        "1 small red onion, chopped",
+        "½ tsp kosher salt",
+        "½ tsp garlic powder",
+        "½ tsp freshly ground black pepper",
+        "4 vine ripened tomatoes, seeded and diced",
+        "2 cups shredded cheddar or Mexican blend cheese",
+        "1 bunch fresh green onions, sliced",
+        "1 (2.25 oz) can sliced black olives, drained"
+      ],
+      "directions": [
+        "1. In a heavy skillet, combine ground beef with 1 packet of taco seasoning. Stir well and cook on medium until cooked through. Drain. Combine cooked beef with refried beans and set aside.",
+        "2. In a bowl, whisk together the sour cream and 1 packet of taco seasoning mix. Set aside.",
+        "3. In a bowl, place peeled and seeded avocados and mash well. Add lime juice, chopped cilantro, chopped red onion, kosher salt, garlic powder, and fresh black pepper. Set aside",
+        "4. In a 9×13 or similar size serving dish, evenly spread the beef/bean mixture on bottom. Continue layering in the following order: sour cream mixture, guacamole, diced tomatoes, and shredded cheese. Top evenly with a layer of green onions and sliced olives. Wrap tightly, keep chilled, and serve with hearty corn chips."
+      ],
+      "notes": [],
+      "image": "6D3D1967-0895-4146-8214-C64F0B34F74F-19352-0000C4BE27CE6971.jpg",
+      "tags": [
+        "Appetizers",
+        "Dips",
+        "Mexican & Latin"
+      ],
+      "prep_time": "",
+      "cook_time": "",
+      "amount": "about 40",
+      "source": "http://www.chewoutloud.com/2014/01/26/7-layer-mexican-dip/",
+      "source_base": "chewoutloud.com",
+      "nutrition": [],
+      "slug_id": 8
+    },
+    {
       "name": "7-Layer Nacho Waffles",
       "ingredients": [
         "For the topping:",
@@ -306,166 +346,7 @@
       "source": "http://scarlettabakes.com/7-layer-nacho-waffles/",
       "source_base": "scarlettabakes.com",
       "nutrition": [],
-      "slug_id": 8
-    },
-    {
-      "name": "Alcoholic Gummies",
-      "ingredients": [
-        "Gummy Candy:",
-        "Gummy Bears",
-        "Sour Patch Kids",
-        "Sour Patch Watermelons",
-        "Haribo Happy Cola Bottles",
-        "Haribo Cherries",
-        "Gummy Worms",
-        "Gummy Frogs",
-        "Alchohol:",
-        "Rum",
-        "Whiskey",
-        "Tequila",
-        "Jack Daniels",
-        "Others"
-      ],
-      "directions": [
-        "See source."
-      ],
-      "notes": [],
-      "image": "CDE8DFAE-AB7A-4AA7-B51C-AE76461B2E0C-53413-00000A2B979A03F8.jpg",
-      "tags": [
-        "Alcoholic",
-        "Desserts & Sweets"
-      ],
-      "prep_time": "",
-      "cook_time": "",
-      "amount": "",
-      "source": "http://www.seriouseats.com/2014/10/return-of-rummy-bears-boozy-alcoholic-gummies.html",
-      "source_base": "seriouseats.com",
-      "nutrition": [],
       "slug_id": 9
-    },
-    {
-      "name": "Almond Cookies",
-      "ingredients": [
-        "3 cups all-purpose flour",
-        "1 teaspoon baking soda",
-        "1/2 teaspoon salt",
-        "1 cup blanched almonds",
-        "1 cup granulated sugar",
-        "1 1/2 cups lard (see Tidbits)",
-        "1 teaspoon almond extract",
-        "1 egg, beaten",
-        "1/8 cup water"
-      ],
-      "directions": [
-        "1. Preheat the oven to 350 degrees.",
-        "2. Mix the flour, baking soda, and salt.",
-        "3. In a blender, grind 1/2 cup blanched almonds to a fine powder. Add to the flour mixture.",
-        "4. Cream the sugar, lard, almond extract, egg, and water, and add to the dry mixture. Mix thoroughly.",
-        "5. Form into 1-inch balls and place on an ungreased cookie sheet 2 inches apart.",
-        "6. Press on of the remaining almonds in the center of each ball, while flattening it slightly with fingers.",
-        "7. Brush each cookie lightly with beaten egg.",
-        "8. Bake for 20 minutes, or until cookies are light brown around edges."
-      ],
-      "notes": [
-        "If your daily allowance of lard will be exceeded by this recipe, feel free to subsitute vegetable shortening."
-      ],
-      "image": "8C35C391-10E6-468E-852D-AA532A065762-42208-00009EAE00AAB009.jpg",
-      "tags": [
-        "Cookies",
-        "Desserts & Sweets"
-      ],
-      "prep_time": "",
-      "cook_time": "1 hour",
-      "amount": "2 dozen cookies",
-      "source": "http://www.topsecretrecipes.com/Twin-Dragon-Almond-Cookies-Copycat-Recipe.html",
-      "source_base": "topsecretrecipes.com",
-      "nutrition": [
-        "Calories: 196"
-      ],
-      "slug_id": 10
-    },
-    {
-      "name": "7-Layer Mexican Dip",
-      "ingredients": [
-        "2 lbs lean ground beef",
-        "2 packets (1 oz each) taco seasoning mix",
-        "1 (16 oz) can refried beans",
-        "1 (12 oz) container sour cream",
-        "4 medium to large avocados",
-        "Juice of half a lime",
-        "¼ cup chopped fresh cilantro",
-        "1 small red onion, chopped",
-        "½ tsp kosher salt",
-        "½ tsp garlic powder",
-        "½ tsp freshly ground black pepper",
-        "4 vine ripened tomatoes, seeded and diced",
-        "2 cups shredded cheddar or Mexican blend cheese",
-        "1 bunch fresh green onions, sliced",
-        "1 (2.25 oz) can sliced black olives, drained"
-      ],
-      "directions": [
-        "1. In a heavy skillet, combine ground beef with 1 packet of taco seasoning. Stir well and cook on medium until cooked through. Drain. Combine cooked beef with refried beans and set aside.",
-        "2. In a bowl, whisk together the sour cream and 1 packet of taco seasoning mix. Set aside.",
-        "3. In a bowl, place peeled and seeded avocados and mash well. Add lime juice, chopped cilantro, chopped red onion, kosher salt, garlic powder, and fresh black pepper. Set aside",
-        "4. In a 9×13 or similar size serving dish, evenly spread the beef/bean mixture on bottom. Continue layering in the following order: sour cream mixture, guacamole, diced tomatoes, and shredded cheese. Top evenly with a layer of green onions and sliced olives. Wrap tightly, keep chilled, and serve with hearty corn chips."
-      ],
-      "notes": [],
-      "image": "6D3D1967-0895-4146-8214-C64F0B34F74F-19352-0000C4BE27CE6971.jpg",
-      "tags": [
-        "Appetizers",
-        "Dips",
-        "Mexican & Latin"
-      ],
-      "prep_time": "",
-      "cook_time": "",
-      "amount": "about 40",
-      "source": "http://www.chewoutloud.com/2014/01/26/7-layer-mexican-dip/",
-      "source_base": "chewoutloud.com",
-      "nutrition": [],
-      "slug_id": 11
-    },
-    {
-      "name": "Almond Glazed Sugar Cookies",
-      "ingredients": [
-        "1 cup Butter, softened",
-        "3/4 cup sugar",
-        "1 teaspoon almond extract",
-        "2 cups all-purpose flour",
-        "1/2 teaspoon baking powder",
-        "1/4 teaspoon salt",
-        "Glaze:",
-        "1 1/2 cups powdered sugar",
-        "1 teaspoon almond extract",
-        "4 to 5 teaspoons water",
-        "Sliced almonds"
-      ],
-      "directions": [
-        "Heat oven to 400°F. Combine all cookie ingredients in large bowl. Beat at medium speed, scraping bowl often, until well mixed.",
-        "Drop dough by rounded teaspoonfuls, 2 inches apart, onto ungreased cookie sheets. Flatten balls to 1/4 inch thick with bottom of buttered glass dipped in sugar. Bake 7-9 minutes or until edges are very lightly browned. Cool 1 minute on cookie sheet; remove to cooling rack. Cool completely.",
-        "Combine all glaze ingredients except almonds in small bowl with wire whisk. Decorate cooled cookies with glaze and sliced almonds as desired.",
-        "Variations:",
-        "Flavored: Substitute vanilla or mint flavoring for almond extract.",
-        "Toppings: Drizzle unglazed cookies with melted chocolate or vanilla-flavored candy coating (almond bark). Decorate glazed cookies with chopped nuts, mini chocolate chips or decorator sugars."
-      ],
-      "notes": [
-        "If dough is too dry, stir in 1 to 2 tablespoons milk.",
-        "Glaze sets up quickly. Frost and decorate just a few cookies at a time."
-      ],
-      "image": "2D679960-8DA5-4019-9767-B1BEBA1B4461-10472-00002E95C18D24EF.jpg",
-      "tags": [
-        "Cookies",
-        "Desserts & Sweets",
-        "Frostings & Glazes"
-      ],
-      "prep_time": "30 min",
-      "cook_time": "",
-      "amount": "42 cookies",
-      "source": "http://www.landolakes.com/recipe/58/almond-glazed-sugar-cookies",
-      "source_base": "landolakes.com",
-      "nutrition": [
-        "Calories: 90, Fat: 4.5g, Cholesterol: 10mg, Sodium: 65mg, Carbohydrates: 12g, Dietary Fiber: 0g, Protein: 1g"
-      ],
-      "slug_id": 12
     },
     {
       "name": "Alabama Pulled Chicken Sandwich with White BBQ Sauce",
@@ -509,7 +390,42 @@
       "source": "http://www.thespicekitrecipes.com/alabama-chicken-sandwich-white-bbq-sauce/",
       "source_base": "thespicekitrecipes.com",
       "nutrition": [],
-      "slug_id": 13
+      "slug_id": 10
+    },
+    {
+      "name": "Alcoholic Gummies",
+      "ingredients": [
+        "Gummy Candy:",
+        "Gummy Bears",
+        "Sour Patch Kids",
+        "Sour Patch Watermelons",
+        "Haribo Happy Cola Bottles",
+        "Haribo Cherries",
+        "Gummy Worms",
+        "Gummy Frogs",
+        "Alchohol:",
+        "Rum",
+        "Whiskey",
+        "Tequila",
+        "Jack Daniels",
+        "Others"
+      ],
+      "directions": [
+        "See source."
+      ],
+      "notes": [],
+      "image": "CDE8DFAE-AB7A-4AA7-B51C-AE76461B2E0C-53413-00000A2B979A03F8.jpg",
+      "tags": [
+        "Alcoholic",
+        "Desserts & Sweets"
+      ],
+      "prep_time": "",
+      "cook_time": "",
+      "amount": "",
+      "source": "http://www.seriouseats.com/2014/10/return-of-rummy-bears-boozy-alcoholic-gummies.html",
+      "source_base": "seriouseats.com",
+      "nutrition": [],
+      "slug_id": 11
     },
     {
       "name": "Almond Butter Blossoms",
@@ -544,42 +460,91 @@
       "source": "http://www.cannellavita.com/2014/02/almond-butter-blossoms.html",
       "source_base": "cannellavita.com",
       "nutrition": [],
-      "slug_id": 14
+      "slug_id": 12
     },
     {
-      "name": "Amish Apple Dumplings",
+      "name": "Almond Glazed Sugar Cookies",
       "ingredients": [
+        "1 cup Butter, softened",
+        "3/4 cup sugar",
+        "1 teaspoon almond extract",
         "2 cups all-purpose flour",
-        "2 1/2 teaspoons baking powder",
-        "1/2 teaspooon salt",
-        "2/3 cup butter, softened",
-        "1/2 cup milk",
-        "6 apples, peeled and cored",
-        "2 cups brown sugar",
-        "2 cups water",
-        "1/4 cup butter",
-        "1/2 teaspoon cinnamon"
+        "1/2 teaspoon baking powder",
+        "1/4 teaspoon salt",
+        "Glaze:",
+        "1 1/2 cups powdered sugar",
+        "1 teaspoon almond extract",
+        "4 to 5 teaspoons water",
+        "Sliced almonds"
       ],
       "directions": [
-        "In a medium size bowl, combine the flour, baking powder and salt. Mix in the butter, then add in the milk an mix until a soft dough forms. Split the dough into 6 balls. Roll out each ball of dough and place an apple in the center of each piece of dough. Fold the dough around the apple and press it together to form a ball. Set these dumplings in a 9x13 pan that has been sprayed with cooking spray.",
-        "In a small saucepan, combine the brown sugar, water, butter and cinnamon. Heat it just until it barely starts boiling, stirring often. Pour this mixture over the dumplings and bake them at 350 degrees for 30 minutes, or until the apples are soft and the dough is golden brown."
+        "Heat oven to 400°F. Combine all cookie ingredients in large bowl. Beat at medium speed, scraping bowl often, until well mixed.",
+        "Drop dough by rounded teaspoonfuls, 2 inches apart, onto ungreased cookie sheets. Flatten balls to 1/4 inch thick with bottom of buttered glass dipped in sugar. Bake 7-9 minutes or until edges are very lightly browned. Cool 1 minute on cookie sheet; remove to cooling rack. Cool completely.",
+        "Combine all glaze ingredients except almonds in small bowl with wire whisk. Decorate cooled cookies with glaze and sliced almonds as desired.",
+        "Variations:",
+        "Flavored: Substitute vanilla or mint flavoring for almond extract.",
+        "Toppings: Drizzle unglazed cookies with melted chocolate or vanilla-flavored candy coating (almond bark). Decorate glazed cookies with chopped nuts, mini chocolate chips or decorator sugars."
       ],
       "notes": [
-        "You can make these dumplings any size you'd like. If you'd like smaller dumplings, use only half an apple and less dough.",
-        "If you'd like a thinner layer of dough around the apples, peel and core two more apples, make 8 dough balls and roll the dough thinner."
+        "If dough is too dry, stir in 1 to 2 tablespoons milk.",
+        "Glaze sets up quickly. Frost and decorate just a few cookies at a time."
       ],
-      "image": "125FBDDF-23A3-4796-98A5-CEB7781E3A68-92460-0000AD6D3A74CD51.jpg",
+      "image": "2D679960-8DA5-4019-9767-B1BEBA1B4461-10472-00002E95C18D24EF.jpg",
       "tags": [
-        "Breakfast & Brunch",
+        "Cookies",
+        "Desserts & Sweets",
+        "Frostings & Glazes"
+      ],
+      "prep_time": "30 min",
+      "cook_time": "",
+      "amount": "42 cookies",
+      "source": "http://www.landolakes.com/recipe/58/almond-glazed-sugar-cookies",
+      "source_base": "landolakes.com",
+      "nutrition": [
+        "Calories: 90, Fat: 4.5g, Cholesterol: 10mg, Sodium: 65mg, Carbohydrates: 12g, Dietary Fiber: 0g, Protein: 1g"
+      ],
+      "slug_id": 13
+    },
+    {
+      "name": "Almond Cookies",
+      "ingredients": [
+        "3 cups all-purpose flour",
+        "1 teaspoon baking soda",
+        "1/2 teaspoon salt",
+        "1 cup blanched almonds",
+        "1 cup granulated sugar",
+        "1 1/2 cups lard (see Tidbits)",
+        "1 teaspoon almond extract",
+        "1 egg, beaten",
+        "1/8 cup water"
+      ],
+      "directions": [
+        "1. Preheat the oven to 350 degrees.",
+        "2. Mix the flour, baking soda, and salt.",
+        "3. In a blender, grind 1/2 cup blanched almonds to a fine powder. Add to the flour mixture.",
+        "4. Cream the sugar, lard, almond extract, egg, and water, and add to the dry mixture. Mix thoroughly.",
+        "5. Form into 1-inch balls and place on an ungreased cookie sheet 2 inches apart.",
+        "6. Press on of the remaining almonds in the center of each ball, while flattening it slightly with fingers.",
+        "7. Brush each cookie lightly with beaten egg.",
+        "8. Bake for 20 minutes, or until cookies are light brown around edges."
+      ],
+      "notes": [
+        "If your daily allowance of lard will be exceeded by this recipe, feel free to subsitute vegetable shortening."
+      ],
+      "image": "8C35C391-10E6-468E-852D-AA532A065762-42208-00009EAE00AAB009.jpg",
+      "tags": [
+        "Cookies",
         "Desserts & Sweets"
       ],
       "prep_time": "",
-      "cook_time": "30 minutes",
-      "amount": "6 servings",
-      "source": "http://www.tastesoflizzyt.com/2014/08/25/amish-apple-dumplings/",
-      "source_base": "tastesoflizzyt.com",
-      "nutrition": [],
-      "slug_id": 15
+      "cook_time": "1 hour",
+      "amount": "2 dozen cookies",
+      "source": "http://www.topsecretrecipes.com/Twin-Dragon-Almond-Cookies-Copycat-Recipe.html",
+      "source_base": "topsecretrecipes.com",
+      "nutrition": [
+        "Calories: 196"
+      ],
+      "slug_id": 14
     },
     {
       "name": "American Chop Suey (Macaroni, Beef, and Cheese Skillet Casserole)",
@@ -623,6 +588,41 @@
       "amount": "6 to 10",
       "source": "http://www.seriouseats.com/recipes/2014/09/american-chop-suey-johnny-marzetti-beefaroni-hamburger-helper-goulash-italian-american-recipe.html",
       "source_base": "seriouseats.com",
+      "nutrition": [],
+      "slug_id": 15
+    },
+    {
+      "name": "Amish Apple Dumplings",
+      "ingredients": [
+        "2 cups all-purpose flour",
+        "2 1/2 teaspoons baking powder",
+        "1/2 teaspooon salt",
+        "2/3 cup butter, softened",
+        "1/2 cup milk",
+        "6 apples, peeled and cored",
+        "2 cups brown sugar",
+        "2 cups water",
+        "1/4 cup butter",
+        "1/2 teaspoon cinnamon"
+      ],
+      "directions": [
+        "In a medium size bowl, combine the flour, baking powder and salt. Mix in the butter, then add in the milk an mix until a soft dough forms. Split the dough into 6 balls. Roll out each ball of dough and place an apple in the center of each piece of dough. Fold the dough around the apple and press it together to form a ball. Set these dumplings in a 9x13 pan that has been sprayed with cooking spray.",
+        "In a small saucepan, combine the brown sugar, water, butter and cinnamon. Heat it just until it barely starts boiling, stirring often. Pour this mixture over the dumplings and bake them at 350 degrees for 30 minutes, or until the apples are soft and the dough is golden brown."
+      ],
+      "notes": [
+        "You can make these dumplings any size you'd like. If you'd like smaller dumplings, use only half an apple and less dough.",
+        "If you'd like a thinner layer of dough around the apples, peel and core two more apples, make 8 dough balls and roll the dough thinner."
+      ],
+      "image": "125FBDDF-23A3-4796-98A5-CEB7781E3A68-92460-0000AD6D3A74CD51.jpg",
+      "tags": [
+        "Breakfast & Brunch",
+        "Desserts & Sweets"
+      ],
+      "prep_time": "",
+      "cook_time": "30 minutes",
+      "amount": "6 servings",
+      "source": "http://www.tastesoflizzyt.com/2014/08/25/amish-apple-dumplings/",
+      "source_base": "tastesoflizzyt.com",
       "nutrition": [],
       "slug_id": 16
     },
@@ -56089,22 +56089,27 @@
         "2.5 lbs boneless skinless chicken breast halves",
         "3/4 cup chicken broth",
         "1/2 cup Zesty Italian Salad dressing",
-        "Juice from 1 lime (or 2 Tbsp lime juice)",
-        "1 Tbsp chili powder",
-        "2 tsp onion powder",
-        "1 tsp garlic powder",
-        "1 tsp paprika",
-        "1 tsp cumin",
-        "1 tsp salt",
-        "1/2 tsp freshly ground black pepper",
-        "1/2 tsp cayenne pepper",
-        "1/2 tsp chipotle pepper powder",
-        "1/2 tsp sugar"
+        "Juice from 1 lime",
+        "1 Tbsp (8 g) chili powder",
+        "2 tsp (4.6 g) onion powder",
+        "1 tsp (3.23 g) garlic powder",
+        "1 tsp (2.27 g) paprika",
+        "1 tsp (2 g) cumin",
+        "1 tsp (6.08 g) salt",
+        "1/2 tsp (1.15 g) freshly ground black pepper",
+        "1/2 tsp (0.88 g) cayenne pepper",
+        "1/2 tsp (0.88 g) chipotle pepper powder",
+        "1/2 tsp (2.1 g) sugar"
       ],
       "directions": [
-        "Place chicken breast halves in the slow cooker. In a mixing bowl whisk together remaining ingredients. Pour mixture over chicken in slow cooker, cover slow cooker with lid. Cook chicken on low heat 6 - 8 hours. Shred chicken, then cook shredded chicken in broth in slow cooker an additional 30 minutes on low. Drain broth from chicken. Serve warm in tacos, burritos, enchiladas, quesadillas, taquitos etc. Note: for taco filling ideas and how to cook corn tortilla shells see this post here."
+        "Modified (recommended):",
+        "Whisk all ingredients (minus chicken) together in mixing bowl. Using tongs, dip chicken breasts into marinade and place into a gallon sized zip lock bag. Pour rest of the marinade into the bag, seal and place in fridge overnight. Pour contents of the ziplock into a slow cooker and cook on low 6-8 hours (very forgiving). Using tongs, remove chicken from the slow cooker and shred using two forks. Return the chicken to the broth in the slow cooker and cook an additional 30 minutes on low. Drain broth from chicken.",
+        "Original:",
+        "Place chicken breast halves in the slow cooker. In a mixing bowl whisk together remaining ingredients. Pour mixture over chicken in slow cooker, cover slow cooker with lid. Cook chicken on low heat 6 - 8 hours. Shred chicken, then cook shredded chicken in broth in slow cooker an additional 30 minutes on low. Drain broth from chicken. Serve warm in tacos, burritos, enchiladas, quesadillas, taquitos etc."
       ],
-      "notes": [],
+      "notes": [
+        "For taco filling ideas and how to cook corn tortilla shells see http://www.cookingclassy.com/?b2w=http://www.cookingclassy.blogspot.com/2012/01/shredded-beef-tacos.html."
+      ],
       "image": "104B6361-5186-4C2D-AB5D-E3A4E8263C92-53938-00001707E8BB004A.jpg",
       "tags": [
         "Poultry",
@@ -56839,11 +56844,12 @@
       ],
       "directions": [
         "1. Preheat oven to 160c (or put slow cooker on low to heat up).  Place the braising beef in a bowl and mix with the flour and a good pinch of salt and pepper.  In a casserole pan, heat up the olive oil and place the beef in the pan.  Cook the beef on a high heat until just browned on all sides.  Turn down the heat and add in the onion.  Cook for about 5 minutes, stirring frequently, until the onions are starting to turn translucent. Add in the carrot, celery and garlic and cook for another couple of minutes.  Add in the tomato puree and stir to coat everything.  Add in the wine, turn up the heat and let it bubble for a couple of minutes.  Finally add in the chopped tomatoes, beef stock and thyme.  Bring everything to a gently bubble.",
-        "2. Oven version: Place a lid on the pan and cook in the oven for 3-4 hours until the beef is falling apart.  Check every hour or so to ensure the sauce isn’t running dry.  Top up with boiling water if it’s starting to look dry.Slow Cooker/Crockpot version: Pour everything into the slow cooker/crockpot, place the lid on and cook for 6-8 hours on low.  Each slow cooker is different, so you may need to add some water if you think the sauce is going to dry up during the cooking time.",
+        "2. Oven version: Place a lid on the pan and cook in the oven for 3-4 hours until the beef is falling apart.  Check every hour or so to ensure the sauce isn’t running dry.  Top up with boiling water if it’s starting to look dry.",
+        "Slow Cooker/Crockpot version: Pour everything into the slow cooker/crockpot, place the lid on and cook for 6-8 hours on low.  Each slow cooker is different, so you may need to add some water if you think the sauce is going to dry up during the cooking time.",
         "3. Serve with rigatoni and garnish with the cheese and parsley.  I like to mix the rigatoni into the sauce, then scoop it out and serve it up, topped with the meaty chunks."
       ],
       "notes": [
-        "Any leftover ragu can be cooled, placed in a lidded container and refrigerated or frozen.  Ensure the ragu is fully defrosted before reheating thoroughly in a pan or microwave."
+        "Any leftover ragu can be cooled, placed in a lidded container and refrigerated or frozen. Ensure the ragu is fully defrosted before reheating thoroughly in a pan or microwave."
       ],
       "image": "5561A250-8C6C-4A46-AAD1-5DC2251F45E4-50415-000459E65E6B4887.jpg",
       "tags": [

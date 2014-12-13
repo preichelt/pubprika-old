@@ -25,9 +25,11 @@ gem 'holder_rails', '~> 2.4.1'
 gem 'bootstrap-typeahead-rails', '~> 0.10.5.1'
 gem 'nprogress-rails', '~> 0.1.6.3'
 gem 'squeel', '~> 1.2.2'
+gem 'lograge', '~> 0.3.0'
 
 group :development do
   gem 'foreman', '~> 0.76.0'
+  gem 'rubocop', require: false
 end
 
 group :development, :test do
@@ -40,6 +42,7 @@ end
 
 group :test do
   gem 'database_cleaner', '~> 1.3.0'
+  gem 'simplecov', require: false
 end
 
 group :production do
