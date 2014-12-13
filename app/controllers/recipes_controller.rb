@@ -13,8 +13,6 @@ class RecipesController < ApplicationController
         end
       end
       format.json do
-        # @recipes = get_recipes
-        # render json: @recipes.as_json(only: [:id, :name, :slug])
         render json: PgJson.wrap(get_recipes.select(["id", "name", "slug"]), "recipes")["recipes"]
       end
     end
