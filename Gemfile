@@ -26,6 +26,7 @@ gem 'holder_rails', '~> 2.4.1'
 gem 'ruby-progressbar', '~> 1.7.0'
 gem 'nprogress-rails', '~> 0.1.6.3'
 gem 'lograge', '~> 0.3.0'
+gem 'rack-timeout'
 
 group :development do
   gem 'foreman', '~> 0.76.0'
