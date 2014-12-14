@@ -15,3 +15,12 @@ test:
   pool: 5
   username: pubprika
   password:
+
+production:
+  adapter: postgresql
+  host: localhost
+  encoding: unicode
+  database: pubprika_production
+  pool: 5
+  username: pubprika
+  password:

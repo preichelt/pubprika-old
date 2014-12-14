@@ -47,6 +47,6 @@ group :test do
   gem 'simplecov', require: false
 end
 
-group :production do
-  gem 'rails_12factor', '~> 0.0.3'
-end
+# group :production do
+#   gem 'rails_12factor', '~> 0.0.3'
+# end
