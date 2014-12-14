@@ -23,7 +23,7 @@
                 - @tags.each do |g|
                   - g.each do |k,v|
                     %li
-                      = link_to "#{k} (#{v})", recipes_path({r: "no", t: k, v: params[:v]})
+                      = link_to "#{k} (#{v})", recipes_path({t: k, v: params[:v], r: "no"})
     - if params[:v] == "list"
       - @recipes.each do |recipe|
         .recipe
@@ -56,7 +56,7 @@
                 %li.list-group-item
                   %span.badge
                     = v
-                  = link_to k, recipes_path({r: "no", t: k, v: params[:v]})
+                  = link_to k, recipes_path({t: k, v: params[:v], r: "no"})
 .hidden-lg.hidden-md.hidden-sm
   .row.small-pagination
     .col-xs-12

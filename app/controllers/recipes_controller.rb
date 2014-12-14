@@ -2,14 +2,23 @@ class RecipesController < ApplicationController
   def index
     respond_to do |format|
       format.html do
-        @recipes = get_recipes
-        if @recipes.length == 1 && redirect?
-          redirect_to recipe_path(@recipes.first)
+        rp = recipe_params
+        recipes = []
+        if !rp[:q].blank?
+          recipes = Recipe.where(name: rp[:q])
+        end
+        if recipes.length == 1 && redirect?
+          redirect_to recipe_path(recipes.first)
         else
-          tags_file = File.read("db/data/tags.json")
-          tags_hash = JSON.parse(tags_file)
-          @tags = tags_hash["tags"]
-          render :index
+          @recipes = get_recipes
+          if @recipes.length == 1 && redirect?
+            redirect_to recipe_path(@recipes.first)
+          else
+            tags_file = File.read("db/data/tags.json")
+            tags_hash = JSON.parse(tags_file)
+            @tags = tags_hash["tags"]
+            render :index
+          end
         end
       end
       format.json do

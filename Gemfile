@@ -39,6 +39,7 @@ group :development, :test do
   gem 'factory_girl_rails', '~> 4.5.0'
   gem 'ffaker', '~> 1.25.0', require: 'ffaker'
   gem 'meta_request', '~> 0.3.4'
+  gem 'pry'
 end
 
 group :test do
