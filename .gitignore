@@ -86,4 +86,3 @@ pickle-email-*.html
 # Node app and Paprika files
 /node_modules
 /paprika_files
-/app/assets/images/recipes
