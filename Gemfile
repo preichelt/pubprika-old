@@ -26,8 +26,6 @@ gem 'holder_rails', '~> 2.4.1'
 gem 'ruby-progressbar', '~> 1.7.0'
 gem 'nprogress-rails', '~> 0.1.6.3'
 gem 'lograge', '~> 0.3.0'
-gem 'fog', '~>1.20', require: 'fog/aws/storage'
-gem 'asset_sync'
 
 group :development do
   gem 'foreman', '~> 0.76.0'
@@ -47,6 +45,6 @@ group :test do
   gem 'simplecov', require: false
 end
 
-# group :production do
-#   gem 'rails_12factor', '~> 0.0.3'
-# end
+group :production do
+  gem 'rails_12factor', '~> 0.0.3'
+end

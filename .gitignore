@@ -89,4 +89,3 @@ pickle-email-*.html
 
 # assets hosted on s3
 /app/assets/images/recipes
-/public/assets
