@@ -1,37 +1,6 @@
 {
   "recipes": [
     {
-      "name": "15-Minute Donuts",
-      "ingredients": [
-        "1 1/4 cups all-purpose flour",
-        "2 tsp baking powder",
-        "1/4 tsp salt",
-        "1/4 cup milk",
-        "1/4 cup buttermilk",
-        "1/4 cup granulated sugar",
-        "3 Tbsp melted butter",
-        "2 cups vegetable oil, for frying",
-        "Granulated sugar, cinnamon sugar or powdered sugar, for coating"
-      ],
-      "directions": [
-        "Preheat oil over medium heat in a 10 inch non-stick fry-pan (keeping an eye on it as it is heating). In a small mixing bowl, whisk together flour, baking powder and salt. In a medium mixing bowl, whisk together milk, buttermilk, sugar and melted butter. Using a fork stir in dry ingredients and mix just until combine (think of making biscuit dough, you just want to incorporate the ingredients).",
-        "Once the oil has reached 350 degrees, measure out 1/2 tablespoonfuls dough and using your hands gently roll into a ball (gently rolling to keep them fluffy, think of rolling something really fragile. Again this is like a biscuit dough you don't want to overwork it). Gently place dough ball into oil and fry until golden brown on bottom then flip and cook reverse side until golden brown. Carefully remove with metal tongs or a fork and drain onto a paper towel lined plate. Roll in sugar. Repeat this process with remaining dough (you can fit about 8 donuts in the pan at once if you can work that fast =). Note: these are best enjoyed the day they are made."
-      ],
-      "notes": [],
-      "image": "A41A10DE-3201-43BD-A615-1280982E7268-10472-00002D07F55DD621.jpg",
-      "tags": [
-        "Breakfast & Brunch",
-        "Desserts & Sweets"
-      ],
-      "prep_time": "",
-      "cook_time": "",
-      "amount": "About 30 Donut Holes",
-      "source": "http://www.cookingclassy.com/2012/01/15-minute-donuts-from-scratch/",
-      "source_base": "cookingclassy.com",
-      "nutrition": [],
-      "slug_id": 1
-    },
-    {
       "name": "10-Minute Lemon Pepper Shrimp",
       "ingredients": [
         "1 1/2 pounds large shrimp, peeled and deveined",
@@ -58,7 +27,7 @@
       "source": "http://www.handletheheat.com/2014/01/10-minute-lemon-pepper-shrimp.html",
       "source_base": "handletheheat.com",
       "nutrition": [],
-      "slug_id": 2
+      "slug_id": 1
     },
     {
       "name": "1963 Homemade White Bread",
@@ -96,47 +65,7 @@
       "nutrition": [
         "Serving Size: 1 slice, Calories per serving: 140.8, Fat per serving: 1.8 g"
       ],
-      "slug_id": 3
-    },
-    {
-      "name": "20-Minute Spicy Sriracha Shrimp and Zucchini Lo Mein",
-      "ingredients": [
-        "1- 8 oz. package lo mein noodles (I found them in the ethnic foods section of our grocery store)",
-        "2 Tbsp olive oil",
-        "1 tablespoon butter",
-        "1/2 pound shrimp, peeled",
-        "1 medium zucchini, cut in half vertically, then cut into half moon shapes",
-        "3 cloves garlic, minced",
-        "1/2 tsp crushed red pepper flakes",
-        "2 large eggs, lightly beaten",
-        "1 Tbsp brown sugar",
-        "2 1/2 Tablespoons soy sauce",
-        "2 Tablespoons Sriracha hot sauce",
-        "1 teaspoon grated ginger (optional)",
-        "1 teaspoon sesame oil (optional)",
-        "1/2 cup fresh cilantro",
-        "3 green onions, sliced thinly",
-        "Salt to taste, if needed (the soy sauce has a lot of sodium, so taste before you add any to the finished product)"
-      ],
-      "directions": [
-        "1. Begin a large pot of salted water to boil. Once the water reaches a full boil, add the noodles and cook according to the package directions (about 4-5 minutes).",
-        "2. While waiting for the water to boil, prepare the spicy sriracha sauce. In a small bowl stir together the brown sugar, soy sauce, sriracha, ginger, and sesame oil.",
-        "3. In a large skillet melt 1 tablespoon of butter over medium-low heat. Add the crushed red pepper to the butter, and once it's completely melted whisk in the eggs. Stir gently and cook for about 3 minutes. Once the egg is done cooking, keep the pan on the burner but transfer eggs to a small plate; set aside. Add 1 tablespoon of oil to the pan and increase the heat to medium-high. Add shrimp and cook for 2 minutes on each side, or just until firm and bright pink. Remove with a slotted spoon and transfer to a clean plate; set aside. Add zucchini to the pan, increase heat to high, and remaining oil; stir fry until just charred; about 3 minutes. Stir in garlic and cook for one minute.",
-        "4. Add drained noodles to the skillet along with the cooked egg, shrimp, and prepared sauce. Turn the heat on to medium-low, and stir until everything is coated well with the sauce. Sprinkle the sliced green onions and cilantro and serve at once!"
-      ],
-      "notes": [],
-      "image": "857F11B0-1D37-41DB-B907-1F2C197C9E48-46059-000046996F1BECAD.jpg",
-      "tags": [
-        "Asian",
-        "Pasta & Noodles"
-      ],
-      "prep_time": "",
-      "cook_time": "",
-      "amount": "",
-      "source": "http://bakerbynature.com/sunday-suppers-spicy-sriracha-shrimp-zucchini-lo-mein/",
-      "source_base": "bakerbynature.com",
-      "nutrition": [],
-      "slug_id": 4
+      "slug_id": 2
     },
     {
       "name": "60-Minute Sticky Buns",
@@ -188,7 +117,7 @@
       "source": "http://crepesofwrath.net/2014/04/03/60-minute-sticky-buns/",
       "source_base": "crepesofwrath.net",
       "nutrition": [],
-      "slug_id": 5
+      "slug_id": 3
     },
     {
       "name": "7-Eleven Cherry Slurpee",
@@ -219,44 +148,78 @@
       "source": "http://www.topsecretrecipes.com/7-Eleven-Cherry-Slurpee-Recipe.html",
       "source_base": "topsecretrecipes.com",
       "nutrition": [],
-      "slug_id": 6
+      "slug_id": 4
     },
     {
-      "name": "7-Layer Fried Taquitos",
+      "name": "15-Minute Donuts",
       "ingredients": [
-        "1 16oz Can Old El Paso Traditional Refried Beans",
-        "1/2 Teaspoon Cumin",
-        "1/2 Teaspoon Chili Powder",
-        "1 1/2 Cups Guacamole",
-        "3/4 Cup Sour Cream",
-        "2 Cups Grated Colby Jack Cheese",
-        "Pico De Gallo for serving",
-        "1/4 Cup Canola Oil for Frying",
-        "Olives (optional)",
-        "1 Package Corn Tortillas",
-        "sea salt for garnish"
+        "1 1/4 cups all-purpose flour",
+        "2 tsp baking powder",
+        "1/4 tsp salt",
+        "1/4 cup milk",
+        "1/4 cup buttermilk",
+        "1/4 cup granulated sugar",
+        "3 Tbsp melted butter",
+        "2 cups vegetable oil, for frying",
+        "Granulated sugar, cinnamon sugar or powdered sugar, for coating"
       ],
       "directions": [
-        "1. In a medium bowl, combine the refried beans, cumin and chili powder, stirring well. Set aside.",
-        "2. Heat a large skillet over high heat. Place one tortilla on the hot skillet, allow to cook for a couple seconds, carefully turn the tortilla and cook on the other side, remove to a plate. The tortilla should be flexible now. Cover with a heavy towel or tinfoil to keep warm and pliable or work on one taquito at a time.",
-        "3. Lay one cooked tortilla on a plate and spread a thin layer of the refried bean mixture, sour cream,guacamole and finally a sprinkling of cheese. You made add olives now, with the pico or skip entirely. Tightly roll the tortilla closed see note and set aside. Continue with each tortilla.",
-        "4. Heat a medium skillet to medium heat and add the oil. When the oil begins to shimmer add the taquito, seam side down and cook for 15-30 seconds or until turning golden brown, flip to each side of the taquito allowing each side to brown and then set on a paper towel lined plate. Sprinkle with a little sea salt",
-        "5. Serve with fresh pico de gallo."
+        "Preheat oil over medium heat in a 10 inch non-stick fry-pan (keeping an eye on it as it is heating). In a small mixing bowl, whisk together flour, baking powder and salt. In a medium mixing bowl, whisk together milk, buttermilk, sugar and melted butter. Using a fork stir in dry ingredients and mix just until combine (think of making biscuit dough, you just want to incorporate the ingredients).",
+        "Once the oil has reached 350 degrees, measure out 1/2 tablespoonfuls dough and using your hands gently roll into a ball (gently rolling to keep them fluffy, think of rolling something really fragile. Again this is like a biscuit dough you don't want to overwork it). Gently place dough ball into oil and fry until golden brown on bottom then flip and cook reverse side until golden brown. Carefully remove with metal tongs or a fork and drain onto a paper towel lined plate. Roll in sugar. Repeat this process with remaining dough (you can fit about 8 donuts in the pan at once if you can work that fast =). Note: these are best enjoyed the day they are made."
       ],
-      "notes": [
-        "If your corn tortilla is cracking you have either not gotten it hot enough in the pan or allowed it to cool."
-      ],
-      "image": "2C2F8587-AC83-4474-877D-6CF5BA3FF50A-10567-0000166AE38FFD50.jpg",
+      "notes": [],
+      "image": "A41A10DE-3201-43BD-A615-1280982E7268-10472-00002D07F55DD621.jpg",
       "tags": [
-        "Mexican & Latin"
+        "Breakfast & Brunch",
+        "Desserts & Sweets"
       ],
-      "prep_time": "2 min",
-      "cook_time": "2 min",
-      "amount": "12-14 Taquitos",
-      "source": "http://www.ohsweetbasil.com/2013/03/7-layer-dip-fried-taquitos.html",
-      "source_base": "ohsweetbasil.com",
+      "prep_time": "",
+      "cook_time": "",
+      "amount": "About 30 Donut Holes",
+      "source": "http://www.cookingclassy.com/2012/01/15-minute-donuts-from-scratch/",
+      "source_base": "cookingclassy.com",
       "nutrition": [],
-      "slug_id": 7
+      "slug_id": 5
+    },
+    {
+      "name": "20-Minute Spicy Sriracha Shrimp and Zucchini Lo Mein",
+      "ingredients": [
+        "1- 8 oz. package lo mein noodles (I found them in the ethnic foods section of our grocery store)",
+        "2 Tbsp olive oil",
+        "1 tablespoon butter",
+        "1/2 pound shrimp, peeled",
+        "1 medium zucchini, cut in half vertically, then cut into half moon shapes",
+        "3 cloves garlic, minced",
+        "1/2 tsp crushed red pepper flakes",
+        "2 large eggs, lightly beaten",
+        "1 Tbsp brown sugar",
+        "2 1/2 Tablespoons soy sauce",
+        "2 Tablespoons Sriracha hot sauce",
+        "1 teaspoon grated ginger (optional)",
+        "1 teaspoon sesame oil (optional)",
+        "1/2 cup fresh cilantro",
+        "3 green onions, sliced thinly",
+        "Salt to taste, if needed (the soy sauce has a lot of sodium, so taste before you add any to the finished product)"
+      ],
+      "directions": [
+        "1. Begin a large pot of salted water to boil. Once the water reaches a full boil, add the noodles and cook according to the package directions (about 4-5 minutes).",
+        "2. While waiting for the water to boil, prepare the spicy sriracha sauce. In a small bowl stir together the brown sugar, soy sauce, sriracha, ginger, and sesame oil.",
+        "3. In a large skillet melt 1 tablespoon of butter over medium-low heat. Add the crushed red pepper to the butter, and once it's completely melted whisk in the eggs. Stir gently and cook for about 3 minutes. Once the egg is done cooking, keep the pan on the burner but transfer eggs to a small plate; set aside. Add 1 tablespoon of oil to the pan and increase the heat to medium-high. Add shrimp and cook for 2 minutes on each side, or just until firm and bright pink. Remove with a slotted spoon and transfer to a clean plate; set aside. Add zucchini to the pan, increase heat to high, and remaining oil; stir fry until just charred; about 3 minutes. Stir in garlic and cook for one minute.",
+        "4. Add drained noodles to the skillet along with the cooked egg, shrimp, and prepared sauce. Turn the heat on to medium-low, and stir until everything is coated well with the sauce. Sprinkle the sliced green onions and cilantro and serve at once!"
+      ],
+      "notes": [],
+      "image": "857F11B0-1D37-41DB-B907-1F2C197C9E48-46059-000046996F1BECAD.jpg",
+      "tags": [
+        "Asian",
+        "Pasta & Noodles"
+      ],
+      "prep_time": "",
+      "cook_time": "",
+      "amount": "",
+      "source": "http://bakerbynature.com/sunday-suppers-spicy-sriracha-shrimp-zucchini-lo-mein/",
+      "source_base": "bakerbynature.com",
+      "nutrition": [],
+      "slug_id": 6
     },
     {
       "name": "7-Layer Mexican Dip",
@@ -296,6 +259,50 @@
       "amount": "about 40",
       "source": "http://www.chewoutloud.com/2014/01/26/7-layer-mexican-dip/",
       "source_base": "chewoutloud.com",
+      "nutrition": [],
+      "slug_id": 7
+    },
+    {
+      "name": "Alabama Pulled Chicken Sandwich with White BBQ Sauce",
+      "ingredients": [
+        "2½ lbs. bone in chicken breasts or 2 lbs. boneless chicken breast",
+        "1 (14.5 oz.) can low sodium chicken broth",
+        "1 Tbsp. liquid smoke",
+        "1 tsp. seasoned salt (we used Lawry’s, chili powder would be nice too, but you want some salt)",
+        "4 large, soft rolls, toasted",
+        "Hamburger Dill Pickle Slices",
+        "White sauce:",
+        "¾ cups mayonnaise",
+        "3 Tbsps. apple cider vinegar",
+        "1½ Tbsps. sugar",
+        "1 Tbsp. jarred horseradish (use less if desired)",
+        "1 Tbsp. water",
+        "1 tsp. lemon juice",
+        "½ tsp. black pepper",
+        "¼ tsp. each cayenne, salt"
+      ],
+      "directions": [
+        "1. Place the chicken breasts in a slow cooker. Pour in chicken broth and liquid smoke. Cover and cook on low 5 hours.",
+        "2. Remove the chicken after 5 hours and place on a cutting board. Pull off the skin and remove the bones, then shred the meat (the meat literally falls off the bones).",
+        "3. Sprinkle the seasoned salt over the meat and mix it in using your hands. Immediately place the chicken in bowl and cover to keep warm.",
+        "4. In a medium bowl, whisk together sauce ingredients.",
+        "5. Pour half the white sauce on the chicken and toss.",
+        "6. Put the chicken on toasted rolls and top with more white sauce. Top with pickles and devour!"
+      ],
+      "notes": [],
+      "image": "97A007B2-0C4F-48BA-A002-B993ECE16B90-54876-0000B6C8CC2E9A56.jpg",
+      "tags": [
+        "BBQ",
+        "Poultry",
+        "Sandwiches & Wraps",
+        "Sauces & Spreads",
+        "Slow Cooker"
+      ],
+      "prep_time": "10 min",
+      "cook_time": "5 hr",
+      "amount": "4",
+      "source": "http://www.thespicekitrecipes.com/alabama-chicken-sandwich-white-bbq-sauce/",
+      "source_base": "thespicekitrecipes.com",
       "nutrition": [],
       "slug_id": 8
     },
@@ -350,46 +357,39 @@
       "slug_id": 9
     },
     {
-      "name": "Alabama Pulled Chicken Sandwich with White BBQ Sauce",
+      "name": "7-Layer Fried Taquitos",
       "ingredients": [
-        "2½ lbs. bone in chicken breasts or 2 lbs. boneless chicken breast",
-        "1 (14.5 oz.) can low sodium chicken broth",
-        "1 Tbsp. liquid smoke",
-        "1 tsp. seasoned salt (we used Lawry’s, chili powder would be nice too, but you want some salt)",
-        "4 large, soft rolls, toasted",
-        "Hamburger Dill Pickle Slices",
-        "White sauce:",
-        "¾ cups mayonnaise",
-        "3 Tbsps. apple cider vinegar",
-        "1½ Tbsps. sugar",
-        "1 Tbsp. jarred horseradish (use less if desired)",
-        "1 Tbsp. water",
-        "1 tsp. lemon juice",
-        "½ tsp. black pepper",
-        "¼ tsp. each cayenne, salt"
+        "1 16oz Can Old El Paso Traditional Refried Beans",
+        "1/2 Teaspoon Cumin",
+        "1/2 Teaspoon Chili Powder",
+        "1 1/2 Cups Guacamole",
+        "3/4 Cup Sour Cream",
+        "2 Cups Grated Colby Jack Cheese",
+        "Pico De Gallo for serving",
+        "1/4 Cup Canola Oil for Frying",
+        "Olives (optional)",
+        "1 Package Corn Tortillas",
+        "sea salt for garnish"
       ],
       "directions": [
-        "1. Place the chicken breasts in a slow cooker. Pour in chicken broth and liquid smoke. Cover and cook on low 5 hours.",
-        "2. Remove the chicken after 5 hours and place on a cutting board. Pull off the skin and remove the bones, then shred the meat (the meat literally falls off the bones).",
-        "3. Sprinkle the seasoned salt over the meat and mix it in using your hands. Immediately place the chicken in bowl and cover to keep warm.",
-        "4. In a medium bowl, whisk together sauce ingredients.",
-        "5. Pour half the white sauce on the chicken and toss.",
-        "6. Put the chicken on toasted rolls and top with more white sauce. Top with pickles and devour!"
+        "1. In a medium bowl, combine the refried beans, cumin and chili powder, stirring well. Set aside.",
+        "2. Heat a large skillet over high heat. Place one tortilla on the hot skillet, allow to cook for a couple seconds, carefully turn the tortilla and cook on the other side, remove to a plate. The tortilla should be flexible now. Cover with a heavy towel or tinfoil to keep warm and pliable or work on one taquito at a time.",
+        "3. Lay one cooked tortilla on a plate and spread a thin layer of the refried bean mixture, sour cream,guacamole and finally a sprinkling of cheese. You made add olives now, with the pico or skip entirely. Tightly roll the tortilla closed see note and set aside. Continue with each tortilla.",
+        "4. Heat a medium skillet to medium heat and add the oil. When the oil begins to shimmer add the taquito, seam side down and cook for 15-30 seconds or until turning golden brown, flip to each side of the taquito allowing each side to brown and then set on a paper towel lined plate. Sprinkle with a little sea salt",
+        "5. Serve with fresh pico de gallo."
       ],
-      "notes": [],
-      "image": "97A007B2-0C4F-48BA-A002-B993ECE16B90-54876-0000B6C8CC2E9A56.jpg",
+      "notes": [
+        "If your corn tortilla is cracking you have either not gotten it hot enough in the pan or allowed it to cool."
+      ],
+      "image": "2C2F8587-AC83-4474-877D-6CF5BA3FF50A-10567-0000166AE38FFD50.jpg",
       "tags": [
-        "BBQ",
-        "Poultry",
-        "Sandwiches & Wraps",
-        "Sauces & Spreads",
-        "Slow Cooker"
+        "Mexican & Latin"
       ],
-      "prep_time": "10 min",
-      "cook_time": "5 hr",
-      "amount": "4",
-      "source": "http://www.thespicekitrecipes.com/alabama-chicken-sandwich-white-bbq-sauce/",
-      "source_base": "thespicekitrecipes.com",
+      "prep_time": "2 min",
+      "cook_time": "2 min",
+      "amount": "12-14 Taquitos",
+      "source": "http://www.ohsweetbasil.com/2013/03/7-layer-dip-fried-taquitos.html",
+      "source_base": "ohsweetbasil.com",
       "nutrition": [],
       "slug_id": 10
     },
@@ -404,7 +404,7 @@
         "Haribo Cherries",
         "Gummy Worms",
         "Gummy Frogs",
-        "Alchohol:",
+        "Alcohol:",
         "Rum",
         "Whiskey",
         "Tequila",
