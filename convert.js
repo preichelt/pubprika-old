@@ -64,7 +64,7 @@ scan(paprikaFilesDir, '.html', function(err, files){
 
     var directions = [];
     $('.instructions').find('p').each(function(i, el){
-      directions[i] = $(this).text();
+      directions[i] = $(this).text().replace(/(\r\n|\n|\r)/gm," ").replace(/\s+/g," ").trim();
     });
 
     var notes = [];
