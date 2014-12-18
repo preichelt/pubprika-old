@@ -30,6 +30,37 @@
       "slug_id": 1
     },
     {
+      "name": "15-Minute Donuts",
+      "ingredients": [
+        "1 1/4 cups all-purpose flour",
+        "2 tsp baking powder",
+        "1/4 tsp salt",
+        "1/4 cup milk",
+        "1/4 cup buttermilk",
+        "1/4 cup granulated sugar",
+        "3 Tbsp melted butter",
+        "2 cups vegetable oil, for frying",
+        "Granulated sugar, cinnamon sugar or powdered sugar, for coating"
+      ],
+      "directions": [
+        "Preheat oil over medium heat in a 10 inch non-stick fry-pan (keeping an eye on it as it is heating). In a small mixing bowl, whisk together flour, baking powder and salt. In a medium mixing bowl, whisk together milk, buttermilk, sugar and melted butter. Using a fork stir in dry ingredients and mix just until combine (think of making biscuit dough, you just want to incorporate the ingredients).",
+        "Once the oil has reached 350 degrees, measure out 1/2 tablespoonfuls dough and using your hands gently roll into a ball (gently rolling to keep them fluffy, think of rolling something really fragile. Again this is like a biscuit dough you don't want to overwork it). Gently place dough ball into oil and fry until golden brown on bottom then flip and cook reverse side until golden brown. Carefully remove with metal tongs or a fork and drain onto a paper towel lined plate. Roll in sugar. Repeat this process with remaining dough (you can fit about 8 donuts in the pan at once if you can work that fast =). Note: these are best enjoyed the day they are made."
+      ],
+      "notes": [],
+      "image": "A41A10DE-3201-43BD-A615-1280982E7268-10472-00002D07F55DD621.jpg",
+      "tags": [
+        "Breakfast & Brunch",
+        "Desserts & Sweets"
+      ],
+      "prep_time": "",
+      "cook_time": "",
+      "amount": "About 30 Donut Holes",
+      "source": "http://www.cookingclassy.com/2012/01/15-minute-donuts-from-scratch/",
+      "source_base": "cookingclassy.com",
+      "nutrition": [],
+      "slug_id": 2
+    },
+    {
       "name": "1963 Homemade White Bread",
       "ingredients": [
         "1/2 cup 1% milk",
@@ -65,37 +96,6 @@
       "nutrition": [
         "Serving Size: 1 slice, Calories per serving: 140.8, Fat per serving: 1.8 g"
       ],
-      "slug_id": 2
-    },
-    {
-      "name": "15-Minute Donuts",
-      "ingredients": [
-        "1 1/4 cups all-purpose flour",
-        "2 tsp baking powder",
-        "1/4 tsp salt",
-        "1/4 cup milk",
-        "1/4 cup buttermilk",
-        "1/4 cup granulated sugar",
-        "3 Tbsp melted butter",
-        "2 cups vegetable oil, for frying",
-        "Granulated sugar, cinnamon sugar or powdered sugar, for coating"
-      ],
-      "directions": [
-        "Preheat oil over medium heat in a 10 inch non-stick fry-pan (keeping an eye on it as it is heating). In a small mixing bowl, whisk together flour, baking powder and salt. In a medium mixing bowl, whisk together milk, buttermilk, sugar and melted butter. Using a fork stir in dry ingredients and mix just until combine (think of making biscuit dough, you just want to incorporate the ingredients).",
-        "Once the oil has reached 350 degrees, measure out 1/2 tablespoonfuls dough and using your hands gently roll into a ball (gently rolling to keep them fluffy, think of rolling something really fragile. Again this is like a biscuit dough you don't want to overwork it). Gently place dough ball into oil and fry until golden brown on bottom then flip and cook reverse side until golden brown. Carefully remove with metal tongs or a fork and drain onto a paper towel lined plate. Roll in sugar. Repeat this process with remaining dough (you can fit about 8 donuts in the pan at once if you can work that fast =). Note: these are best enjoyed the day they are made."
-      ],
-      "notes": [],
-      "image": "A41A10DE-3201-43BD-A615-1280982E7268-10472-00002D07F55DD621.jpg",
-      "tags": [
-        "Breakfast & Brunch",
-        "Desserts & Sweets"
-      ],
-      "prep_time": "",
-      "cook_time": "",
-      "amount": "About 30 Donut Holes",
-      "source": "http://www.cookingclassy.com/2012/01/15-minute-donuts-from-scratch/",
-      "source_base": "cookingclassy.com",
-      "nutrition": [],
       "slug_id": 3
     },
     {
@@ -137,37 +137,6 @@
       "source_base": "bakerbynature.com",
       "nutrition": [],
       "slug_id": 4
-    },
-    {
-      "name": "7-Eleven Cherry Slurpee",
-      "ingredients": [
-        "2 cups cold club soda",
-        "1/2 cup sugar",
-        "1/4 teaspoon plus 1/8 teaspoon cherry flavored unsweetened Kool-Aid mix",
-        "1/2 teaspoon cherry extract",
-        "2 1/2 cups crushed ice"
-      ],
-      "directions": [
-        "1. Pour 1 cup of the club soda into a blender. Add the sugar, Kool-Aid mix, and cherry extract. Blend this until all of the sugar is dissolved.",
-        "2. Add the crushed ice and blend on high speed until the drink is a slushy, smooth consistency, with no remaining chunks of ice.",
-        "3. Add the remaining club soda and blend briefly until mixed. You may have to stop the blender and use a long spoon to stir up the contents.",
-        "4. If necessary, put the blender into your freezer for 1/2-hour. This will help thicken it up. After 1/2-hour remove blender from freezer and, again, blend briefly to mix."
-      ],
-      "notes": [],
-      "image": "6BE47B55-625D-4F23-BE1E-FD588BD29A3C-43687-0000382DC3DE1AA6.jpg",
-      "tags": [
-        "American",
-        "Copycat",
-        "Desserts & Sweets",
-        "Drinks"
-      ],
-      "prep_time": "",
-      "cook_time": "",
-      "amount": "one 32-ounce drink (or two 16-ouncers)",
-      "source": "http://www.topsecretrecipes.com/7-Eleven-Cherry-Slurpee-Recipe.html",
-      "source_base": "topsecretrecipes.com",
-      "nutrition": [],
-      "slug_id": 5
     },
     {
       "name": "60-Minute Sticky Buns",
@@ -218,6 +187,37 @@
       "amount": "12 buns",
       "source": "http://crepesofwrath.net/2014/04/03/60-minute-sticky-buns/",
       "source_base": "crepesofwrath.net",
+      "nutrition": [],
+      "slug_id": 5
+    },
+    {
+      "name": "7-Eleven Cherry Slurpee",
+      "ingredients": [
+        "2 cups cold club soda",
+        "1/2 cup sugar",
+        "1/4 teaspoon plus 1/8 teaspoon cherry flavored unsweetened Kool-Aid mix",
+        "1/2 teaspoon cherry extract",
+        "2 1/2 cups crushed ice"
+      ],
+      "directions": [
+        "1. Pour 1 cup of the club soda into a blender. Add the sugar, Kool-Aid mix, and cherry extract. Blend this until all of the sugar is dissolved.",
+        "2. Add the crushed ice and blend on high speed until the drink is a slushy, smooth consistency, with no remaining chunks of ice.",
+        "3. Add the remaining club soda and blend briefly until mixed. You may have to stop the blender and use a long spoon to stir up the contents.",
+        "4. If necessary, put the blender into your freezer for 1/2-hour. This will help thicken it up. After 1/2-hour remove blender from freezer and, again, blend briefly to mix."
+      ],
+      "notes": [],
+      "image": "6BE47B55-625D-4F23-BE1E-FD588BD29A3C-43687-0000382DC3DE1AA6.jpg",
+      "tags": [
+        "American",
+        "Copycat",
+        "Desserts & Sweets",
+        "Drinks"
+      ],
+      "prep_time": "",
+      "cook_time": "",
+      "amount": "one 32-ounce drink (or two 16-ouncers)",
+      "source": "http://www.topsecretrecipes.com/7-Eleven-Cherry-Slurpee-Recipe.html",
+      "source_base": "topsecretrecipes.com",
       "nutrition": [],
       "slug_id": 6
     },
@@ -1410,36 +1410,6 @@
       "slug_id": 33
     },
     {
-      "name": "Apple Nachos",
-      "ingredients": [
-        "apples",
-        "fresh lemon juice",
-        "almond butter",
-        "chocolate chips",
-        "unsweetened shredded coconut",
-        "sliced almonds"
-      ],
-      "directions": [
-        "1. slice apples and toss with the lemon juice in a large bowl",
-        "2. arrange the apples in a plate and drizzle with almond butter. You can use a pastry/piping bag or a ziploc bag to drizzle the almond butter.",
-        "3. sprinkle with shredded coconut, chocolate chips and sliced almonds"
-      ],
-      "notes": [],
-      "image": "A500A5F5-9DC8-48D0-86DD-5A69677CE2A6-3653-00003CB60762392B.jpg",
-      "tags": [
-        "Breakfast & Brunch",
-        "Desserts & Sweets",
-        "Fruit"
-      ],
-      "prep_time": "",
-      "cook_time": "",
-      "amount": "",
-      "source": "http://livinghealthywithchocolate.com/desserts/paleo-apple-nachos-2715/",
-      "source_base": "livinghealthywithchocolate.com",
-      "nutrition": [],
-      "slug_id": 34
-    },
-    {
       "name": "Apple Fritters",
       "ingredients": [
         "2/3 cup all purpose flour",
@@ -1481,6 +1451,36 @@
       "amount": "4",
       "source": "http://www.cbc.ca/inthekitchen/2012/02/stefanos-apples-fritters.html",
       "source_base": "cbc.ca",
+      "nutrition": [],
+      "slug_id": 34
+    },
+    {
+      "name": "Apple Nachos",
+      "ingredients": [
+        "apples",
+        "fresh lemon juice",
+        "almond butter",
+        "chocolate chips",
+        "unsweetened shredded coconut",
+        "sliced almonds"
+      ],
+      "directions": [
+        "1. slice apples and toss with the lemon juice in a large bowl",
+        "2. arrange the apples in a plate and drizzle with almond butter. You can use a pastry/piping bag or a ziploc bag to drizzle the almond butter.",
+        "3. sprinkle with shredded coconut, chocolate chips and sliced almonds"
+      ],
+      "notes": [],
+      "image": "A500A5F5-9DC8-48D0-86DD-5A69677CE2A6-3653-00003CB60762392B.jpg",
+      "tags": [
+        "Breakfast & Brunch",
+        "Desserts & Sweets",
+        "Fruit"
+      ],
+      "prep_time": "",
+      "cook_time": "",
+      "amount": "",
+      "source": "http://livinghealthywithchocolate.com/desserts/paleo-apple-nachos-2715/",
+      "source_base": "livinghealthywithchocolate.com",
       "nutrition": [],
       "slug_id": 35
     },
@@ -1778,7 +1778,7 @@
         "6. Bake 35 to 40 minutes or until pastry is slightly puffed and golden. Cool completely on wire rack. Cut with pizza wheel."
       ],
       "notes": [
-        "To Store:  Place any leftovers in an airtight container and cover.  Store in the refrigerator for up to 2 days."
+        "To Store: Place any leftovers in an airtight container and cover. Store in the refrigerator for up to 2 days."
       ],
       "image": "2E183323-C8C6-452B-ADAA-CB87C5817E4A-17585-00002EE64F98B96D.jpg",
       "tags": [
@@ -5729,7 +5729,7 @@
         "3. Serve immediately."
       ],
       "notes": [
-        "For the zest, use a vegetable peeler and remove only the orange part of the zest. Do not remove the bitter white pith. ",
+        "For the zest, use a vegetable peeler and remove only the orange part of the zest. Do not remove the bitter white pith.",
         "Leftover caramel sauce can be kept in the refrigerator for two weeks or frozen for four months."
       ],
       "image": "661524B9-18C4-476B-934A-C6BC2D775A1A-94324-0001DFEBAFB7D217.jpg",
@@ -11794,7 +11794,7 @@
         "9. Top with additional parmesan if desired. Allow to set for ten minutes before slicing."
       ],
       "notes": [
-        "Lightly drizzle tomato slices with olive oil.  Sprinkle with salt and place on a parchment lined baking sheet. Roast in a 400 degree oven for thirty to forty minutes. I do this the night before I make the pizza for a fast and easy preparation time easy enough for a weeknight."
+        "Lightly drizzle tomato slices with olive oil. Sprinkle with salt and place on a parchment lined baking sheet. Roast in a 400 degree oven for thirty to forty minutes. I do this the night before I make the pizza for a fast and easy preparation time easy enough for a weeknight."
       ],
       "image": "37E86EF4-8B2D-4220-B7BB-9ACA9CDE7FFD-32017-0000D35A0645E604.jpg",
       "tags": [
@@ -13331,10 +13331,10 @@
         "In a medium bowl, mash together the avocados with the lime juice, salt and pepper. Add the remaining ingredients and stir together. Let sit for at least one hour refrigerated or serve immediately."
       ],
       "notes": [
-        "Basa is a type of catfish from Vietnam and Thailand. You can substitute the fish in this recipe for any other white fish such as tilapia, snapper, or even halibut. When you are cutting your fish into portions, remember not to cut it too large since it will become even larger once coated and fried. ",
-        "To prevent your fingers from getting clumpy from the flour and beer batter, use one hand to dredge the fish in the seasoned flour and the other hand for dipping it in the beer batter. ",
-        "If you don’t have a griddle there are several other ways to heat up your tortillas. You can either heat them on a pan over low medium or you can warm them up in the microwave in a Ziploc bag. ",
-        "For the salsa and guacamole, try to let it sit for at least one hour to let the flavors meld together. ",
+        "Basa is a type of catfish from Vietnam and Thailand. You can substitute the fish in this recipe for any other white fish such as tilapia, snapper, or even halibut. When you are cutting your fish into portions, remember not to cut it too large since it will become even larger once coated and fried.",
+        "To prevent your fingers from getting clumpy from the flour and beer batter, use one hand to dredge the fish in the seasoned flour and the other hand for dipping it in the beer batter.",
+        "If you don’t have a griddle there are several other ways to heat up your tortillas. You can either heat them on a pan over low medium or you can warm them up in the microwave in a Ziploc bag.",
+        "For the salsa and guacamole, try to let it sit for at least one hour to let the flavors meld together.",
         "I’ve made other versions of fish tacos, but this recipe is one that I always go back to. The combination of all the seasonings in flour mixture flavor the fish so well without overpowering it while the beer batter allows it to stay crispy. I’ve used the beer batter for onion rings as well and they stayed crispy even hours after they were fried! Serve the fish tacos with tortilla chips, beans, or even corn on the cob and enjoy a great summer meal."
       ],
       "image": "5FAB6564-94DB-42B9-AF6C-229183715078-94324-0001E2219DFDEEBF.jpg",
@@ -16456,7 +16456,7 @@
         "For the lime sour cream, stir together the sour cream and lime juice. Adjust amount of lime, if desired. Keep in refrigerator until ready to serve. Serve the flautas with lime sour cream, salsa verde, and guacamole."
       ],
       "notes": [
-        "For easy poached and shredded chicken: ",
+        "For easy poached and shredded chicken:",
         "Place four chicken breasts in a deep, flat-sided skillet. Add enough cooking liquid (I used a mix of chicken stock and beer) to completely cover the chicken and sprinkle in a few teaspoons of kosher salt. Bring the liquid to a gentle boil over medium-high heat. Reduce heat to medium-low (try to maintain the temperature of cooking liquid to between 170°F and 180°F) and simmer until the chicken reaches the internal temperature of 160°F, about 15 minutes.",
         "Place hot/warm chicken in the bowl of a stand mixer fitted with beater attachment. Turn the mixer on low, then increase power to medium (watch out for splashing!) and mix until chicken is shredded to desired texture, about 30 seconds. (If you don't have a stand mixer, just shred the chicken using the two fork method, or my favorite, the \"bear claw.\") Return chicken to the poaching liquid to cool. Strain before using. Yields approximately 3 cups shredded chicken. (I made the chicken the night before so the flauta recipe came together in a flash.)"
       ],
@@ -17273,7 +17273,7 @@
         "Once the dough has risen, preheat the oven to 475°F. Lightly grease a baking sheet and set aside. Divide the dough into four portions and spread each portion of the dough into a rectangle/oval on a lightly floured surface.￼￼In a mixing bowl, combine the shredded chicken and the pesto. Spoon 1/4 of the chicken pesto mixture onto half of each piece of dough. Top with the provolone cheese. Fold the dough over the filling and pinch the edges to seal the calzone.￼(At this point, you can wrap with plastic wrap and pop the calzones in the freezer).￼Transfer each calzone to the baking sheet, brush the top with some olive oil and sprinkle with Italian seasoning. Bake for about 12 – 14 minutes until golden on top and cooked through. Enjoy!"
       ],
       "notes": [
-        "To freeze calzones, simply prepare and assemble them according to the recipe (you can try my recipe for chicken pesto calzones below).  Wrap them in plastic wrap (or double wrap, if you’re a bit OCD like I am), then place the wrapped calzones in a freezer bag.  Label each bag with the calzone flavor and date and then pop them in the freezer.  When you’re ready to serve them, just unwrap and let them thaw on a baking sheet before baking according to the recipe directions (you can also unwrap them and let them thaw gradually in the fridge)."
+        "To freeze calzones, simply prepare and assemble them according to the recipe (you can try my recipe for chicken pesto calzones below). Wrap them in plastic wrap (or double wrap, if you’re a bit OCD like I am), then place the wrapped calzones in a freezer bag. Label each bag with the calzone flavor and date and then pop them in the freezer. When you’re ready to serve them, just unwrap and let them thaw on a baking sheet before baking according to the recipe directions (you can also unwrap them and let them thaw gradually in the fridge)."
       ],
       "image": "4DCE321C-3148-4199-953D-C01D04304FD2-85757-0000707F6ED88F4F.jpg",
       "tags": [
@@ -18675,7 +18675,7 @@
         "Fill the wontons and fry in hot oil for 4 – 5 minutes, until golden brown and crispy and the pork or chicken is cooked through. Serve with Honey Chili Sauce or Duck Sauce."
       ],
       "notes": [
-        "You can get more complex with seasonings if you like.  If I have it in the house, I like to use a pinch of ground anise or sichuan peppers ground with salt"
+        "You can get more complex with seasonings if you like. If I have it in the house, I like to use a pinch of ground anise or sichuan peppers ground with salt"
       ],
       "image": "558D79C5-4F92-4D53-9DAE-D9D5A071D4A0-10380-0000B06250EB267A.jpg",
       "tags": [
@@ -19164,7 +19164,7 @@
         "Serve and enjoy!"
       ],
       "notes": [
-        "To prepare the sauce without a blender, mince the garlic and chipotle peppers.  Combine sauce ingredients in a bowl and mix until well combined."
+        "To prepare the sauce without a blender, mince the garlic and chipotle peppers. Combine sauce ingredients in a bowl and mix until well combined."
       ],
       "image": "4CCC2622-00F8-43A4-A023-FCB6341903C5-64230-00030ACEA2B01C4F.jpg",
       "tags": [
@@ -21004,7 +21004,7 @@
         "Store in the refrigerator for up to 3 weeks. It won't last that long!"
       ],
       "notes": [
-        "*Instead of honey roasted peanuts, try using dry-roasted plain peanuts and adding 1 Tablespoon of honey. If your peanuts are unsalted, you'll likely have to add salt to taste. ",
+        "*Instead of honey roasted peanuts, try using dry-roasted plain peanuts and adding 1 Tablespoon of honey. If your peanuts are unsalted, you'll likely have to add salt to taste.",
         "**You may add 1 Tablespoon of a neutral tasting oil (canola oil, peanut oil) during the blending process if your nuts aren't processing. Usually honey roasted peanuts have a little extra oil in their coating which makes them easy to process. I never add oil."
       ],
       "image": "E85449F2-4306-4BE6-A22E-55B7F7F663D7-32006-00004D5EFFED4859.jpg",
@@ -21974,7 +21974,7 @@
         "I would underbake the cookie crust by about 25-30% of what she recommends (take it from 15 minutes to about 10 minutes) so that it crumbles easier and packs into the pie plate easier; plus it gets baked a second time anyway as part of the pie.",
         "I would consider buying a store-bought graham cracker pie crust and just making Christina’s filling if I wanted to take this recipe from 2 hours of standing on my feet to 15 minutes by just making the filling.",
         "I didn’t miss the corn powder and would continue to use my 1 1/2 tablespoons of all-purpose flour because I am frugal, didn’t want to source it, and don’t want to store a bag of corn powder in my already maxed out cupboard space for the occasional one tablespoon use of it.",
-        "Tosi recommends baking the entire pie, crust and filling together, for 15 minutes at 350F, opening the oven door and allowing the oven to cool to 325F, and then baking for about 5 more minutes after the oven temperature has reached 325F (about 20-25 minutes of total baking time). I needed to bake mine for about 31-34 minutes of total baking time in order for the center to set (at least one-third longer than she called for which is highly significant and to be noted). Also I was only baking one pie; if I had two in the oven, it would have taken even longer."
+        "Tosi recommends baking the entire pie, crust and filling together, for 15 minutes at 350F, opening the oven door and allowing the oven to cool to 325F, and then baking for about 5 more minutes after the oven temperature has reached 325F (about 20-25 minutes of total baking time). I needed to bake mine for about 31-34 minutes of total baking time in order for the center to set (at least one-third longer than she called for which is highly significant and to be noted). Also I was only baking one pie; if I had two in the oven, it would have taken even longer."
       ],
       "image": "9C52B7C6-A96D-438E-BE35-1554ECFA40B5-10509-00003B97623C61E3.jpg",
       "tags": [
@@ -24185,7 +24185,7 @@
         "Mix mayonnaise, garlic and lemon juice in a small bowl. Add salt and pepper to taste."
       ],
       "notes": [
-        "If you want to freeze the breaded tilapia fingers, lay them in a single layer and wrap well with aluminum foil. Place in a freezer bag in the freezer.  When you’re ready to make them, simply defrost them enough so they’ll lay flat in the pan and cook as directed above."
+        "If you want to freeze the breaded tilapia fingers, lay them in a single layer and wrap well with aluminum foil. Place in a freezer bag in the freezer. When you’re ready to make them, simply defrost them enough so they’ll lay flat in the pan and cook as directed above."
       ],
       "image": "F08AF42B-869D-4F9E-893D-3A4FEB433D93-8955-0000122E450D20D7.jpg",
       "tags": [
@@ -28274,7 +28274,7 @@
       ],
       "notes": [
         "Get creative! Use your favorite fillings instead of brown sugar cinnamon. Like jam, Nutella, etc.",
-        "I'm sure store-bought pastry would be fine, but this homemade version creates that unique flaky, slightly crunchy yet tender texture you know and love from regular pop-tarts. I prefer shortening in my pie crust and pastry dough recipe for the best texture. Feel free to use your own favorite pie crust recipe that uses all butter if you prefer. Butter may not be replaced for shortening in this particular pastry recipe."
+        "I'm sure store-bought pastry would be fine, but this homemade version creates that unique flaky, slightly crunchy yet tender texture you know and love from regular pop-tarts. I prefer shortening in my pie crust and pastry dough recipe for the best texture. Feel free to use your own favorite pie crust recipe that uses all butter if you prefer. Butter may not be replaced for shortening in this particular pastry recipe."
       ],
       "image": "ACE6F52D-51CA-4DBD-A581-CFB5D15F6E63-16021-0000494884766ECA.jpg",
       "tags": [
@@ -28794,7 +28794,7 @@
         "Blend all the ingredients in a blender except for the sprinkles. Continue to blend until all the ingredients are mixed and the ice breaks down. Pour milkshakes into glasses. Stir in additional sprinkles as desired."
       ],
       "notes": [
-        "Using a ripe banana with lots of brown spots will give the milkshake a more banana flavor + make it sweeter - cut back 2 tablespoons of the cake batter before mixing so as to not make it super sweet. If you use a banana without any brown spots, the banana flavor is less apparent in the milkshake with just the cake batter flavor. I prefer my milkshake this way. ",
+        "Using a ripe banana with lots of brown spots will give the milkshake a more banana flavor + make it sweeter - cut back 2 tablespoons of the cake batter before mixing so as to not make it super sweet. If you use a banana without any brown spots, the banana flavor is less apparent in the milkshake with just the cake batter flavor. I prefer my milkshake this way.",
         "I dipped my serving glasses in a little bit of light corn syrup and then rolled them around in non-pareils to get those sprinkled rims."
       ],
       "image": "CE2D7B4B-FC4E-4509-A429-1D20ABB2F47C-21798-00003E12B27AB6DC.jpg",
@@ -29617,12 +29617,12 @@
         "Bake them \"naked.\" While baking, make a honey butter glaze with the 1/4 cup melted butter and 2 Tbsp honey. Separately, finely chop the almonds, dry toast them in a pan, and mix the nuts with equal parts 1/4 cup granulated sugar and 1/4 cup brown sugar. After they are baked, brush with the honey butter, sprinkle on the topping, and bake for an additional 3 - 5 minutes to slightly caramelize the sugar on top. I served these with a icing glaze of confectioner's sugar, a bit of vanilla, a squeeze of lemon juice, and some cream to the desired consistency."
       ],
       "notes": [
-        "Let's talk about the boiling.  Boiling the pretzels for about 30 seconds makes the interior of the pretzel quickly “puff” and begins the crust formation. If you don’t boil, you’ll lose out on the chewiness you’d expect from a pretzel.  You find this same principle with bagels.",
-        "Baking soda is very alkaline ingredient.  Sometimes it is mixed with flour and combined with an acid in baked goods, where it neutralizes the acid, creates carbon dioxide bubbles, and causes the baked good to rise. In this case, it is bathing the exterior of the pretzels, so the purpose is different.  We are not trying to increase the rise of the pretzels, we are increasing the alkalinity of the outside of the pretzel.  Here, the alkaline water allows browning of the pretzel to occur at a lower temperature (thanks to the Maillard reaction, for all of you science buffs).  By allowing the browning to to happen more easily, you don't have to bake the pretzel nearly as long to achieve the brown exterior. So if you baked the pretzel long enough to get the brown color on the outside without the alkaline environment, you would impact the texture significantly. So basically, the baking soda gives the pretzel the brown, shiny crust and imparts a distinctive flavor and aroma as well. ",
-        "So what happens if you skip the “boiling in water + baking soda” step?  Your texture, flavor, and appearance will all be rather anemic.  Without the alkali bath, you would basically just have a cute bread stick. So go for it.  It does not increase your prep time by much, and it's awfully fun to see the water bubble up when you add the baking soda. ",
+        "Let's talk about the boiling. Boiling the pretzels for about 30 seconds makes the interior of the pretzel quickly “puff” and begins the crust formation. If you don’t boil, you’ll lose out on the chewiness you’d expect from a pretzel. You find this same principle with bagels.",
+        "Baking soda is very alkaline ingredient. Sometimes it is mixed with flour and combined with an acid in baked goods, where it neutralizes the acid, creates carbon dioxide bubbles, and causes the baked good to rise. In this case, it is bathing the exterior of the pretzels, so the purpose is different. We are not trying to increase the rise of the pretzels, we are increasing the alkalinity of the outside of the pretzel. Here, the alkaline water allows browning of the pretzel to occur at a lower temperature (thanks to the Maillard reaction, for all of you science buffs). By allowing the browning to to happen more easily, you don't have to bake the pretzel nearly as long to achieve the brown exterior. So if you baked the pretzel long enough to get the brown color on the outside without the alkaline environment, you would impact the texture significantly. So basically, the baking soda gives the pretzel the brown, shiny crust and imparts a distinctive flavor and aroma as well.",
+        "So what happens if you skip the “boiling in water + baking soda” step? Your texture, flavor, and appearance will all be rather anemic. Without the alkali bath, you would basically just have a cute bread stick. So go for it. It does not increase your prep time by much, and it's awfully fun to see the water bubble up when you add the baking soda.",
         "I tried to research the history of the pretzel, which I assume originated somewhere in Germany. I found this story from The History of the Pretzel on kitchenproject.com.... (which basically means that we really are not sure of the origins except that this is a pretty ancient food):",
-        "The pretzel may have originated as early as 610AD at a monastery somewhere in Southern France or Northern Italy, where monks used scraps of dough and formed them into strips to represent a child's arms folded in prayer. The three empty holes represented the Christian Trinity.  The monks offered the warm, doughy bribe to children who had memorized their Bible verses and prayers. The monks called it a Pretiola, Latin for little reward. From there, the pretzel transformed into the Italian word, Brachiola, which means little arms. ",
-        "The Pretiola journeyed beyond the French and Italian wine regions, hiked the Alps, wandered through Austria, and crossed into Germany, where it became known as the Bretzel or Pretzel. ",
+        "The pretzel may have originated as early as 610AD at a monastery somewhere in Southern France or Northern Italy, where monks used scraps of dough and formed them into strips to represent a child's arms folded in prayer. The three empty holes represented the Christian Trinity. The monks offered the warm, doughy bribe to children who had memorized their Bible verses and prayers. The monks called it a Pretiola, Latin for little reward. From there, the pretzel transformed into the Italian word, Brachiola, which means little arms.",
+        "The Pretiola journeyed beyond the French and Italian wine regions, hiked the Alps, wandered through Austria, and crossed into Germany, where it became known as the Bretzel or Pretzel.",
         "In medieval times merchants traveling to the Frankfurt Fair risked being robbed by bandits. In order to guard the tradesmen, the towns' people would ride out, greet the vendors and offer them pewter pitchers of wine and loads of crisp dough on their spears, called Geleit-pretzels.",
         "The Whimsical Pretzel shape worked its way into the culture not only as a reward but as a symbol of Good Luck and prosperity. I suppose it had the same effect as a logo did appearing in festivals and celebrations, as well as a quick snack available from street corner vendors. Probably two of the most fascinating things about the pretzel is it was served on Easter with 2 hard boiled eggs and hidden around the farms, for the kids to find. This very likely was the forerunner of the Easter egg hunt. Weddings in Europe for a time used the tradition of the bride and groom tugging at a pretzel like a wishbone, the larger piece assured the spouses fulfillment of their wishes."
       ],
@@ -29662,8 +29662,8 @@
         "12. Slide out of the plan onto a serving plate. Season with additional salt if required. To serve, garnish with chopped parsley (optional) and cut into wedges."
       ],
       "notes": [
-        "1. You need to use starchy potatoes for hash browns as they breakdown when cooked, becoming nice and fluffy on the inside and golden and crunchy on the outside. The best to use are Russet (common in the US), dutch creams, King Edwards or red delight. However, great all rounders like golden delight, coliban, red rascal and Sebago (popular in Australia) still works great. ",
-        "I use Sebago which are the brushed potatoes you can get from any supermarket in Australia (ie. the ones with dirt on them). If you are based in the US, a great all rounder to use is Russet which I understand is one of the most widely used potatoes in the US. ",
+        "1. You need to use starchy potatoes for hash browns as they breakdown when cooked, becoming nice and fluffy on the inside and golden and crunchy on the outside. The best to use are Russet (common in the US), dutch creams, King Edwards or red delight. However, great all rounders like golden delight, coliban, red rascal and Sebago (popular in Australia) still works great.",
+        "I use Sebago which are the brushed potatoes you can get from any supermarket in Australia (ie. the ones with dirt on them). If you are based in the US, a great all rounder to use is Russet which I understand is one of the most widely used potatoes in the US.",
         "2. This can be made up to an hour in advance, then reheated in a hot oven (200C/390F) and it will be crisp on the outside and moist on the inside. If you make it any further ahead then you might notice some loss of moisture on the inside, but the outside will still be nice and crisp when reheated in the oven. I have made it the night before, stored it in the fridge then to reinvigorate it, just drizzled a bit of olive oil on it before popping into the oven."
       ],
       "image": "0475615F-AA10-4A5D-AACC-2AAE6D10B72F-22604-00004C1D59AF7E45.jpg",
@@ -29764,7 +29764,7 @@
         "Make the glaze: whisk all of the ingredients together and drizzle over warm muffins. Muffins stay soft, fresh, and moist at room temperature for up to 5 days. Unglazed muffins freeze well, up to 3 months."
       ],
       "notes": [
-        "For 14-15 standard size muffins, reduce baking time to 20 total minutes: 5 initial minutes at 425F and 15 minutes at 350F. ",
+        "For 14-15 standard size muffins, reduce baking time to 20 total minutes: 5 initial minutes at 425F and 15 minutes at 350F.",
         "*Use your favorite yogurt; I prefer low fat plain Greek yogurt but regular (not Greek) would be just fine. Try with apple flavored, vanilla, honey, nonfat, or full fat. Sour cream works as well."
       ],
       "image": "89230BA0-2599-48B4-BDCE-5B227B0D8991-32006-00004B96B7C68096.jpg",
@@ -30223,7 +30223,7 @@
         "Bake for 1 hour, stirring every 20 minutes. Allow to cool on the pan and break apart large clusters if desired. Cover the popcorn tightly once cooled; it will stay fresh for up to 2 weeks."
       ],
       "notes": [
-        "*If you do not have a popcorn maker at home, you can simply add 3 tablespoons of popcorn kernels to a brown paper bag.  Seal the bag tightly by folding over the top.  Microwave the popcorn for approximately 1 minute, 45 seconds on High, or up to 2 minutes, depending on your microwave.  This method will make 5 cups, so you'll have to do it twice. Alternatively, you can use natural-style microwave popcorn that has no butter added to it."
+        "*If you do not have a popcorn maker at home, you can simply add 3 tablespoons of popcorn kernels to a brown paper bag. Seal the bag tightly by folding over the top. Microwave the popcorn for approximately 1 minute, 45 seconds on High, or up to 2 minutes, depending on your microwave. This method will make 5 cups, so you'll have to do it twice. Alternatively, you can use natural-style microwave popcorn that has no butter added to it."
       ],
       "image": "7A2904F7-3CAF-458F-AF60-26AB75AA1B6B-32006-00004DBC4FFA043A.jpg",
       "tags": [
@@ -34054,7 +34054,7 @@
         "Serve hot with a sprinkle of shredded Parmesan cheese, a dollop of sour cream and some freshly chopped basil. And then get ready for some boot scootin’, toot shootin’ meal! hehehehe"
       ],
       "notes": [
-        "You can substitute dry beans for canned beans if you like.  It would cut the cook time down substantially.  To about 15-20 minutes.  Also, if you wish to soak the dry beans overnight and then remove the bean husks before cooking, you’re welcome to do that as well.  I heard that the husks/shells are what causes bloating and gases when beans are consumed."
+        "You can substitute dry beans for canned beans if you like. It would cut the cook time down substantially. To about 15-20 minutes. Also, if you wish to soak the dry beans overnight and then remove the bean husks before cooking, you’re welcome to do that as well. I heard that the husks/shells are what causes bloating and gases when beans are consumed."
       ],
       "image": "9497924D-FB7D-4759-8D59-C501C653F5A7-27697-0002743CE6D2347B.jpg",
       "tags": [
@@ -34349,8 +34349,8 @@
         "Enjoy!"
       ],
       "notes": [
-        "COOKS NOTE: You can mix the dough by hand if you do not have a stand mixer.  Add water, yeast and sugar to a large bowl.  Once the yeast blooms stir in the salt and the flour.  Mix with a spoon.  Turn dough out onto floured counter top and knead for 3-5 minutes until dough is no longer sticky.  Proceed with remaining instructions.",
-        "I microwaved the beer in a glass microwave safe measuring cup, 15 seconds at a time until it was 110-120 degrees.  ",
+        "COOKS NOTE: You can mix the dough by hand if you do not have a stand mixer. Add water, yeast and sugar to a large bowl. Once the yeast blooms stir in the salt and the flour. Mix with a spoon. Turn dough out onto floured counter top and knead for 3-5 minutes until dough is no longer sticky. Proceed with remaining instructions.",
+        "I microwaved the beer in a glass microwave safe measuring cup, 15 seconds at a time until it was 110-120 degrees.",
         "You can substitute milk or water for the beer."
       ],
       "image": "CDBF79EF-E2AB-4838-B9C9-81B03A735425-62816-0003F9FF8945766F.jpg",
@@ -34898,7 +34898,7 @@
         "In a large saucepan (I used my Le Crueset stock pot) heat all of the ingredients. I stirred frequently with a whisk to ensure the ingredients mixed well. I also let it simmer as long as I could so it would thicken up some. My arm couldn't take it for more than an hour. I recommend not walking away because this stuff bubbles up like the La Brea tar pits. (Did they bubble? hmm) anyway it's thick and will splatter and make a mess if you walk away for long. This does make a lot of sauce but you can freeze the left-overs so you'll have some for the next time."
       ],
       "notes": [
-        "If you decided to add a little bit more of this or that just do it in small increments so you don't waste an entire batch.  Also give it time for the flavors to completely blend before you decide if it's enough of a certain ingredient."
+        "If you decided to add a little bit more of this or that just do it in small increments so you don't waste an entire batch. Also give it time for the flavors to completely blend before you decide if it's enough of a certain ingredient."
       ],
       "image": "1C9367D4-101D-4F38-9448-0AB35B452FAB-7086-0001552BD11EC64A.jpg",
       "tags": [
@@ -36614,7 +36614,7 @@
         "10. Optionally, garnish and serve nachos with cilantro, sour cream, salsa, guacamole, pico de gallo. Nachos are best fresh and warm."
       ],
       "notes": [
-        "The recipe is highly adaptable and if you want to add a handful of black beans, refried beans, jalapeños, bell peppers, or salsa, feel free. "
+        "The recipe is highly adaptable and if you want to add a handful of black beans, refried beans, jalapeños, bell peppers, or salsa, feel free."
       ],
       "image": "E4B47227-E469-46F9-A669-4B232BF48298-62816-0003FA2610020E69.jpg",
       "tags": [
@@ -37906,7 +37906,7 @@
         "Stir the yeast, sugar, and warm water/milk together in a large, mixing bowl. Allow the yeast mixture to bubble up and wake up for 5-10 minutes. Add oil, flour, and salt until the dough comes together. Knead the dough for 10-15 minutes by hand or 5-7 minutes if using a stand mixer. Once the dough is well-kneaded, place the dough ball in an oil-lined bowl. Cover the dough and allow it to rise until doubled in size (1-2 hours). Once doubled in size, knead the dough again, cover it, and allow to rise a second time (I always did this step once, but I recently discovered she does it twice.). Once risen twice, section off the dough into four parts. Roll out the dough you'll be using, and freeze the rest in a zip-loc bag or two."
       ],
       "notes": [
-        "Bake at the hottest temperature for your oven on a pizza stone, pizza pan (Mariangela's uses this), cast-iron skillet, or the back of a jelly-roll pan. I prefer to dock or poke holes with a fork in the dough and then cook it for about 3 minutes. Then I take it out, add the sauce and toppings, and cook it until the crust is to my liking."
+        "Bake at the hottest temperature for your oven on a pizza stone, pizza pan (Mariangela's uses this), cast-iron skillet, or the back of a jelly-roll pan. I prefer to dock or poke holes with a fork in the dough and then cook it for about 3 minutes. Then I take it out, add the sauce and toppings, and cook it until the crust is to my liking."
       ],
       "image": "662E641F-AC92-4F26-93B7-5E100BA6F9C9-61211-0002B6AF5444EDB6.jpg",
       "tags": [
@@ -44061,7 +44061,7 @@
       ],
       "notes": [
         "Make sure you let the batter sit or it will be too runny.",
-        "Caramel Buttermilk Syrup:The original recipe calls for 1/2 cup  butter. I cut back to 1/4 cup to save my waistline and my husband’s cholesterol, but you can feel free to use all of it if you so desire. I won’t stand in your way.",
+        "Caramel Buttermilk Syrup:The original recipe calls for 1/2 cup butter. I cut back to 1/4 cup to save my waistline and my husband’s cholesterol, but you can feel free to use all of it if you so desire. I won’t stand in your way.",
         "This stuff is so delicious, we haven’t gone back to maple syrup. We also use it on buttermilk pancakes, waffles, and German pancakes. It can also be served over ice cream.",
         "Several readers have asked how long this will keep in the refrigerator. I'm not exactly sure because with 4 hungry boys we finish things off pretty fast. But I know we've kept some for at least 2-3 months and it was just fine."
       ],
@@ -45508,7 +45508,7 @@
         "4. Remove hot fries from sheet pan and place in a large bowl and toss with truffle oil, chopped parsley and grated Parmesan."
       ],
       "notes": [
-        "Be sure to look for oils that have been infused with real truffles.  Truffle oils are meant to be added for flavor after a dish is cooked (never cook with it).  And remember, a good-quality truffle oil will have a much stronger flavor, so just remember that a little drizzle will go a long way!"
+        "Be sure to look for oils that have been infused with real truffles. Truffle oils are meant to be added for flavor after a dish is cooked (never cook with it). And remember, a good-quality truffle oil will have a much stronger flavor, so just remember that a little drizzle will go a long way!"
       ],
       "image": "DB004D40-8031-4A6D-9DDF-7BB1C1301C83-7036-00001033FA90924B.jpg",
       "tags": [
@@ -46143,7 +46143,7 @@
         "Make the glaze: whisk all of the ingredients together and drizzle over warm muffins. Muffins stay soft, fresh, and moist at room temperature for up to 5 days. Unglazed muffins freeze well, up to 3 months."
       ],
       "notes": [
-        "*Use your favorite yogurt; I prefer low fat plain Greek yogurt but regular (not Greek) would be just fine. Try with apple flavored, vanilla, honey, nonfat, or full fat. Sour cream works as well. ",
+        "*Use your favorite yogurt; I prefer low fat plain Greek yogurt but regular (not Greek) would be just fine. Try with apple flavored, vanilla, honey, nonfat, or full fat. Sour cream works as well.",
         "**You may use chopped frozen peaches - do not thaw."
       ],
       "image": "1FB68930-E5D1-4610-AF4A-FA5C935A2375-51172-00032E11BD0E7E19.jpg",
@@ -47686,7 +47686,7 @@
         "Turn dough onto lightly floured surface and roll into a rectangle slightly larger than a 9×13 pan (rectangle). Spread surface evenly with pesto and sprinkle shredded Parmesan cheese on top. Beginning with the long side, roll dough pinching the seam to seal. Cut into 12 equal slices and place them in a greased muffin tin, cut side up. Cover with a damp towel and allow to rise for 30 minutes. Preheat oven to 375 degrees F. Bake in preheated oven for 20 minutes or until golden brown. Remove from muffin cups and serve warm. Enjoy!"
       ],
       "notes": [
-        "Dough can be kneaded by hand, bread machine, or KitchenAid Mixer using the dough hook.  However, directions below are written for a KitchenAid.",
+        "Dough can be kneaded by hand, bread machine, or KitchenAid Mixer using the dough hook. However, directions below are written for a KitchenAid.",
         "You can also use store bought frozen dinner roll dough and pesto to save time!"
       ],
       "image": "5AC4FC1F-DA5F-4C9C-B342-55A2015A7272-85757-000073A2E223A53E.jpg",
@@ -48904,7 +48904,7 @@
         "Roll out the dough you'll be using, and freeze the rest in a zip-loc bag or two."
       ],
       "notes": [
-        "Bake at the hottest temperature for your oven on a pizza stone, pizza pan (Mariangela's uses this), cast-iron skillet, or the back of a jelly-roll pan. I prefer to dock or poke holes with a fork in the dough and then cook it for about 3 minutes. Then I take it out, add the sauce and toppings, and cook it until the crust is to my liking.",
+        "Bake at the hottest temperature for your oven on a pizza stone, pizza pan (Mariangela's uses this), cast-iron skillet, or the back of a jelly-roll pan. I prefer to dock or poke holes with a fork in the dough and then cook it for about 3 minutes. Then I take it out, add the sauce and toppings, and cook it until the crust is to my liking.",
         "alt - http://www.copykat.com/2013/08/25/how-to-make-pizza-dough/"
       ],
       "image": "4B7112E0-79CF-4AE4-A117-69B251209DEF-62816-0003FAD3D8718D85.jpg",
@@ -50090,7 +50090,7 @@
         "16. Repeat with the remaining potato rings and serve immediately with the dipping sauce."
       ],
       "notes": [
-        "1. The importance of having the potatoes completely coated; no holes please, or the mashed potatoes will pour out of the holes once they hit the oil. ",
+        "1. The importance of having the potatoes completely coated; no holes please, or the mashed potatoes will pour out of the holes once they hit the oil.",
         "2. The importance of the rings being frozen solid before entering the oil…it just helps with the frying, that’s all."
       ],
       "image": "38E6EC70-2254-4FB6-A312-FDA4ECFD382B-81177-00004DC27FB64AAE.jpg",
@@ -51926,7 +51926,7 @@
         "Enjoy!"
       ],
       "notes": [
-        "If you want it to cut into nice squares you can chill it and then cut it into squares, then microwave it for 20-25 seconds per piece and top with sauce."
+        "If you want it to cut into nice squares you can chill it and then cut it into squares, then microwave it for 20-25 seconds per piece and top with sauce."
       ],
       "image": "110C2FC8-653E-4DA6-B82D-869116471376-62816-0003FAFE0610D1D3.jpg",
       "tags": [
@@ -52300,7 +52300,7 @@
         "4. Gradually fold the whipping cream into the raspberry puree mixture. Stir carefully so there are no lumps and the mixture is smooth. Pour onto the sponge and place in the refrigerator overnight."
       ],
       "notes": [
-        "*You can make this by simply blending raspberries in a food processor and  pouring through a fine-mesh sieve to discard the seeds."
+        "*You can make this by simply blending raspberries in a food processor and pouring through a fine-mesh sieve to discard the seeds."
       ],
       "image": "9495558C-CD70-4F93-937C-778D9AB1964C-32446-00020068866D74ED.jpg",
       "tags": [
@@ -63686,7 +63686,7 @@
         "Use a large sharp knife when cutting the block of candy to get smooth sides for the candy bar",
         "Measure all of your ingredients before beginning the candy making process. It goes much quicker when all of your ingredients are measured and ready to go",
         "We suggest making a parchment paper overhang for easy removal and cutting of the candy bar",
-        "Keep the candy in the refrigerator and take out right before eating. ",
+        "Keep the candy in the refrigerator and take out right before eating.",
         "The chocolate and caramel can get a bit gooey after being at room temperature for too long. We assure you that it is fabulous cold, melted, frozen... anyway you like it"
       ],
       "image": "F88CCA36-FF69-4E56-B0B6-939A521F5DF5-17585-000023DDE99AFB8A.jpg",

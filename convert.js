@@ -69,7 +69,7 @@ scan(paprikaFilesDir, '.html', function(err, files){
 
     var notes = [];
     $('.notes').find('p').each(function(i, el){
-      notes[i] = $(this).text();
+      notes[i] = $(this).text().replace(/(\r\n|\n|\r)/gm," ").replace(/\s+/g," ").trim();
     });
 
     var image = "";
