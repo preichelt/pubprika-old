@@ -35,6 +35,7 @@ class Recipe < ActiveRecord::Base
     52
   end
 
+  # would be better to determine this during data import, rather than each time
   def other_source_base_recipes?
     if Recipe.search_source_base(self.source_base).length > 1
       true

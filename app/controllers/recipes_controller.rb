@@ -22,7 +22,7 @@ class RecipesController < ApplicationController
         end
       end
       format.json do
-        render json: PgJson.wrap(get_recipes.select(["id", "name", "slug"]), "recipes")["recipes"]
+        render json: ArPgJson.wrap(get_recipes.select(["id", "name", "slug"]), "recipes")["recipes"]
       end
     end
   end
@@ -32,6 +32,7 @@ class RecipesController < ApplicationController
     if !rp[:q].blank?
       redirect_to recipes_path({q: rp[:q]})
     else
+      # separate into format specific calls, find for html, where for json so PgJson.wrap can be used
       @recipe = Recipe.find(rp[:id])
       respond_to do |format|
         format.html { render :show }
@@ -83,7 +84,7 @@ class RecipesController < ApplicationController
     end
     query
       .page(rp[:page] || 1)
-      .per(per_page || rp[:per_page] || Recipe.default_per_page)
+      .per(per_page || ENV['RECIPES_PER_PAGE'] || rp[:per_page] || Recipe.default_per_page)
   end
 
   def redirect?
