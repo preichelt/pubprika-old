@@ -2,8 +2,11 @@ ready = ->
   recipes = new Bloodhound(
     datumTokenizer: Bloodhound.tokenizers.obj.whitespace("value")
     queryTokenizer: Bloodhound.tokenizers.whitespace
-    prefetch: "/recipes.json"
-    remote: "/recipes.json?q=%QUERY"
+    remote: {
+      url: "/recipes.json?per_page=5&q=%QUERY"
+      filter: (data) ->
+        data.recipes
+    }
   )
   recipes.initialize()
   $(".typeahead").typeahead null,

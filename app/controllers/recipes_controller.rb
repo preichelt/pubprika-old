@@ -22,7 +22,7 @@ class RecipesController < ApplicationController
         end
       end
       format.json do
-        render json: ArPgJson.wrap(get_recipes.select(["id", "name", "slug"]), "recipes")["recipes"]
+        render json: ArPgJson.wrap(get_recipes, "recipes", true)
       end
     end
   end
@@ -32,17 +32,20 @@ class RecipesController < ApplicationController
     if !rp[:q].blank?
       redirect_to recipes_path({q: rp[:q]})
     else
-      # separate into format specific calls, find for html, where for json so PgJson.wrap can be used
-      @recipe = Recipe.find(rp[:id])
       respond_to do |format|
-        format.html { render :show }
-        format.json { render json: @recipe.as_json }
+        format.html do
+          @recipe = Recipe.find(rp[:id])
+          render :show
+        end
+        format.json do
+          render json: ArPgJson.wrap_find(Recipe.where(id: rp[:id]).limit(1))
+        end
       end
     end
   end
 
   def random
-    @recipe = get_recipes(Recipe.all.count).sample
+    @recipe = Recipe.offset(rand(Recipe.count)).first
     redirect_to recipe_path(@recipe)
   end
 
