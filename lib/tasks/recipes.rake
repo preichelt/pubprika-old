@@ -30,7 +30,7 @@ namespace :recipes do
     end
     Rails.logger.info("Finished parsing recipes.json. Beginning import.")
     total = recipes.count
-    progress_bar = ProgressBar.create(title: "Saving Recipes", starting_at: 0, total: total)
+    progress_bar = ProgressBar.create(title: "Importing Recipes", starting_at: 0, total: total)
     recipes.each do |recipe|
       recipe.save!
       progress_bar.increment
