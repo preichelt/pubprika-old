@@ -22,7 +22,8 @@ class RecipesController < ApplicationController
         end
       end
       format.json do
-        render json: ArPgJson.wrap(get_recipes, "recipes", true)
+        @recipes = ArPgJson.wrap(get_recipes, "recipes")
+        render json: ArPgJson.package([@recipes])
       end
     end
   end
