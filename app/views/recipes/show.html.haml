@@ -31,7 +31,7 @@
         .col-xs-12
           Source:
           = link_to @recipe.source_base, @recipe.source
-      - if @recipe.other_source_base_recipes?
+      - if @recipe.common_source_base
         .row
           .col-xs-12
             = link_to "Other recipes from #{@recipe.source_base}", recipes_path({s: @recipe.source_base})

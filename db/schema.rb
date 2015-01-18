@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141117231800) do
+ActiveRecord::Schema.define(version: 20150118044807) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -31,22 +31,23 @@ ActiveRecord::Schema.define(version: 20141117231800) do
   add_index "friendly_id_slugs", ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type", using: :btree
 
   create_table "recipes", force: true do |t|
-    t.string   "name",                     null: false
-    t.text     "ingredients", default: [],              array: true
-    t.text     "directions",  default: [],              array: true
-    t.text     "notes",       default: [],              array: true
+    t.string   "name",                               null: false
+    t.text     "ingredients",        default: [],                 array: true
+    t.text     "directions",         default: [],                 array: true
+    t.text     "notes",              default: [],                 array: true
     t.string   "image"
-    t.text     "tags",        default: [],              array: true
+    t.text     "tags",               default: [],                 array: true
     t.string   "prep_time"
     t.string   "cook_time"
     t.string   "amount"
     t.text     "source"
     t.string   "source_base"
-    t.text     "nutrition",   default: [],              array: true
+    t.text     "nutrition",          default: [],                 array: true
     t.string   "slug"
     t.integer  "slug_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "common_source_base", default: false
   end
 
   add_index "recipes", ["ingredients"], name: "index_recipes_on_ingredients", using: :btree

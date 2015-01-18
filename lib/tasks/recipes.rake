@@ -21,21 +21,24 @@ namespace :recipes do
     file = File.read("db/data/recipes.json")
     data_hash = JSON.parse(file)
     total = data_hash["recipes"].count
-    progress_bar = ProgressBar.create(title: "Parsing Recipes", starting_at: 0, total: total)
+    progress_bar = ProgressBar.create(title: "Importing Recipes", starting_at: 0, total: total)
     recipes = []
     data_hash["recipes"].each do |recipe_data|
       recipe = Recipe.new(recipe_data)
+      recipe.save!
       recipes << recipe
       progress_bar.increment
     end
-    Rails.logger.info("Finished parsing recipes.json. Beginning import.")
+    Rails.logger.info("Finished importing recipes. Determining common source bases.")
     total = recipes.count
-    progress_bar = ProgressBar.create(title: "Importing Recipes", starting_at: 0, total: total)
+    progress_bar = ProgressBar.create(title: "Determining", starting_at: 0, total: total)
     recipes.each do |recipe|
-      recipe.save!
+      if Recipe.search_source_base(recipe.source_base).length > 1
+        recipe.update_attributes(common_source_base: true)
+      end
       progress_bar.increment
     end
-    Rails.logger.info("Finished importing recipes.")
+    Rails.logger.info("Finished determining common source bases.")
   end
 
   desc "Copy Paprika exported recipe images to images/recipes directory."
