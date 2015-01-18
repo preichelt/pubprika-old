@@ -99,17 +99,14 @@ scan(paprikaFilesDir, '.html', function(err, files){
     }
 
     var source = "";
+    var sourceBase = "";
     if($('.source').length){
       source = $('.source').attr('href');
+      sourceBase = $('.source').text().toLowerCase();
     }
     var sourceLastTwo = source.slice(-2);
     if(sourceLastTwo == "/#"){
       source = source.slice(0, -2);
-    }
-
-    var sourceBase = "";
-    if(source != ""){
-      sourceBase = source.replace("https://", "").replace("http://", "").replace("www.", "").split("/")[0]
     }
 
     var nutrition = [];
