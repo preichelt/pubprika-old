@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20150118044807) do
   enable_extension "plpgsql"
   enable_extension "unaccent"
 
-  create_table "friendly_id_slugs", force: true do |t|
+  create_table "friendly_id_slugs", force: :cascade do |t|
     t.string   "slug",                      null: false
     t.integer  "sluggable_id",              null: false
     t.string   "sluggable_type", limit: 50
@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(version: 20150118044807) do
   add_index "friendly_id_slugs", ["sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_id", using: :btree
   add_index "friendly_id_slugs", ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type", using: :btree
 
-  create_table "recipes", force: true do |t|
+  create_table "recipes", force: :cascade do |t|
     t.string   "name",                               null: false
     t.text     "ingredients",        default: [],                 array: true
     t.text     "directions",         default: [],                 array: true
