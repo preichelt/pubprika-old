@@ -33,7 +33,7 @@ namespace :recipes do
     total = recipes.count
     progress_bar = ProgressBar.create(title: "Determining", starting_at: 0, total: total)
     recipes.each do |recipe|
-      if Recipe.search_source_base(recipe.source_base).length > 1
+      if Recipe.where(source_base: recipe.source_base).count > 1
         recipe.update_attributes(common_source_base: true)
       end
       progress_bar.increment
@@ -58,5 +58,20 @@ namespace :recipes do
     end
     paprika_dir = 'paprika_files'
     Pathname.new(paprika_dir).children.each {|p| p.rmtree}
+  end
+
+  desc "Master task: covert -> import -> copy images -> precompile assets"
+  task :master => :environment do
+    if Rails.env == "development"
+      Rails.logger = Logger.new(STDOUT)
+    end
+    system "bundle exec rake recipes:convert"
+    system "bundle exec rake recipes:import"
+    system "bundle exec rake recipes:copy_images"
+    assets_dir = 'public/assets'
+    if Dir.exists?(assets_dir)
+      FileUtils.rm_rf(assets_dir)
+    end
+    system "bundle exec rake assets:precompile RAILS_ENV=production"
   end
 end
