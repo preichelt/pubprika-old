@@ -68,10 +68,7 @@ namespace :recipes do
     system "bundle exec rake recipes:convert"
     system "bundle exec rake recipes:import"
     system "bundle exec rake recipes:copy_images"
-    assets_dir = 'public/assets'
-    if Dir.exists?(assets_dir)
-      FileUtils.rm_rf(assets_dir)
-    end
+    system "bundle exec rake assets:clobber"
     system "bundle exec rake assets:precompile RAILS_ENV=production"
   end
 end
