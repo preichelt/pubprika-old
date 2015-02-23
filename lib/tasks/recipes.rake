@@ -1,5 +1,5 @@
 namespace :recipes do
-  desc "Convert Paprika esported recipe html files to json using node cli tool."
+  desc "Convert paprika esported recipe html files to json using node cli tool."
   task :convert => :environment do
     if Rails.env == "development"
       Rails.logger = Logger.new(STDOUT)
@@ -41,7 +41,7 @@ namespace :recipes do
     Rails.logger.info("Finished determining common source bases.")
   end
 
-  desc "Copy Paprika exported recipe images to images/recipes directory."
+  desc "Copy paprika exported recipe images to images/recipes directory."
   task :copy_images => :environment do
     if Rails.env == "development"
       Rails.logger = Logger.new(STDOUT)
