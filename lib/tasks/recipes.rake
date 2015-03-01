@@ -14,22 +14,60 @@ namespace :recipes do
     if Rails.env == "development"
       Rails.logger = Logger.new(STDOUT)
     end
+
+    Rails.logger.info("Removing exisiting recipe tags from db.")
+    RecipeTag.delete_all
+    ActiveRecord::Base.connection.reset_pk_sequence!(RecipeTag.table_name)
+    Rails.logger.info("Finished removing exisiting recipe tags.")
     Rails.logger.info("Removing existing recipes from db.")
     Recipe.delete_all
     ActiveRecord::Base.connection.reset_pk_sequence!(Recipe.table_name)
     Rails.logger.info("Finished removing existing recipes.")
+    Rails.logger.info("Removing existing tags from db.")
+    Tag.delete_all
+    ActiveRecord::Base.connection.reset_pk_sequence!(Tag.table_name)
+    Rails.logger.info("Finished removing existing tags.")
+
+    tag_file = File.read("db/data/tags.json")
+    tag_data_hash = JSON.parse(tag_file)
+    total = tag_data_hash["tags"].count
+    progress_bar = ProgressBar.create(title: "Importing Tags", starting_at: 0, total: total)
+    tag_data_hash["tags"].each do |tag_data|
+      tag = Tag.new(tag_data)
+      if ["Christmas"].include?(tag.name)
+        tag.singularized = tag.name
+      elsif ["Cookies"].include?(tag.name)
+        tag.singularized = tag.name[0..-2]
+      else
+        singularized = tag.name.split(" & ").map {|t| t.singularize}.join(" & ")
+        tag.singularized = singularized
+      end
+      tag.save!
+      progress_bar.increment
+    end
+    Rails.logger.info("Finished importing tags.")
+
     file = File.read("db/data/recipes.json")
     data_hash = JSON.parse(file)
     total = data_hash["recipes"].count
     progress_bar = ProgressBar.create(title: "Importing Recipes", starting_at: 0, total: total)
     recipes = []
     data_hash["recipes"].each do |recipe_data|
+      tags = recipe_data["tags"]
+      recipe_data.delete("tags")
       recipe = Recipe.new(recipe_data)
       recipe.save!
       recipes << recipe
+
+      tags.each do |t|
+        tag = Tag.find_by_name(t)
+        recipe_tag = RecipeTag.create!(recipe_id: recipe.id, tag_id: tag.id)
+      end
+
       progress_bar.increment
     end
     Rails.logger.info("Finished importing recipes. Determining common source bases.")
+
     total = recipes.count
     progress_bar = ProgressBar.create(title: "Determining", starting_at: 0, total: total)
     recipes.each do |recipe|

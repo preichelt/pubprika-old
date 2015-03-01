@@ -20,10 +20,9 @@
                 %i.fa.fa-tags
                 %span.caret
               %ul.dropdown-menu{:role => "menu"}
-                - @tags.each do |g|
-                  - g.each do |k,v|
-                    %li
-                      = link_to "#{k} (#{v})", recipes_path({t: k, v: params[:v], r: "no"})
+                - @tags.each do |t|
+                  %li
+                    = link_to "#{t.name} (#{t.referenced})", recipes_path({t: t.name, v: params[:v], r: "no"})
     - if params[:v] == "list"
       - @recipes.each do |recipe|
         .recipe
@@ -37,7 +36,7 @@
                 %h4
                   = link_to recipe.name, recipe_path(recipe)
                 %p.tags
-                  = recipe.tags.to_sentence
+                  = recipe.tags.map{|t| t.name}.to_sentence
                 %p
                   = link_to "View", recipe_path(recipe), class: "label label-success"
               = image_tag("recipes/#{recipe.image}", class: "thumbnail-img")
@@ -51,12 +50,11 @@
       .row
         .col-sm-12
           %ul.list-group
-            - @tags.each do |g|
-              - g.each do |k,v|
-                %li.list-group-item
-                  %span.badge
-                    = v
-                  = link_to k, recipes_path({t: k, v: params[:v], r: "no"})
+            - @tags.each do |t|
+              %li.list-group-item
+                %span.badge
+                  = t.referenced
+                = link_to t.name, recipes_path({t: t.name, v: params[:v], r: "no"})
 .hidden-lg.hidden-md.hidden-sm
   .row.small-pagination
     .col-xs-12

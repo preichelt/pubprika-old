@@ -14,15 +14,13 @@ class RecipesController < ApplicationController
           if @recipes.length == 1 && redirect?
             redirect_to recipe_path(@recipes.first)
           else
-            tags_file = File.read("db/data/tags.json")
-            tags_hash = JSON.parse(tags_file)
-            @tags = tags_hash["tags"]
+            @tags = Tag.all
             render :index
           end
         end
       end
       format.json do
-        @recipes = ArPgJson.wrap(get_recipes, "recipes")
+        @recipes = ArPgJson.wrap(get_recipes.for_ar_pg, "recipes")
         render json: ArPgJson.package([@recipes])
       end
     end
@@ -39,7 +37,7 @@ class RecipesController < ApplicationController
           render :show
         end
         format.json do
-          render json: ArPgJson.wrap_find(Recipe.where(id: rp[:id]).limit(1))
+          render json: ArPgJson.wrap_find(Recipe.where(id: rp[:id]).limit(1).for_ar_pg)
         end
       end
     end
@@ -69,14 +67,13 @@ class RecipesController < ApplicationController
     rp = recipe_params
     query = Recipe
     if !rp[:t].blank?
-      tags = rp[:t].split(",").map {|t| ["BBQ", "4th of July"].include?(t) ? t : t.titleize}
-      @current_tags = tags.map {|t| ["Christmas"].include?(t) ? "#{t}" :
-        (t == "Cookies" ? "Cookie" : (t == "Sauces & Spreads" ? "Sauce & Spread" :
-        (t == "Breads & Doughs" ? "Bread & Dough" : (t == "Desserts & Sweets" ? "Dessert & Sweet" :
-        (t == "Frostings & Glazes" ? "Frosting & Glaze" : (t == "Muffins & Cupcakes" ? "Muffin & Cupcake" :
-        (t == "Salads & Dressings" ? "Salad & Dressing" : (t == "Sandwiches & Wraps" ? "Sandwich & Wrap" :
-        (t == "Soups & Stews" ? "Soup & Stew" : "#{t.singularize}")))))))))}.to_sentence + " Recipes"
-      query = query.with_tags(tags)
+      tags = rp[:t]
+        .split(",")
+        .map {|t| ["BBQ", "4th of July"].include?(t) ? t : t.titleize}
+        .map {|t| Tag.find_by_name(t)}
+        .compact
+      @current_tags = tags.map {|t| t.singularized}.to_sentence + " Recipes"
+      query = query.with_tags(tags.map {|t| t.id})
     end
     if !rp[:q].blank?
       query = query.search_name_ingredients_and_source_base(rp[:q])

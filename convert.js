@@ -147,11 +147,11 @@ scan(paprikaFilesDir, '.html', function(err, files){
     console.log("recipes.json has been built.");
   });
 
-
   uniqTags = _.uniq(allTags).sort()
   groupedTags = _.map(uniqTags, function(t){
     var tagGroup = {};
-    tagGroup[t] = allTags.reduce(function(n, val){
+    tagGroup["name"] = t
+    tagGroup["referenced"] = allTags.reduce(function(n, val){
       return n + (val === t);
     }, 0);
     return tagGroup;

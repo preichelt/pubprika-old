@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150118044807) do
+ActiveRecord::Schema.define(version: 20150301083428) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,13 +30,22 @@ ActiveRecord::Schema.define(version: 20150118044807) do
   add_index "friendly_id_slugs", ["sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_id", using: :btree
   add_index "friendly_id_slugs", ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type", using: :btree
 
+  create_table "recipe_tags", force: :cascade do |t|
+    t.integer  "recipe_id",  null: false
+    t.integer  "tag_id",     null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "recipe_tags", ["recipe_id"], name: "index_recipe_tags_on_recipe_id", using: :btree
+  add_index "recipe_tags", ["tag_id"], name: "index_recipe_tags_on_tag_id", using: :btree
+
   create_table "recipes", force: :cascade do |t|
     t.string   "name",                               null: false
     t.text     "ingredients",        default: [],                 array: true
     t.text     "directions",         default: [],                 array: true
     t.text     "notes",              default: [],                 array: true
     t.string   "image"
-    t.text     "tags",               default: [],                 array: true
     t.string   "prep_time"
     t.string   "cook_time"
     t.string   "amount"
@@ -56,6 +65,15 @@ ActiveRecord::Schema.define(version: 20150118044807) do
   add_index "recipes", ["slug_id"], name: "index_recipes_on_slug_id", unique: true, using: :btree
   add_index "recipes", ["source"], name: "index_recipes_on_source", using: :btree
   add_index "recipes", ["source_base"], name: "index_recipes_on_source_base", using: :btree
-  add_index "recipes", ["tags"], name: "index_recipes_on_tags", using: :btree
+
+  create_table "tags", force: :cascade do |t|
+    t.string   "name",         null: false
+    t.string   "singularized", null: false
+    t.integer  "referenced",   null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
+  add_index "tags", ["name"], name: "index_tags_on_name", unique: true, using: :btree
 
 end
