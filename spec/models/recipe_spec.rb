@@ -5,10 +5,6 @@ RSpec.describe Recipe, type: :model do
 
   subject { @recipe }
 
-  it "has the correct associations" do
-    has_associations :recipe_tags, :tags
-  end
-
   it "validates the presence of required fields" do
     should_validate_presence :name
   end

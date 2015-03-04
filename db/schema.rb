@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150301083428) do
+ActiveRecord::Schema.define(version: 20150303213847) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,16 +30,6 @@ ActiveRecord::Schema.define(version: 20150301083428) do
   add_index "friendly_id_slugs", ["sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_id", using: :btree
   add_index "friendly_id_slugs", ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type", using: :btree
 
-  create_table "recipe_tags", force: :cascade do |t|
-    t.integer  "recipe_id",  null: false
-    t.integer  "tag_id",     null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  add_index "recipe_tags", ["recipe_id"], name: "index_recipe_tags_on_recipe_id", using: :btree
-  add_index "recipe_tags", ["tag_id"], name: "index_recipe_tags_on_tag_id", using: :btree
-
   create_table "recipes", force: :cascade do |t|
     t.string   "name",                               null: false
     t.text     "ingredients",        default: [],                 array: true
@@ -57,6 +47,7 @@ ActiveRecord::Schema.define(version: 20150301083428) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "common_source_base", default: false
+    t.integer  "tag_ids",            default: [],                 array: true
   end
 
   add_index "recipes", ["ingredients"], name: "index_recipes_on_ingredients", using: :btree

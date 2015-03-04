@@ -4,9 +4,6 @@ class Recipe < ActiveRecord::Base
 
   strip_attributes
 
-  has_many :recipe_tags
-  has_many :tags, through: :recipe_tags
-
   validates :name, presence: true
 
   pg_search_scope :search_name_ingredients_and_source_base,
@@ -22,7 +19,7 @@ class Recipe < ActiveRecord::Base
                   against: :source_base,
                   using: {tsearch: {prefix: true}}
 
-  scope :with_tags, lambda {|tags| joins{recipe_tags.outer}.where("recipe_tags.tag_id IN (?)",tags)}
+  scope :with_tags, lambda {|tag_ids| where("recipes.tag_ids && ARRAY[?]", [*tag_ids]) }
   scope :sorted_by, lambda {|sort_option| order("recipes.#{sort_option}")}
 
   friendly_id :slug_candidates, use: [:slugged, :finders]
@@ -38,6 +35,10 @@ class Recipe < ActiveRecord::Base
     52
   end
 
+  def tags
+    Tag.where{|t| t.id.in(tag_ids)}
+  end
+
   OnlyBinaryFields = column_names.map {|cn| cn if columns_hash[cn].type == :binary}.compact
   OnlyDatetimeFields = column_names.map {|cn| cn if columns_hash[cn].type == :datetime}.compact
   OnlyIntegerFields = column_names.map {|cn| cn if columns_hash[cn].type == :integer}.compact
@@ -47,7 +48,7 @@ class Recipe < ActiveRecord::Base
   OnlyBooleanFields = column_names.map {|cn| cn if columns_hash[cn].type == :boolean}.compact
   SimpleFields = OnlyStringFields + OnlyTextFields + OnlyBooleanFields + OnlyIntegerFields
   ComplexFields = OnlyBinaryFields + OnlyDatetimeFields + OnlyDecimalFields
-  IncludeHasMany = [:recipe_tags]
+  IncludeHasMany = []
   IncludeHasManyReflections = IncludeHasMany
     .map {|hm| reflect_on_association(hm)}
     .map {|r| {

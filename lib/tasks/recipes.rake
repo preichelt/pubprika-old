@@ -15,10 +15,6 @@ namespace :recipes do
       Rails.logger = Logger.new(STDOUT)
     end
 
-    Rails.logger.info("Removing exisiting recipe tags from db.")
-    RecipeTag.delete_all
-    ActiveRecord::Base.connection.reset_pk_sequence!(RecipeTag.table_name)
-    Rails.logger.info("Finished removing exisiting recipe tags.")
     Rails.logger.info("Removing existing recipes from db.")
     Recipe.delete_all
     ActiveRecord::Base.connection.reset_pk_sequence!(Recipe.table_name)
@@ -56,14 +52,9 @@ namespace :recipes do
       tags = recipe_data["tags"]
       recipe_data.delete("tags")
       recipe = Recipe.new(recipe_data)
+      recipe.tag_ids = tags.map {|t| Tag.find_by_name(t).id}
       recipe.save!
       recipes << recipe
-
-      tags.each do |t|
-        tag = Tag.find_by_name(t)
-        recipe_tag = RecipeTag.create!(recipe_id: recipe.id, tag_id: tag.id)
-      end
-
       progress_bar.increment
     end
     Rails.logger.info("Finished importing recipes. Determining common source bases.")
