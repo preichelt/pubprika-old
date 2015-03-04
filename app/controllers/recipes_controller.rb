@@ -34,6 +34,7 @@ class RecipesController < ApplicationController
       respond_to do |format|
         format.html do
           @recipe = Recipe.find(rp[:id])
+          @tags = @recipe.tags
           render :show
         end
         format.json do

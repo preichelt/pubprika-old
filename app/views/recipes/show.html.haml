@@ -7,11 +7,11 @@
       .col-xs-12
         %h2
           = @recipe.name
-    - unless @recipe.tags.count == 0
+    - unless @tags.size == 0
       .row
         .col-xs-12
-          = "#{"Tag".pluralize(@recipe.tags.count)}: "
-          - @recipe.tags.each_with_index do |tag,index|
+          = "#{"Tag".pluralize(@tags.size)}: "
+          - @tags.each_with_index do |tag,index|
             - unless index == 0
               |
             = link_to tag.name, recipes_path({t: tag.name})
