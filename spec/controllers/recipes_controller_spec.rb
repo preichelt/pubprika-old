@@ -34,12 +34,18 @@ RSpec.describe RecipesController do
     end
 
     context "json" do
+      let(:body) { parsed_json }
       it "returns json structure" do
         get :index, format: :json
-        body = parsed_json
         expect(body.has_key?("recipes")).to eq(true)
-        expect(body["recipes"].first["id"]).to eq(recipe1.id)
-        expect(body["recipes"].first["name"]).to eq(recipe1.name)
+      end
+
+      it "json attributes match recipe1's attributes" do
+        get :index, format: :json
+        recipe_attributes = body["recipes"].first
+        parsed_recipe = Recipe.new(recipe_attributes)
+        parsed_recipe.id = recipe_attributes["id"]
+        expect(recipe1).to eq(parsed_recipe)
       end
     end
   end
