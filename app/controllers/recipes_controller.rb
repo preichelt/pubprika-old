@@ -20,8 +20,8 @@ class RecipesController < ApplicationController
         end
       end
       format.json do
-        @recipes = ArPgJson.wrap(get_recipes.for_ar_pg, "recipes")
-        render json: ArPgJson.package([@recipes])
+        @recipes = Recipe.ar_pg_wrap(get_recipes.for_ar_pg, "recipes")
+        render json: Recipe.ar_pg_package([@recipes])
       end
     end
   end
@@ -38,7 +38,7 @@ class RecipesController < ApplicationController
           render :show
         end
         format.json do
-          render json: ArPgJson.wrap_find(Recipe.where(id: rp[:id]).limit(1).for_ar_pg)
+          render json: Recipe.ar_pg_wrap_find(Recipe.where(id: rp[:id]).limit(1).for_ar_pg)
         end
       end
     end
