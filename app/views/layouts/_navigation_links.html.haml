@@ -1,2 +1,13 @@
-%li= link_to "Random", random_recipes_path
 %li= link_to "About", about_path
+- if @tags.nil?
+  %li= link_to "Random", random_recipes_path
+- else
+  %li.dropdown
+    %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+      Random
+      %span.caret
+    %ul.dropdown-menu{role: "menu"}
+      %li= link_to "All", random_recipes_path
+      %li.divider
+      - @tags.each do |t|
+        %li= link_to t.name, random_recipes_path({t: t.name})

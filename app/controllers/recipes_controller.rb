@@ -34,7 +34,8 @@ class RecipesController < ApplicationController
       respond_to do |format|
         format.html do
           @recipe = Recipe.find(rp[:id])
-          @tags = @recipe.tags
+          @recipe_tags = @recipe.tags
+          @tags = Tag.all
           render :show
         end
         format.json do
@@ -45,7 +46,7 @@ class RecipesController < ApplicationController
   end
 
   def random
-    @recipe = Recipe.offset(rand(Recipe.count)).first
+    @recipe = get_random_recipe
     redirect_to recipe_path(@recipe)
   end
 
@@ -87,6 +88,20 @@ class RecipesController < ApplicationController
     query
       .page(rp[:page] || 1)
       .per(per_page || ENV['RECIPES_PER_PAGE'] || rp[:per_page] || Recipe.default_per_page)
+  end
+
+  def get_random_recipe
+    rp = recipe_params
+    if !rp[:t].blank?
+      tags = rp[:t]
+        .split(",")
+        .map {|t| ["BBQ", "4th of July"].include?(t) ? t : t.titleize}
+        .map {|t| Tag.find_by_name(t)}
+        .compact
+      Recipe.with_tags(tags.map {|t| t.id}).offset(rand(Recipe.with_tags(tags.map {|t| t.id}).count)).first
+    else
+      Recipe.offset(rand(Recipe.count)).first
+    end
   end
 
   def redirect?
