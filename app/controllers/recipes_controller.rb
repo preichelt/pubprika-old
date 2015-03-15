@@ -46,8 +46,15 @@ class RecipesController < ApplicationController
   end
 
   def random
-    @recipe = get_random_recipe
-    redirect_to recipe_path(@recipe)
+    respond_to do |format|
+      format.html do
+        @recipe = get_random_recipe.first
+        redirect_to recipe_path(@recipe)
+      end
+      format.json do
+        render json: Recipe.ar_pg_wrap_find(get_random_recipe.for_ar_pg)
+      end
+    end
   end
 
   private
@@ -98,9 +105,9 @@ class RecipesController < ApplicationController
         .map {|t| ["BBQ", "4th of July"].include?(t) ? t : t.titleize}
         .map {|t| Tag.find_by_name(t)}
         .compact
-      Recipe.with_tags(tags.map {|t| t.id}).offset(rand(Recipe.with_tags(tags.map {|t| t.id}).count)).first
+      Recipe.with_tags(tags.map {|t| t.id}).offset(rand(Recipe.with_tags(tags.map {|t| t.id}).count)).limit(1)
     else
-      Recipe.offset(rand(Recipe.count)).first
+      Recipe.offset(rand(Recipe.count)).limit(1)
     end
   end
 
