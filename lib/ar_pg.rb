@@ -4,7 +4,10 @@ module ArPg
   end
 
   def fields_of_type(type)
-    column_names.map {|cn| cn if columns_hash[cn].type == type}.compact.reject {|f| blacklist_fields.include?(f)}
+    column_names
+      .map {|cn| cn if columns_hash[cn].type == type}
+      .compact
+      .reject {|f| blacklist_fields.include?(f)}
   end
 
   def binary_fields
@@ -46,12 +49,22 @@ module ArPg
   def include_has_many_reflections
     include_has_many
       .map {|hm| reflect_on_association(hm)}
-      .map {|r| {
-        table_name: r.plural_name,
-        results_name: "#{r.plural_name.singularize}_results",
-        model: r.plural_name.classify.constantize,
-        order: "#{r.options.has_key?(:order) ? r.options[:order].split(", ").map {|o| "#{r.plural_name}.#{o}"}.join(", ") : ""}",
-        fk: "#{r.options.has_key?(:foreign_key) ? r.options[:foreign_key] : "#{table_name.singularize}_id"}"}}
+      .map do |r|
+        {
+          table_name: r.plural_name,
+          results_name: "#{r.plural_name.singularize}_results",
+          model: r.plural_name.classify.constantize,
+          order: "#{r.options.has_key?(:order) ?
+            r.options[:order]
+              .split(", ")
+              .map {|o| "#{r.plural_name}.#{o}"}
+              .join(", ") :
+            ""}",
+          fk: "#{r.options.has_key?(:foreign_key) ?
+            r.options[:foreign_key] :
+            "#{table_name.singularize}_id"}"
+        }
+      end
       .map {|h| Hashie::Mash.new(h)}
   end
 
@@ -62,12 +75,20 @@ module ArPg
   def include_belongs_to_reflections
     include_belongs_to
       .map {|bt| reflect_on_association(bt)}
-      .map {|r| {
-        table_name: r.plural_name,
-        results_name: "#{r.plural_name.singularize}_results",
-        model: r.plural_name.classify.constantize,
-        order: "#{r.options.has_key?(:order) ? r.options[:order].split(", ").map {|o| "#{r.plural_name}.#{o}"}.join(", ") : ""}",
-        fk: "#{r.options[:foreign_key] || "#{r.plural_name.singularize}_id"}"}}
+      .map do |r|
+        {
+          table_name: r.plural_name,
+          results_name: "#{r.plural_name.singularize}_results",
+          model: r.plural_name.classify.constantize,
+          order: "#{r.options.has_key?(:order) ?
+            r.options[:order]
+              .split(", ")
+              .map {|o| "#{r.plural_name}.#{o}"}
+              .join(", ") :
+            ""}",
+          fk: "#{r.options[:foreign_key] || "#{r.plural_name.singularize}_id"}"
+        }
+      end
       .map {|h| Hashie::Mash.new(h)}
   end
 
@@ -75,24 +96,67 @@ module ArPg
     self.select("
       #{simple_fields.map {|f| "#{table_name}.#{f}"}*', '}
       #{binary_fields.count > 0 ? ', ' : ''}
-      #{binary_fields.map {|f| "encode(#{table_name}.#{f}, 'base64') as #{f}"}*', '}
+      #{binary_fields.map do |f|
+        "encode(
+          #{table_name}.#{f}, 'base64'
+        ) as #{f}"
+      end*', '}
       #{datetime_fields.count > 0 ? ', ' : ''}
-      #{datetime_fields.map {|f| "to_char(timezone('UTC', cast(#{table_name}.#{f} as timestamp(0))), 'YYYY-MM-DD\"T\"HH24:MI:SS\"Z\"') as #{f}"}*', '}
+      #{datetime_fields.map do |f|
+        "to_char(
+          timezone(
+            'UTC', cast(
+              #{table_name}.#{f} as timestamp(0)
+            )
+          ), 'YYYY-MM-DD\"T\"HH24:MI:SS\"Z\"'
+        ) as #{f}"
+      end*', '}
       #{decimal_fields.count > 0 ? ', ' : ''}
-      #{decimal_fields.map {|f| "to_char(#{table_name}.#{f}, 'FM99999999999999999999.9999999999') as #{f}"}*', '}
+      #{decimal_fields.map do |f|
+        "to_char(
+          #{table_name}.#{f}, 'FM99999999999999999999.9999999999'
+        ) as #{f}"
+      end*', '}
       #{include_belongs_to.count > 0 ? ', ' : ''}
-      #{include_belongs_to_reflections.map {|bt| "(SELECT row_to_json(#{bt.results_name}) from (#{bt.model.for_ar_pg.to_sql} where #{bt.table_name}.id = #{table_name}.#{bt.fk}) #{bt.results_name}) as #{bt.table_name.singularize}"}*', '}
+      #{include_belongs_to_reflections.map do |bt|
+        "(
+          SELECT row_to_json(#{bt.results_name})
+          FROM (
+            #{bt.model.for_ar_pg.to_sql}
+            WHERE #{bt.table_name}.id = #{table_name}.#{bt.fk}
+          ) #{bt.results_name}
+        ) as #{bt.table_name.singularize}"
+      end*', '}
       #{include_has_many.count > 0 ? ', ' : ''}
-      #{include_has_many_reflections.map {|hm| "(CASE WHEN (SELECT count(*) from #{hm.table_name} where #{hm.table_name}.#{hm.fk} = #{table_name}.id) = 0 THEN '[]' ELSE (SELECT json_agg(#{hm.results_name}) from (#{hm.model.for_ar_pg.to_sql} where #{hm.table_name}.#{hm.fk} = #{table_name}.id #{hm.order.length > 0 ? "ORDER BY #{hm.order}" : ""}) as #{hm.results_name}) END) as #{hm.table_name}"}*', '}
+      #{include_has_many_reflections.map do |hm|
+        "(
+          CASE
+            WHEN (
+              SELECT count(*)
+              FROM #{hm.table_name}
+              WHERE #{hm.table_name}.#{hm.fk} = #{table_name}.id
+            ) = 0
+            THEN '[]'
+            ELSE (
+              SELECT json_agg(#{hm.results_name})
+              FROM (
+                #{hm.model.for_ar_pg.to_sql}
+                WHERE #{hm.table_name}.#{hm.fk} = #{table_name}.id
+                #{hm.order.length > 0 ? "ORDER BY #{hm.order}" : ""}
+              ) as #{hm.results_name}
+            )
+          END
+        ) as #{hm.table_name}"
+      end*', '}
     ")
   end
 
   def ar_pg_wrap(query, key = "objects")
     ActiveRecord::Base.connection.execute(
       "SELECT json_agg(query_results) as #{key}
-        FROM (
-          #{query.to_sql}
-        ) query_results"
+      FROM (
+        #{query.to_sql}
+      ) query_results"
     ).first
   end
 

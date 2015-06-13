@@ -20,7 +20,7 @@ class Recipe < ActiveRecord::Base
                   against: :source_base,
                   using: {tsearch: {prefix: true}}
 
-  scope :with_tags, lambda {|tag_ids| where("recipes.tag_ids && ARRAY[?]", [*tag_ids]) }
+  scope :with_tags, lambda {|tag_ids| where("recipes.tag_ids && ARRAY[?]", [*tag_ids])}
   scope :sorted_by, lambda {|sort_option| order("recipes.#{sort_option}")}
 
   friendly_id :slug_candidates, use: [:slugged, :finders]
